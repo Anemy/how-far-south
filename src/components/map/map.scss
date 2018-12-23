@@ -35,11 +35,9 @@
 .home-line {
   background: linear-gradient(to bottom, #F1F3FC, $white) no-repeat 0 0;
 
-  -webkit-animation: bikesouth 60s ease-out;
-  -moz-animation: bikesouth 60s ease-out;
-  -o-animation: bikesouth 60s ease-out;
-  -ms-animation: bikesouth 60s ease-out;
-  animation: bikesouth 60s ease-out;
+  animation-duration: 60s;
+  animation-name: bikesouth;
+  animation-timing-function: ease-out;
 
   position: fixed;
   top: 0;
@@ -49,23 +47,12 @@
   width: 2px;
 }
 
-@-webkit-keyframes bikesouth {
-  0% { background-size: 4px 0%; }
-  100% { background-size: 100vh 100%; }
-}
-@-moz-keyframes bikesouth {
-  0% { background-size: 4px 0%; }
-  100% { background-size: 100vh 100%; }
-}
-@-o-keyframes bikesouth {
-  0% { background-size: 4px 0%; }
-  100% { background-size: 100vh 100%; }
-}
-@-ms-keyframes bikesouth {
-  0% { background-size: 4px 0%; }
-  100% { background-size: 100vh 100%; }
-}
 @keyframes bikesouth {
-  0% { background-size: 4px 0%; }
-  100% { background-size: 100vh 100%; }
+  from {
+    background-size: 4px 0%;
+  }
+
+  to {
+    background-size: 100vh 100%;
+  }
 }
