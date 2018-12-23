@@ -7,14 +7,17 @@
     "d3": "^5.1.0",
     "eslint": "5.6.0",
     "lodash": "^4.17.5",
+    "mapshaper": "^0.4.104",
     "node-sass": "^4.11.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
-    "react-scripts": "^2.1.1"
+    "react-scripts": "^2.1.1",
+    "topojson": "^3.0.2"
   },
   "scripts": {
+    "build-topojson": "node ./src/scripts/build-topojson",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",

@@ -17,4 +17,9 @@ registerServiceWorker();
  * Plak condensend for headline - 'Plak Black Extra Condensed'
  * Custom caps font over main page load.
  * Topography animation
+ * 
+ * Wheel turning in background?
+ * Animate bikes in background?
+ * Path coming down in background?
+ * Spot onto seattle coming down?
  */
