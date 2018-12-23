@@ -29,7 +29,7 @@ const simplifyTopojsonPercentage = 0.20 /* 20% */;
 const countryIsoCodes = require(`./iso-countries-with-regions-and-countries.json`);
 
 const countryIsosToIgnore = {
-  CA: 'CA', // Canada
+  // CA: 'CA', // Canada
   GL: 'GL', // Greenland,
   GS: 'GS' // South Georgia and the South Sandwich Islands.
 };
@@ -37,7 +37,7 @@ const countryIsosToBreakIntoSubdivisions = {
   US: 'US'
 };
 const stateIsosToIgnore = {
-  'US-AK': 'US-AK',
+  // 'US-AK': 'US-AK',
   'US-HI': 'US-HI',
   'US-GU': 'US-GU',
   'US-MP': 'US-MP',

@@ -1,58 +1,31 @@
 @import "../../variables";
 
-.home-title {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  letter-spacing: 0.4em;
-  margin-top: 30vh;
-  text-align: center;
-}
-
-.home-rotate {
-  margin-left: -0.4em;
-  margin-right: 0.4em;
-
-  top: 0.1em;
-
-  position: relative;
-  display: inline-block;
-
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.home-under-title {
-  font-weight: 200;
-  font-size: 1em;
-  letter-spacing: 0.2em;
-  text-align: center;
-}
-
-.home-line {
-  background: linear-gradient(to bottom, #F1F3FC, $white) no-repeat 0 0;
-
-  animation-duration: 60s;
-  animation-name: bikesouth;
-  animation-timing-function: ease-out;
-
-  position: fixed;
+.map {
+  background-color: $black; // TODO: Remove
+  position: absolute;
+  left: 0;
   top: 0;
-  left: 20%;
-  bottom: 0;
-
-  width: 2px;
+  min-height: 100vh;
+  width: 100%;
+  z-index: -1;
+  text-align: center;
 }
 
-@keyframes bikesouth {
-  from {
-    background-size: 4px 0%;
-  }
+.map-border {
+  stroke-width: 0.5px;
+  stroke: $nice-white;
+  fill: none;
+}
 
+.map-border path {
+  // stroke-dasharray: 5000;
+  // stroke-dashoffset: 5000;
+  // animation: draw-overtime 5s linear forwards;
+  animation: draw-overtime 3s ease-out forwards;
+}
+
+@keyframes draw-overtime {
   to {
-    background-size: 100vh 100%;
+    stroke-dashoffset: 0;
   }
 }

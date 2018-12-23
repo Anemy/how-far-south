@@ -14,7 +14,8 @@
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^2.1.1",
-    "topojson": "^3.0.2"
+    "topojson": "^3.0.2",
+    "topojson-client": "^3.0.0"
   },
   "scripts": {
     "build-topojson": "node ./src/scripts/build-topojson",

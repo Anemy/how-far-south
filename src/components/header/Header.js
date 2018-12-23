@@ -22,7 +22,7 @@ class Header extends Component {
   render() {
     // const { links } = this.props;
 
-    return null;
+    return (<div />);
 
     // return (
     //   <div className="nav top-nav">
