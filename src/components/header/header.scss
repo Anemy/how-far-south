@@ -1,0 +1,47 @@
+@import "../../variables";
+
+.popover-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: $white;
+  color: $black;
+  padding: 60px 30px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 50;
+
+  &.active {
+    height: 100vh;
+  }
+
+  > *:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .loader-container {
+    width: 100%;
+  }
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.group-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  > *:not(:first-child) {
+    margin-left: 10px;
+  }
+}

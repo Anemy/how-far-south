@@ -1,0 +1,17 @@
+$black: #060606; // #000000; // Sofloo uses this black I like: `#282c34`.
+$red: red;
+$white: white;
+$lightgray: darken($white, 20%);
+$superlightgray: darken($white, 5%);
+$darkgray: lighten($black, 40%);
+$blue: #2684ff;
+$darkblue: darken($blue, 20%);
+
+// Cloud white #ecf0f1
+
+$raisedShadow: 0 5px 20px $darkgray;
+
+$inputHeight: 38px;
+
+
+// #F1F3FC

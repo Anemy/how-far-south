@@ -1,20 +1,28 @@
 {
   "name": "how-far-south",
+  "homepage": "http://anemy.github.io/how-far-south",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-scripts": "2.1.1"
+    "d3": "^5.1.0",
+    "eslint": "5.6.0",
+    "lodash": "^4.17.5",
+    "node-sass": "^4.11.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   },
   "browserslist": [
     ">0.2%",
