@@ -50,13 +50,17 @@ class Map extends Component {
 
     const maxWidth = this.state.width;
 
-    let mapHeight = this.state.height * 2;
-    let mapWidth = this.state.width;
+    // let mapHeight = this.state.height * 2;
+    // let mapWidth = this.state.width;
 
-    const mapXOffset = 800;
-    const mapYOffset = 200;
-    const mapTranslation = [this.state.width / 2 + mapXOffset, this.state.height / 2 + mapYOffset];
-    const mapScale = 700;
+    const ourScale = 1.2;
+    const mapScale = 700 * ourScale;
+    const mapHeight = 1382 * ourScale;
+    const mapWidth = 765 * ourScale;
+
+    const mapXOffset = 1240 * ourScale;
+    const mapYOffset = 640 * ourScale;
+    const mapTranslation = [mapXOffset, mapYOffset];
 
     if (this.state.width * (3 / 2) < this.state.height) {
       console.log('Very vertical screen - scale to fit the width');
@@ -77,6 +81,7 @@ class Map extends Component {
 
     // Pull in the map boundaries -> project & scale accordingly.
     const path = d3.geoPath(geoProjection(kavrayskiy7Raw).translate(mapTranslation).scale(mapScale));
+    // const path = d3.geoPath(d3.geoAzimuthalEqualArea().translate(mapTranslation).scale(mapScale))
 
     svg.append('g')
       .attr('class', 'map-border')

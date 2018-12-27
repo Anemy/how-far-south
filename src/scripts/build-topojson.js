@@ -24,30 +24,49 @@ const outputFileName = 'topojson-output.json';
 const directory = './src/scripts';
 
 // https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify
-const simplifyTopojsonPercentage = 0.20 /* 20% */;
+const simplifyTopojsonPercentage = 0.40 /* 40% */;
 
 const countryIsoCodes = require(`./iso-countries-with-regions-and-countries.json`);
 
-const countryIsosToIgnore = {
-  // CA: 'CA', // Canada
-  GL: 'GL', // Greenland,
-  GS: 'GS' // South Georgia and the South Sandwich Islands.
+// const countryIsosToIgnore = {
+//   // CA: 'CA', // Canada
+//   GL: 'GL', // Greenland,
+//   GS: 'GS' // South Georgia and the South Sandwich Islands.
+// };
+const countryIsosToKeep = {
+  MX: 'MX',
+  GT: 'GT',
+  SV: 'SV',
+  HN: 'HN',
+  NI: 'NI',
+  CR: 'CR',
+  PA: 'PA',
+  CO: 'CO',
+  EC: 'EC',
+  PE: 'PE',
+  CL: 'CL',
+  AR: 'AR'
 };
 const countryIsosToBreakIntoSubdivisions = {
   US: 'US'
 };
-const stateIsosToIgnore = {
-  // 'US-AK': 'US-AK',
-  'US-HI': 'US-HI',
-  'US-GU': 'US-GU',
-  'US-MP': 'US-MP',
-  'US-AS': 'US-AS'
+// const stateIsosToIgnore = {
+//   'US-AK': 'US-AK',
+//   'US-HI': 'US-HI',
+//   'US-GU': 'US-GU',
+//   'US-MP': 'US-MP',
+//   'US-AS': 'US-AS'
+// };
+const stateIsosToKeep = {
+  'US-CA': 'US-CA',
+  'US-WA': 'US-WA',
+  'US-OR': 'US-OR'
 };
 const regionToInclude = 'Americas';
 
 const countriesWeCareAboutMappedByIso2 = {};
 _.each(countryIsoCodes, country => {
-  if (country.region === regionToInclude && !countryIsosToIgnore[country['alpha-2']]) {
+  if (country.region === regionToInclude && countryIsosToKeep[country['alpha-2']]) {
     countriesWeCareAboutMappedByIso2[country['alpha-2']] = country;
   }
 })
@@ -113,7 +132,7 @@ mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/*.
       let doesIsoExistInMapping = (countriesWeCareAboutMappedByIso2[countryIso] && !countryIsosToBreakIntoSubdivisions[countryIso]);
       let isSubdividedCountry = false;
 
-      if (countryIsosToBreakIntoSubdivisions[countryIso] && !stateIsosToIgnore[stateIso]) {
+      if (countryIsosToBreakIntoSubdivisions[countryIso] && stateIsosToKeep[stateIso]) {
         doesIsoExistInMapping = true;
         isSubdividedCountry = true;
       }
