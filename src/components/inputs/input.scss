@@ -1,0 +1,64 @@
+@import "../../variables";
+
+.floating-label-input {
+  width: 100%;
+  max-width: 400px;
+  height: $inputHeight;
+  position: relative;
+  margin-bottom: 20px;
+
+  &.flex {
+    width: 0;
+    flex-grow: 1;
+  }
+}
+
+.floating-label-input label {
+  position: absolute;
+  left: -1px;
+  top: 9px;
+  padding: 0 12px;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+  pointer-events: none;
+  transform-origin: 0% 0%;
+  z-index: 1;
+  color: $lightgray;
+  font-family: 'IBM Plex Sans', sans-serif;
+  border-radius: 2.85px;
+}
+
+.floating-label-input input {
+  border: 1px solid $lightgray;
+  border-radius: 4px;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: 0;
+  font-size: 1rem;
+  transition: all 0.1s ease-in-out;
+  width: 100%;
+  height: $inputHeight;
+  padding: 4px 10px;
+  font-weight: 400;
+  outline: none;
+}
+
+.floating-label-input input:focus {
+  outline: 0;
+  border: 1px solid $blue;
+  box-shadow: 0 0 0 1px $blue;
+}
+
+.floating-label-input label.value {
+  opacity: 0;
+  top: -3px;
+  padding: 2px 5px;
+  transform: scale(0.7) translateY(-100%);
+}
+
+.floating-label-input:focus-within label.value {
+  color: $white;
+  background: $blue;
+  opacity: 1;
+}

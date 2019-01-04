@@ -20,11 +20,11 @@ const fs = require('fs');
 const mapshaper = require('mapshaper');
 const topojson = require('topojson');
 
-const outputFileName = 'topojson-output.json';
+const outputFileName = 'map-data.topo.json';
 const directory = './src/scripts';
 
 // https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify
-const simplifyTopojsonPercentage = 0.40 /* 40% */;
+const simplifyTopojsonPercentage = 0.50 /* 50% */;
 
 const countryIsoCodes = require(`./iso-countries-with-regions-and-countries.json`);
 
@@ -44,6 +44,7 @@ const countryIsosToKeep = {
   CO: 'CO',
   EC: 'EC',
   PE: 'PE',
+  BO: 'BO',
   CL: 'CL',
   AR: 'AR'
 };

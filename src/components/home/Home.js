@@ -2,23 +2,35 @@ import React, { Component } from 'react';
 
 import './home.scss';
 
+import Footer from '../footer';
 import Header from '../header';
 import Map from '../map';
 
+/**
+ * "I would much rather fail gloriously, than not venture, not try."
+ * “Palms are sweaty. Knees weak arms were heavy, he’s vomiting all over his sweater already. Moms spaghetti.”
+**/
+
 class Home extends Component {
+  componentDidMount() {
+    document.title = 'How Far South';
+  }
+
   render() {
     return (
       <div className="home">
-        <Header />
+        <Header showHomeLink={false} />
         {/* <div className="home-line" /> */}
 
         <h1 className="home-title">
-          HOW F<span className="home-rotate">A</span>R SOUTH
+          HOW <span>F<span className="home-rotate">A</span>R</span> SOUTH
         </h1>
         {/* <h4 className="home-under-title">
           COMING SOON
         </h4> */}
-        <Map />
+        <Map history={this.props.history} />
+        
+        <Footer />
       </div>
     );
   }

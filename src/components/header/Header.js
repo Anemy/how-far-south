@@ -1,47 +1,86 @@
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './header.scss';
 
 class Header extends Component {
   static propTypes = {
+    showAboutLink: PropTypes.bool,
+    showContactLink: PropTypes.bool,
+    showHomeLink: PropTypes.bool,
+    showMailingLink: PropTypes.bool,
+    showPostsLink: PropTypes.bool,
     links: PropTypes.array
   }
 
   static defaultProps = {
-    links: [{
-      text: 'About',
-      url: '/about'
-    }, {
-      text: 'Contact',
-      url: '/contact'
-    }]
+    showAboutLink: true,
+    showContactLink: true,
+    showHomeLink: true,
+    showMailingLink: true,
+    showPostsLink: true,
+  }
+
+  state = {
+    showMobileMenu: false
+  }
+
+  mobileMenuClicked = () => {
+    this.setState({
+      showMobileMenu: !this.state.showMobileMenu
+    });
   }
 
   render() {
-    // const { links } = this.props;
+    const { showMobileMenu } = this.state;
+    const {
+      showAboutLink,
+      showContactLink,
+      showHomeLink,
+      showMailingLink,
+      showPostsLink
+    } = this.props;
 
-    return (<div />);
-
-    // return (
-    //   <div className="nav top-nav">
-    //     <div className="header-title">
-    //       How Far South <span role="img" aria-label="">🚲</span>
-    //     </div>
-    //     <div className="header-links">
-    //     {links.map(link => (
-    //       <Link
-    //         to={link.url}
-    //         className="header-link"
-    //         key={link.url}
-    //       >
-    //         {link.text}
-    //       </Link>
-    //     ))}
-    //     </div>
-    //   </div>
-    // );
+    return (
+      <div className="header">
+        {!showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-burger"></button>}
+        {showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-close">X</button>}
+        <div className={`header-links ${showMobileMenu ? 'header-links-mobile-menu-open' : 'header-links-mobile-menu-closed'}`}>
+          {/* {showMobileMenu && <div className="header-mobile-menu-title">Menu</div>} */}
+          {showHomeLink && <Link
+            to="/"
+            className="header-link"
+          >
+            Home
+          </Link>}
+          {showPostsLink && <Link
+            to="/posts"
+            className="header-link"
+          >
+            Posts
+          </Link>}
+          {showMailingLink && <Link
+            to="/mailing"
+            className="header-link"
+          >
+            Mailing List
+          </Link>}
+          {showAboutLink && <Link
+            to="/about"
+            className="header-link"
+          >
+            About
+          </Link>}
+          {showContactLink && <Link
+            to="/contact"
+            className="header-link"
+          >
+            Contact
+          </Link>}
+        </div>
+      </div>
+    );
   }
 }
 

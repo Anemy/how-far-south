@@ -1,20 +1,108 @@
 @import "../../variables";
 
+.map-clouds {
+  -webkit-animation: animateBackground 45s linear 2s infinite;
+  -moz-animation: animateBackground 45s linear 2s infinite;
+  -ms-animation: animateBackground 45s linear 2s infinite;
+  -o-animation: animateBackground 45s linear 2s infinite;
+  animation: animateBackground 45s linear 2s infinite;
+  opacity: 1;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  transform: translateZ(0px);
+  background-image: url(/images/clouds.png);
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+  background-repeat: repeat-x;
+
+  mask-size: 100% 800px;
+  mask-image: -webkit-gradient(linear, center bottom, center top,
+  color-stop(0.00,  rgba(0,0,0,0)),
+  color-stop(1.00,  rgba(0,0,0,0.7)));
+
+  // -webkit-mask-size: 100% 800px;
+  // -webkit-mask-image: -webkit-gradient(linear, center bottom, center top,
+  // color-stop(0.00,  rgba(0,0,0,0)),
+  // color-stop(1.00,  rgba(0,0,0,0.7)));
+}
+
+@-webkit-keyframes animateBackground {
+  from {
+    background-position: 0px 0px;
+  }
+
+  to {
+    background-position: 1781px 0px;
+  }
+}
+
+@-moz-keyframes animateBackground {
+  from {
+    background-position: 0px 0px;
+  }
+
+  to {
+    background-position: 1781px 0px;
+  }
+}
+
+@-ms-keyframes animateBackground {
+  from {
+    background-position: 0px 0px;
+  }
+
+  to {
+    background-position: 1781px 0px;
+  }
+}
+
+@keyframes animateBackground {
+  from {
+    background-position: 0px 0px;
+  }
+
+  to {
+    background-position: 1781px 0px;
+  }
+}
+
+
 .map {
   background-color: $black; // TODO: Remove
-  position: absolute;
-  left: 0;
-  top: 0;
+  position: relative;
+  // left: 0;
+  // top: 0;
+  margin: 0;
   min-height: 100vh;
   width: 100%;
-  z-index: -1;
   text-align: center;
+
+  // pointer-events: all;
+}
+
+@media (max-width: 768px) {
+  .map {
+    // top: 60vh;
+    margin-top: 60vh;
+  }
 }
 
 .map-border {
   stroke-width: 0.5px;
   stroke: $nice-white;
   fill: none;
+
+  // stroke-linecap: round;
+  // stroke-width: 1px;
+  // stroke-dasharray: 0.1, 4;
 }
 
 .map-border path {
@@ -28,4 +116,65 @@
   to {
     stroke-dashoffset: 0;
   }
+}
+
+.map-journey-path path {
+  fill: none;
+  stroke-width: 2px;
+}
+
+// $completed-color: green;
+// $inprogress-color: $completed-color;
+// $todo-color: yellow;
+
+// $completed-color: #6b76ff;
+// $inprogress-color: #a5aeff;
+// $todo-color: #c8e4fe;
+
+$completed-color: url(#gradient);
+$inprogress-color: url(#in-progress);
+$todo-color: url(#gradient);
+
+
+.map-path-completed {
+  stroke: url(#gradient);
+  // stroke: $completed-color;
+}
+
+.map-path-inprogress {
+  animation: inprogress-dash 20s linear infinite;
+  stroke-dasharray: 4;
+  stroke: $inprogress-color;
+}
+
+@keyframes inprogress-dash {
+  to {
+    stroke-dashoffset: -500;
+  }
+}
+
+.map-path-todo {
+  stroke: $todo-color;// yellow;
+}
+
+.map-journey-bubbles circle {
+  // fill: none;
+  fill: white;
+  fill-opacity: 0.3;
+  stroke-width: 2px;
+}
+.map-journey-bubbles circle:hover {
+  fill-opacity: 1;
+  fill: white;
+}
+.map-journey-bubbles {
+  outline: none;
+}
+
+.map-circle-completed {
+  stroke: $completed-color;
+}
+
+.map-circle-todo {
+  stroke: $todo-color;
 }

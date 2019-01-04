@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 
-import './header.css'
+import './about.scss'
 
-class Header extends Component {
+import Header from '../header';
+
+class About extends Component {
+  componentDidMount() {
+    document.title = 'How Far South - About';
+  }
+
   render() {
     return (
-      <div className="header">
-        Hello
+      <div className="about-container">
+        <Header />
+        <div className="about">About</div>
       </div>
     );
   }
 }
 
-export default Header;
+export default About;
