@@ -1,31 +1,37 @@
 @import "variables";
 
+// h1 {
+//   // text-transform: capitalize;
+//   font-weight: 300;
+//   font-family: 'Source Sans Pro', sans-serif;
+// }
+
 .app {
-  background: $black;
-  color: $white;
+  background: $backgroundColor;
+  color: $textColor;
   .nav {
-    background: $black;
-    color: $white;
+    background: $backgroundColor;
+    color: $textColor;
     box-shadow: 0 1px 2px $darkgray;
     &.bottom-nav {
       box-shadow: 0 -1px 2px $darkgray;
     }
   }
   button {
-    background: $white;
-    color: $black;
+    background: $textColor;
+    color: $backgroundColor;
     .icon {
-      fill: $black;
+      fill: $textColor;
     }
     &.inverse {
-      background: $black;
-      color: $white;
+      background: $textColor;
+      color: $backgroundColor;
       .icon {
-        fill: $white;
+        fill: $backgroundColor;
       }
     }
     &.hollow {
-      border-color: $white;
+      border-color: $textColor;
     }
     &.favorite .icon {
       fill: $red;

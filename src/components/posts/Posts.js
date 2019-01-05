@@ -35,8 +35,8 @@ class Posts extends Component {
         <div className="posts">
           <h1>Posts</h1>
           {PostsData.keys.map(key => (
-            <div className="posts-post">
-              <Link key={key} to={`/${key}`}>
+            <div className="posts-post" key={key}>
+              <Link to={`/${key}`}>
                 <h2 className="posts-title">{PostsData[key].title}</h2>
               </Link>
               <p className="posts-description">

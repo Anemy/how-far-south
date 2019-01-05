@@ -1,9 +1,8 @@
 @import "variables";
 
 body {
-  /* background-color: #282c34; */
-  background-color: $black;
-  color: $white;
+  background-color: $backgroundColor;
+  color: $textColor;
   height: 100vh;
   width: 100%;
   margin: 0;

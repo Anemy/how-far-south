@@ -15,7 +15,7 @@ class Contact extends Component {
       <div className="contact-container">
         <Header />
         <div className="contact">
-          Contact
+          <h1>Contact Us</h1>
         </div>
       </div>
     );

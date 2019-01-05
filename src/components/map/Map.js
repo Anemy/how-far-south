@@ -137,15 +137,44 @@ class Map extends Component {
         // TODO: Here we can also update the color of the points if it's valid based on passed in progress.
         
         if (point.title) {
+          const innerCircle = journeyBubbles
+            .append('circle')
+            .attr('cx', point.x)
+            .attr('cy', point.y)
+            .attr('r', 2)
+            .attr('id', `inner-circle-${i}`)
+            .attr('class', 'map-journey-circle-inner');
+
           journeyBubbles
             .append('a')
             .attr('href', `/${point.post}`)
-            // .on('click', () => this.props.history.push(`/${point.post}`))
             .append('circle')
             .attr('cx', point.x)
             .attr('cy', point.y)
             .attr('r', 10)
-            .attr('class', passedInProgress ? 'map-circle-todo' : 'map-circle-completed')
+            .on('mouseover', function() {
+              d3.select(this).transition()
+                .ease(d3.easeElastic)
+                .duration(500)
+                .attr('r', 14);
+
+              innerCircle.transition()
+                .ease(d3.easeElastic)
+                .duration(500)
+                .attr('r', 4);
+            })
+            .on('mouseout', function() {
+              d3.select(this).transition()
+                .ease(d3.easeQuad)
+                .duration(160)
+                .attr('r', 10);
+
+              innerCircle.transition()
+                .ease(d3.easeQuad)
+                .duration(160)
+                .attr('r', 2);
+            })
+            .attr('class', `map-journey-circle ${passedInProgress ? 'map-circle-todo' : 'map-circle-completed'}`);
         }
 
         currentPath += ` L ${point.x} ${point.y}`;
@@ -183,6 +212,17 @@ class Map extends Component {
                 <stop offset="0%" stopColor="#60efb8" />
                 <stop offset="100%" stopColor="#f1ffab" />
               </linearGradient>
+
+              <filter id="dropshadow" x="-40%" y="-40%" width="180%" height="180%" filterUnits="userSpaceOnUse">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+                <feOffset dx="5" dy="5" result="offsetblur"/> 
+                <feOffset dx="-5" dy="-5" result="offsetblur"/>
+                <feMerge> 
+                  <feMergeNode/>
+                  <feMergeNode in="SourceGraphic"/>
+                  <feMergeNode in="SourceGraphic"/>
+                </feMerge>
+              </filter>
             </defs>
           </svg>
         </div>
