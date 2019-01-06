@@ -5,6 +5,7 @@ import './post.scss';
 
 import Posts from '../../posts';
 
+import Footer from '../footer';
 import Header from '../header';
 import PostItem from './PostItem';
 
@@ -39,6 +40,7 @@ class Post extends Component {
           <h1 className="post-title">{postTitle}</h1>
           {postContent.map((item, index) => <PostItem key={`${postLink}_${index}`} item={item} />)}
         </div>
+        <Footer />
       </div>
     );
   }

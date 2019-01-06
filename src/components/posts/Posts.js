@@ -6,6 +6,7 @@ import './posts.scss';
 
 import PostsData from '../../posts';
 
+import Footer from '../footer';
 import Header from '../header';
 
 // const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
@@ -27,8 +28,6 @@ class Posts extends Component {
   render() {
     // const { currentPost } = this.props;
 
-    console.log('at render');
-
     return (
       <div className="posts-container">
         <Header />
@@ -45,6 +44,7 @@ class Posts extends Component {
             </div>
           ))}
         </div>
+        <Footer />
       </div>
     );
   }

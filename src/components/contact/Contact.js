@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './contact.scss';
 
+import Footer from '../footer';
 import Header from '../header';
 
 class Contact extends Component {
@@ -17,6 +18,7 @@ class Contact extends Component {
         <div className="contact">
           <h1>Contact Us</h1>
         </div>
+        <Footer />
       </div>
     );
   }

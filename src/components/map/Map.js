@@ -7,6 +7,7 @@ import * as topojson from 'topojson-client';
 
 import './map.scss';
 
+import Footer from '../footer';
 import MapMarkers from './MapMarkers';
 
 // TODO: Async load.
@@ -69,6 +70,9 @@ class Map extends Component {
     const { mapWidth, mapHeight, mapTranslation, mapScale } = this.getMapDimensions();
 
     svg.attr('width', mapWidth).attr('height', mapHeight);
+    d3.selectAll('.map-clouds').style('width', `${Math.ceil(mapWidth)}px`);
+    d3.selectAll('.map-clouds').style('height', `${Math.ceil(mapHeight)}px`);
+    // d3.selectAll('.map-clouds').style('background-color', 'purple');
 
     // Make sure the svg is cleaned.
     svg.selectAll('g').remove();
@@ -197,6 +201,9 @@ class Map extends Component {
   render() {    
     return (
       <div className="map-container">
+        <h1 className="map-title">
+          HOW <span>F<span className="map-rotate">A</span>R</span> SOUTH
+        </h1>
         <div className="map-clouds"/>
         <div className="map" id="toClickTrack">
           <svg
@@ -226,6 +233,7 @@ class Map extends Component {
             </defs>
           </svg>
         </div>
+        <Footer />
       </div>
     );
   }

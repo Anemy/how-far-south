@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './mailing.scss'
 
+import Footer from '../footer';
 import Input from '../inputs';
 import Header from '../header';
 
@@ -64,6 +65,7 @@ class Mailing extends Component {
             </div>
           </form>
         </div>
+        <Footer />
       </div>
     );
   }

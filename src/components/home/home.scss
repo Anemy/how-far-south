@@ -1,54 +1,5 @@
 @import "../../variables";
 
-.home-title {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 3em;
-  font-weight: 700;
-  letter-spacing: 0.4em;
-  position: absolute;
-  top: 20vh;
-  text-align: center;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  pointer-events: none;
-  z-index: 10;
-}
-
-@media (max-width: 768px) {
-  .home-title {
-    top: 15vh;
-  }
-}
-
-.home-title span {
-  display: inline-block;
-}
-
-.home-rotate {
-  margin-left: -0.4em;
-  margin-right: 0.4em;
-
-  top: 0.1em;
-
-  position: relative;
-  display: inline-block;
-
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
-.home-under-title {
-  font-weight: 200;
-  font-size: 1em;
-  letter-spacing: 0.2em;
-  text-align: center;
-}
-
 .home-line {
   background: linear-gradient(to bottom, $nice-white, $white) no-repeat 0 0;
 

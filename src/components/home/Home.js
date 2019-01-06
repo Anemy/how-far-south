@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import './home.scss';
 
-import Footer from '../footer';
 import Header from '../header';
 import Map from '../map';
 
@@ -22,15 +21,10 @@ class Home extends Component {
         <Header showHomeLink={false} />
         {/* <div className="home-line" /> */}
 
-        <h1 className="home-title">
-          HOW <span>F<span className="home-rotate">A</span>R</span> SOUTH
-        </h1>
         {/* <h4 className="home-under-title">
           COMING SOON
         </h4> */}
         <Map history={this.props.history} />
-        
-        <Footer />
       </div>
     );
   }

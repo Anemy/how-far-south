@@ -63,7 +63,7 @@ export default [
   {x: 166, y: 410},
   {x: 172, y: 417},
   {x: 175, y: 419},
-  {x: 178, y: 412},
+  {x: 178, y: 412, title: 'La Paz, Mexico', post: Beginnings.link},
   {x: 232, y: 454},
   {x: 243, y: 462},
   {x: 243, y: 476},
