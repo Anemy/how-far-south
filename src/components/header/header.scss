@@ -26,10 +26,6 @@
 
   position: relative;
 
-  // box-shadow: inset 0 -2px 1px $textColor;
-
-  transition: 100ms all;
-
   &::after {
     border-bottom: 1px solid $textColor;// transparent;
 
@@ -44,6 +40,7 @@
     height: 2px;
 
     transition: 150ms all ease-out;
+    -webkit-transition: 150ms all ease-out;
   }
 
   &:hover::after {

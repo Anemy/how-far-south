@@ -10,6 +10,28 @@
 
 .posts-title {
   margin: 0;
+  text-decoration: underline;
+  position: relative;
+}
+
+.posts-title:before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0px;
+  text-decoration: underline;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  text-decoration-color: #60daaa;
+  overflow: hidden;
+}
+
+.posts-title:hover {
+  &:before {
+    width: 100%;
+  }
 }
 
 .posts-description {
