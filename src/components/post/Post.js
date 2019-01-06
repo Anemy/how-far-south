@@ -6,6 +6,7 @@ import './post.scss';
 import Posts from '../../posts';
 
 import Header from '../header';
+import PostItem from './PostItem';
 
 class Post extends Component {
   static propTypes = {
@@ -36,13 +37,7 @@ class Post extends Component {
         <Header />
         <div className="post">
           <h1 className="post-title">{postTitle}</h1>
-          {postContent.map((item, index) => {
-            return (
-              <p className="post-text" key={`${postLink}_${index}`}>
-                {item}
-              </p>
-            );
-          })}
+          {postContent.map((item, index) => <PostItem key={`${postLink}_${index}`} item={item} />)}
         </div>
       </div>
     );

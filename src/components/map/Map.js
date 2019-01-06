@@ -88,7 +88,7 @@ class Map extends Component {
       .attr('stroke-dashoffset', function(d) { return d.totalLength; })
 
     // setTimeout(() => {
-      this.drawJourneyPath();
+      // this.drawJourneyPath();
     // }, drawDelay);
 
     // const elementToClickTrack = document.getElementById('toClickTrack');
