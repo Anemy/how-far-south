@@ -5,9 +5,9 @@ import Route from './Route';
 
 const posts = {
   [Beginnings.link]: Beginnings,
-  [Gear.link]: Gear,
-  [Route.link]: Route,
-  [Daily.link]: Daily
+  // [Gear.link]: Gear,
+  // [Route.link]: Route,
+  // [Daily.link]: Daily
 };
 
 posts.keys = Object.keys(posts);
