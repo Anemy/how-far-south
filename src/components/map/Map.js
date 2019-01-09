@@ -118,6 +118,47 @@ class Map extends Component {
     for (let i = 0; i < MapMarkers.length; i++) {
       const point = MapMarkers[i];
 
+      if (point.title) {
+        const innerCircle = journeyBubbles
+          .append('circle')
+          .attr('cx', point.x)
+          .attr('cy', point.y)
+          .attr('r', 2)
+          .attr('id', `inner-circle-${i}`)
+          .attr('class', 'map-journey-circle-inner');
+
+        journeyBubbles
+          .append('a')
+          .attr('href', `/${point.post}`)
+          .append('circle')
+          .attr('cx', point.x)
+          .attr('cy', point.y)
+          .attr('r', 10)
+          .on('mouseover', function() {
+            d3.select(this).transition()
+              .ease(d3.easeElastic)
+              .duration(500)
+              .attr('r', 14);
+
+            innerCircle.transition()
+              .ease(d3.easeElastic)
+              .duration(500)
+              .attr('r', 4);
+          })
+          .on('mouseout', function() {
+            d3.select(this).transition()
+              .ease(d3.easeQuad)
+              .duration(160)
+              .attr('r', 10);
+
+            innerCircle.transition()
+              .ease(d3.easeQuad)
+              .duration(160)
+              .attr('r', 2);
+          })
+          .attr('class', `map-journey-circle ${passedInProgress ? 'map-circle-todo' : 'map-circle-completed'}`);
+      }
+
       if (i === 0) {
         currentPath += `M ${point.x} ${point.y} `;
         continue;
@@ -139,47 +180,6 @@ class Map extends Component {
         passedInProgress = true;
       } else {
         // TODO: Here we can also update the color of the points if it's valid based on passed in progress.
-        
-        if (point.title) {
-          const innerCircle = journeyBubbles
-            .append('circle')
-            .attr('cx', point.x)
-            .attr('cy', point.y)
-            .attr('r', 2)
-            .attr('id', `inner-circle-${i}`)
-            .attr('class', 'map-journey-circle-inner');
-
-          journeyBubbles
-            .append('a')
-            .attr('href', `/${point.post}`)
-            .append('circle')
-            .attr('cx', point.x)
-            .attr('cy', point.y)
-            .attr('r', 10)
-            .on('mouseover', function() {
-              d3.select(this).transition()
-                .ease(d3.easeElastic)
-                .duration(500)
-                .attr('r', 14);
-
-              innerCircle.transition()
-                .ease(d3.easeElastic)
-                .duration(500)
-                .attr('r', 4);
-            })
-            .on('mouseout', function() {
-              d3.select(this).transition()
-                .ease(d3.easeQuad)
-                .duration(160)
-                .attr('r', 10);
-
-              innerCircle.transition()
-                .ease(d3.easeQuad)
-                .duration(160)
-                .attr('r', 2);
-            })
-            .attr('class', `map-journey-circle ${passedInProgress ? 'map-circle-todo' : 'map-circle-completed'}`);
-        }
 
         currentPath += ` L ${point.x} ${point.y}`;
       }

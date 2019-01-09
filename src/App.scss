@@ -196,7 +196,7 @@ button, a.button {
 
 h2, p, a {
   margin: 0;
-  line-height: 1.6em;
+  // line-height: 1.6em;
 }
 
 .gray {
@@ -233,7 +233,7 @@ a:hover {
 }
 
 a:before {
-  content: attr(title);
+  content: attr(data-title);
   position: absolute;
   top: 0;
   left: 0;
@@ -241,8 +241,7 @@ a:before {
   width: 0px;
   text-decoration: underline;
   transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  text-decoration-color: #60daaa;
+  text-decoration-color: $lightBlue;
   overflow: hidden;
 }
 

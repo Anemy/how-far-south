@@ -4,14 +4,14 @@ import Daily from './Daily';
 import Route from './Route';
 
 const posts = {
-  [Beginnings.link]: Beginnings,
-  // [Gear.link]: Gear,
-  // [Route.link]: Route,
-  // [Daily.link]: Daily
+  [Beginnings.url]: Beginnings,
+  // [Gear.url]: Gear,
+  // [Route.url]: Route,
+  // [Daily.url]: Daily
 };
 
 posts.keys = Object.keys(posts);
-posts.mostRecent = Beginnings.link;
+posts.mostRecent = Beginnings.url;
 
 export default posts;
 export { Beginnings, Gear, Route, Daily };

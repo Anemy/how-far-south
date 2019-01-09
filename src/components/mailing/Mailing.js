@@ -22,6 +22,9 @@ class Mailing extends Component {
         <div className="mailing">
           {/* Begin Mailchimp Signup Form */}
           <h1 className="mailing-list-title">Subscribe to our Mailing List</h1>
+          <p className="gray mailing-list-description">
+            We'll shoot you an email when we post new content (no spam).
+          </p>
           <form action={mailChimpUrl} method="POST" noValidate>
             <input type="hidden" name="u" value="eb05e4f830c2a04be30171b01"/>
             <input type="hidden" name="id" value="8281a64779"/>

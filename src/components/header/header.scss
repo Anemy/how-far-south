@@ -136,7 +136,7 @@
     border-right: 1px solid #282c34;
     top: 0;
     left: 0;
-    right: 10%;
+    // animation: slide-in-from-left 100ms ease-out;
     bottom: 0;
     margin: 0;
     background: $backgroundColor;
@@ -147,20 +147,25 @@
     z-index: 50;
     height: 100vh;
     text-align: center;
+
+    transition: all 0.1s ease;
+    visibility: hidden;
+    right: 100%;
+
   
     // > *:not(:last-child) {
     //   margin-bottom: 14px;
     // }
   }
 
-  .header-links-mobile-menu-closed {
-    display: none;
-    visibility: none;
-  }
+  // .header-links-mobile-menu-closed {
+  //   // transition: all 250ms ease-in-out;
+
+  // }
 
   .header-links-mobile-menu-open {
-    display: block;
     visibility: visible;
+    right: 14%;
   }
   
 	.header-link {

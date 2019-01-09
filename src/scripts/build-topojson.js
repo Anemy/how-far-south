@@ -24,7 +24,7 @@ const outputFileName = 'map-data.topo.json';
 const directory = './src/scripts';
 
 // https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify
-const simplifyTopojsonPercentage = 0.50 /* 50% */;
+const simplifyTopojsonPercentage = 0.25 /* 25% */;
 
 const countryIsoCodes = require(`./iso-countries-with-regions-and-countries.json`);
 
@@ -110,7 +110,7 @@ mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/*.
       if (!arcs || arcs.length === 0) {
         return;
       }
-  
+
       const newGeometry = {
         arcs: JSON.parse(JSON.stringify(arcs)),
         properties: {
@@ -118,7 +118,7 @@ mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/*.
         },
         type,
       };
-  
+
       // const isCountry = !!properties.iso_a2;
   
       let countryIso = properties.ISO_A2 ? properties.ISO_A2 : properties.iso_a2;

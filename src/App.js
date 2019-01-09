@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import './App.scss';
 import './grid.css';
 
+import 'babel-polyfill';
+
 import Router from './router';
 
 class App extends Component {

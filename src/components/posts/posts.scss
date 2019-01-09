@@ -1,3 +1,4 @@
+@import "../../variables";
 
 .posts {
   text-align: left;
@@ -15,7 +16,7 @@
 }
 
 .posts-title:before {
-  content: attr(title);
+  content: attr(data-title);
   position: absolute;
   top: 0;
   left: 0;
@@ -24,7 +25,7 @@
   text-decoration: underline;
   transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
-  text-decoration-color: #60daaa;
+  text-decoration-color: $lightBlue;
   overflow: hidden;
 }
 
@@ -39,6 +40,7 @@
   font-weight: 300;
   margin: 0;
   margin-bottom: 24px;
+  margin-top: 6px;
   font-size: 14px;
 }
 
