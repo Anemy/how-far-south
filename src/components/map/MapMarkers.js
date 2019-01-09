@@ -4,12 +4,12 @@ import {
 } from '../../posts';
 
 export default [
-  {x: 157, y: 73, title: 'Seattle, Washington, USA', post: Beginnings.link},
+  {x: 157, y: 73, title: 'Seattle, Washington, USA', post: Beginnings.url, inprogress: true},
   {x: 150, y: 83},
   {x: 143, y: 86},
   {x: 135, y: 93},
   {x: 135, y: 102},
-  {x: 134, y: 117, title: 'Portland, Oregon, USA', post: Route.link},
+  {x: 134, y: 117, title: 'Portland, Oregon, USA'},
   {x: 124, y: 120},
   {x: 116, y: 122},
   {x: 112, y: 126},
@@ -25,12 +25,12 @@ export default [
   {x: 86, y: 202},
   {x: 89, y: 208},
   {x: 96, y: 210},
-  {x: 94, y: 214, title: 'San Fransisco, California, USA', post: Beginnings.link},
+  {x: 94, y: 214, title: 'San Fransisco, California, USA'},
   {x: 95, y: 218},
   {x: 91, y: 225},
   {x: 97, y: 230},
   {x: 92, y: 236},
-  {x: 95, y: 247, inprogress: true},
+  {x: 95, y: 247},
   {x: 98, y: 253},
   {x: 98, y: 262},
   {x: 110, y: 264},
@@ -63,7 +63,7 @@ export default [
   {x: 166, y: 410},
   {x: 172, y: 417},
   {x: 175, y: 419},
-  {x: 178, y: 412, title: 'La Paz, Mexico', post: Beginnings.link},
+  {x: 178, y: 412, title: 'La Paz, Mexico'},
   {x: 232, y: 454},
   {x: 243, y: 462},
   {x: 243, y: 476},
@@ -95,7 +95,7 @@ export default [
   {x: 468, y: 602},
   {x: 464, y: 614},
   {x: 473, y: 614},
-  {x: 478, y: 628},
+  {x: 478, y: 628, title: 'San Jose, Costa Rica'},
   {x: 487, y: 633},
   {x: 499, y: 645},
   {x: 513, y: 645},
@@ -140,7 +140,7 @@ export default [
   {x: 686, y: 1108},
   {x: 675, y: 1171},
   {x: 687, y: 1210},
-  {x: 689, y: 1268},
+  {x: 689, y: 1268, title: 'Santiago, Chile'},
   {x: 687, y: 1279},
   {x: 700, y: 1287},
   {x: 677, y: 1336},
@@ -168,5 +168,5 @@ export default [
   {x: 784, y: 1555},
   {x: 797, y: 1563},
   {x: 797, y: 1572},
-  {x: 797, y: 1577, title: 'Ushuaia, Tierra del Fuego, Argentina', post: Beginnings.link}
+  {x: 797, y: 1577, title: 'Ushuaia, Tierra del Fuego, Argentina'}
 ];

@@ -1,12 +1,5 @@
 @import "../../variables";
 
-// .header {
-//   // position: absolute;
-//   // top: 0;
-//   // left: 0;
-//   // right: 0;
-// }
-
 .header-links {
   margin-right: 20px;
   text-align: right;
@@ -27,7 +20,7 @@
   position: relative;
 
   &::after {
-    border-bottom: 1px solid $textColor;// transparent;
+    border-bottom: 1px solid $textColor;
 
     bottom: 0;
     left: 0;
@@ -44,18 +37,12 @@
   }
 
   &:hover::after {
-    border-bottom-color: #60daaa; // Make borders visible
+    border-bottom-color: $lightBlue; // Make borders visible
     width: 100%;
   }
 }
 .header-link:hover {
   cursor: pointer;
-  // padding-left: 0px;
-  // padding-right: 0px;
-  // margin-left: 24px;
-  // margin-right: 24px;
-
-  // box-shadow: 0px 0px 0px 10px $textColor;
 }
 
 .menu-container {

@@ -26,7 +26,7 @@ class Posts extends Component {
           {PostsData.keys.map(key => (
             <div className="posts-post" key={key}>
               <Link to={`/${key}`}>
-                <h2 className="posts-title" data-title={PostsData[key].title}>{PostsData[key].title}</h2>
+                <h2 className="nice-link posts-title" data-title={PostsData[key].title}>{PostsData[key].title}</h2>
               </Link>
               <p className="posts-description">
                 <span className="posts-desc-date">{PostsData[key].date ? `${PostsData[key].date.toLocaleDateString('en-US', dateOptions)} - `:''}</span>{PostsData[key].description}

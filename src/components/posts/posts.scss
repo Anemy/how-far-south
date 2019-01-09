@@ -15,26 +15,6 @@
   position: relative;
 }
 
-.posts-title:before {
-  content: attr(data-title);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 0px;
-  text-decoration: underline;
-  transition: all 0.3s ease 0s;
-  -webkit-transition: all 0.3s ease 0s;
-  text-decoration-color: $lightBlue;
-  overflow: hidden;
-}
-
-.posts-title:hover {
-  &:before {
-    width: 100%;
-  }
-}
-
 .posts-description {
   text-decoration: none;
   font-weight: 300;

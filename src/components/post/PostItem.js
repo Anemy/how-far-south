@@ -26,7 +26,7 @@ class PostItem extends Component {
     } else if (item.type === CONTENT_TYPES.EXTERNAL_LINK) {
       return (
         <a
-          className="post-link"
+          className="post-link nice-link"
           href={item.url}
           data-title={item.text}
           rel="noopener noreferrer"
@@ -38,7 +38,7 @@ class PostItem extends Component {
     } else if (item.type === CONTENT_TYPES.INTERNAL_LINK) {
       return (
         <Link
-          className="post-link"
+          className="post-link nice-link"
           to={item.url}
           data-title={item.text}
         >

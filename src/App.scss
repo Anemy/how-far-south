@@ -226,13 +226,18 @@ a {
   }
 }
 
-a:hover {
-  &:before {
+.nice-link {
+  text-decoration: underline;
+  position: relative;
+}
+
+.nice-link:hover {
+  &:after {
     width: 100%;
   }
 }
 
-a:before {
+.nice-link:after {
   content: attr(data-title);
   position: absolute;
   top: 0;

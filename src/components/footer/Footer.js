@@ -14,11 +14,11 @@ class Footer extends Component {
         <div className="footer">
           <div className="footer-divider" />
           <div className="footer-content">
-            <Link to={`/mailing`} className="footer-link" data-title="Join our mailing list">
+            <Link to={`/mailing`} className="nice-link footer-link" data-title="Join our mailing list">
               Join our mailing list
             </Link>
 
-            <Link to={Posts.mostRecent} className="footer-link footer-link-right" data-title={`Most recent post: ${mostRecentPostTitle}`}>
+            <Link to={Posts.mostRecent} className="nice-link footer-link footer-link-right" data-title={`Most recent post: ${mostRecentPostTitle}`}>
               Most recent post: {mostRecentPostTitle}
             </Link>
           </div>

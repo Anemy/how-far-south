@@ -24,7 +24,7 @@ const outputFileName = 'map-data.topo.json';
 const directory = './src/scripts';
 
 // https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify
-const simplifyTopojsonPercentage = 0.25 /* 25% */;
+const simplifyTopojsonPercentage = 0.12 /* 12% */;
 
 const countryIsoCodes = require(`./iso-countries-with-regions-and-countries.json`);
 

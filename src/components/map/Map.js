@@ -13,6 +13,8 @@ import MapMarkers from './MapMarkers';
 // TODO: Async load.
 import topology from '../../data/map-data.topo.json';
 
+import Posts from '../../posts';
+
 // let mousePositions = [];
 
 // function printMousePos(event) {
@@ -27,6 +29,9 @@ import topology from '../../data/map-data.topo.json';
 // window.globalFunc = () => {
 //   console.log('mousePositions:', mousePositions);
 // }
+
+const mapMarkerRightAlignYThreshold = 625;
+const markerTextDistanceFromMarker = 80;
 
 function kavrayskiy7Raw(lambda, phi) {
   return [3 / (Math.PI * 2) * lambda * Math.sqrt(Math.PI * Math.PI / 3 - phi * phi), phi];
@@ -92,11 +97,141 @@ class Map extends Component {
       .attr('stroke-dashoffset', function(d) { return d.totalLength; })
 
     // setTimeout(() => {
-      // this.drawJourneyPath();
+      this.drawJourneyPath();
     // }, drawDelay);
 
     // const elementToClickTrack = document.getElementById('toClickTrack');
     // elementToClickTrack.addEventListener('click', printMousePos);
+  }
+
+  addPostMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
+    const leftAlign = point.y < mapMarkerRightAlignYThreshold;
+
+    const markerTextLink = journeyPosts.append('a')
+      .attr('href', `/#/${point.post}`)
+      .on('mouseover', function() {
+        d3.select(`.map-circle-${markerIndex}`).transition()
+          .ease(d3.easeElastic)
+          .duration(500)
+          .attr('r', 14);
+
+        d3.select(`.map-circle-inner-${markerIndex}`).transition()
+          .ease(d3.easeElastic)
+          .duration(500)
+          .attr('r', 4);
+
+        d3.selectAll(`.marker-${markerIndex}`)
+          .classed('marker-is-hovered', true);
+      })
+      .on('mouseout', function() {
+        d3.select(`.map-circle-${markerIndex}`).transition()
+          .ease(d3.easeQuad)
+          .duration(160)
+          .attr('r', 10);
+
+        d3.select(`.map-circle-inner-${markerIndex}`).transition()
+          .ease(d3.easeQuad)
+          .duration(160)
+          .attr('r', 2);
+
+        d3.selectAll(`.marker-${markerIndex}`)
+          .classed('marker-is-hovered', false);
+      });
+    
+    journeyPosts.append('line')
+      .attr('x1', point.x)
+      .attr('y1', point.y)
+      .attr('x2', point.x + (leftAlign ? (markerTextDistanceFromMarker + .1) : (-markerTextDistanceFromMarker - .1)))
+      .attr('y2', point.y - 2.4)
+      .attr('class', 'map-journey-marker-line');
+
+    markerTextLink.append('text')
+      .attr('x', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('y', point.y - 4)
+      .text(Posts[point.post].title)
+      .attr('text-anchor', leftAlign ? 'start' : 'end')
+      .attr('class', `map-journey-post marker-${markerIndex}`)
+      .classed('map-post-todo', passedInProgress)
+      .classed('map-post-completed', !passedInProgress);
+
+    markerTextLink.append('text')
+      .attr('x', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('y', point.y + 14)
+      .text(point.title)
+      .attr('text-anchor', leftAlign ? 'start' : 'end')
+      .attr('class', `map-journey-post marker-${markerIndex} map-journey-post-text`)
+      .classed('map-post-todo', passedInProgress)
+      .classed('map-post-completed', !passedInProgress);
+  }
+
+  addMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
+    const leftAlign = point.y < mapMarkerRightAlignYThreshold;
+
+    journeyPosts.append('line')
+      .attr('x1', point.x)
+      .attr('y1', point.y)
+      .attr('x2', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('y2', point.y)
+      .attr('class', 'map-journey-marker-line');
+
+    journeyPosts.append('text')
+      .attr('x', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('y', point.y + 4)
+      .text(point.title)
+      .attr('text-anchor', leftAlign ? 'start' : 'end')
+      .attr('class', `map-journey-post marker-${markerIndex} map-journey-post-text`)
+      .classed('map-post-todo', passedInProgress)
+      .classed('map-post-completed', !passedInProgress);
+  }
+
+  addPostMarker = (markerIndex, passedInProgress, point, isPost, journeyBubbles) => {
+    const innerCircle = journeyBubbles
+      .append('circle')
+      .attr('cx', point.x)
+      .attr('cy', point.y)
+      .attr('r', 2)
+      .attr('class', `map-journey-circle-inner map-circle-inner-${markerIndex}`);
+
+    if (isPost) {
+      journeyBubbles
+        .append('a')
+        .attr('href', `/#/${point.post}`)
+        .append('circle')
+        .attr('cx', point.x)
+        .attr('cy', point.y)
+        .attr('r', 10)
+        .on('mouseover', function() {
+          d3.select(this).transition()
+            .ease(d3.easeElastic)
+            .duration(500)
+            .attr('r', 14);
+
+          innerCircle.transition()
+            .ease(d3.easeElastic)
+            .duration(500)
+            .attr('r', 4);
+
+          d3.selectAll(`.marker-${markerIndex}`)
+            .classed('marker-is-hovered', true);
+        })
+        .on('mouseout', function() {
+          d3.select(this).transition()
+            .ease(d3.easeQuad)
+            .duration(160)
+            .attr('r', 10);
+
+          innerCircle.transition()
+            .ease(d3.easeQuad)
+            .duration(160)
+            .attr('r', 2);
+
+          d3.selectAll(`.marker-${markerIndex}`)
+            .classed('marker-is-hovered', false);
+        })
+        .attr('class', `map-journey-circle map-circle-${markerIndex}`)
+        .classed('map-circle-todo', passedInProgress)
+        .classed('map-circle-completed', !passedInProgress);
+      }
   }
 
   drawJourneyPath = () => {
@@ -112,6 +247,10 @@ class Map extends Component {
       .attr('class', 'map-journey-bubbles')
       .attr('transform', `translate(${pathOffset[0]},${pathOffset[1]})`);
 
+    const journeyPosts = svg.append('g')
+      .attr('class', 'map-journey-posts')
+      .attr('transform', `translate(${pathOffset[0]},${pathOffset[1]})`);
+
     let lastPoint = MapMarkers[0];
     let currentPath = '';
     let passedInProgress = false;
@@ -119,44 +258,13 @@ class Map extends Component {
       const point = MapMarkers[i];
 
       if (point.title) {
-        const innerCircle = journeyBubbles
-          .append('circle')
-          .attr('cx', point.x)
-          .attr('cy', point.y)
-          .attr('r', 2)
-          .attr('id', `inner-circle-${i}`)
-          .attr('class', 'map-journey-circle-inner');
+        this.addPostMarker(i, passedInProgress, point, !!point.post, journeyBubbles);
 
-        journeyBubbles
-          .append('a')
-          .attr('href', `/${point.post}`)
-          .append('circle')
-          .attr('cx', point.x)
-          .attr('cy', point.y)
-          .attr('r', 10)
-          .on('mouseover', function() {
-            d3.select(this).transition()
-              .ease(d3.easeElastic)
-              .duration(500)
-              .attr('r', 14);
-
-            innerCircle.transition()
-              .ease(d3.easeElastic)
-              .duration(500)
-              .attr('r', 4);
-          })
-          .on('mouseout', function() {
-            d3.select(this).transition()
-              .ease(d3.easeQuad)
-              .duration(160)
-              .attr('r', 10);
-
-            innerCircle.transition()
-              .ease(d3.easeQuad)
-              .duration(160)
-              .attr('r', 2);
-          })
-          .attr('class', `map-journey-circle ${passedInProgress ? 'map-circle-todo' : 'map-circle-completed'}`);
+        if (point.post) {
+          this.addPostMarkerText(i, passedInProgress, point, journeyPosts);
+        } else {
+          this.addMarkerText(i, passedInProgress, point, journeyPosts);
+        }
       }
 
       if (i === 0) {

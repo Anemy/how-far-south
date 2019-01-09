@@ -75,18 +75,14 @@
 }
 
 .map-clouds {
-  -webkit-animation: animateBackground 45s linear 2s infinite;
-  -moz-animation: animateBackground 45s linear 2s infinite;
-  -ms-animation: animateBackground 45s linear 2s infinite;
-  -o-animation: animateBackground 45s linear 2s infinite;
-  animation: animateBackground 45s linear 2s infinite;
+  animation: animate-clouds 45s linear 0s infinite;
   opacity: 1;
   -webkit-transform: translateZ(0px);
   -moz-transform: translateZ(0px);
   -ms-transform: translateZ(0px);
   -o-transform: translateZ(0px);
   transform: translateZ(0px);
-  background-image: url(/images/clouds.png);
+  background-image: url(/images/cloudbg.png);
   pointer-events: none;
   position: absolute;
   z-index: 1000;
@@ -96,52 +92,9 @@
   left: 0px;
   top: 0px;
   background-repeat: repeat-x;
-
-  mask-size: 1781px 800px;
-  mask-image: -webkit-gradient(linear, center bottom, center top,
-  color-stop(0.05,  rgba(0,0,0,0)),
-  color-stop(1.00,  rgba(0,0,0,1)));
-
-  -webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
-  filter: invert(100%);
-
-  // -webkit-mask-size: 100% 800px;
-  // -webkit-mask-image: -webkit-gradient(linear, center bottom, center top,
-  // color-stop(0.00,  rgba(0,0,0,0)),
-  // color-stop(1.00,  rgba(0,0,0,0.7)));
 }
 
-@-webkit-keyframes animateBackground {
-  from {
-    background-position: 0px 0px;
-  }
-
-  to {
-    background-position: 1781px 0px;
-  }
-}
-
-@-moz-keyframes animateBackground {
-  from {
-    background-position: 0px 0px;
-  }
-
-  to {
-    background-position: 1781px 0px;
-  }
-}
-
-@-ms-keyframes animateBackground {
-  from {
-    background-position: 0px 0px;
-  }
-
-  to {
-    background-position: 1781px 0px;
-  }
-}
-
-@keyframes animateBackground {
+@keyframes animate-clouds {
   from {
     background-position: 0px 0px;
   }
@@ -230,6 +183,50 @@ $todo-color: url(#gradient);
 .map-journey-bubbles {
   outline: none;
 }
+
+.map-journey-posts {
+  outline: none;
+}
+
+.map-journey-post {
+  font-size: 16px;
+  fill: $textColor;
+}
+
+.map-journey-marker-line {
+  fill: none;
+  stroke: $textColor;
+  stroke-width: 0.8px;
+}
+
+.map-journey-post-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.marker-is-hovered {
+  fill: black;
+}
+
+// .map-journey-post:before {
+//   content: attr(data-title);
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   height: 100%;
+//   width: 0px;
+//   text-decoration: underline;
+//   transition: all 0.3s ease 0s;
+//   -webkit-transition: all 0.3s ease 0s;
+//   text-decoration-color: $lightBlue;
+//   overflow: hidden;
+// }
+
+// .marker-is-hovered {
+//   &:before {
+//     width: 100%;
+//   }
+// }
 
 .map-journey-circle-inner {
   fill: $textColor;
