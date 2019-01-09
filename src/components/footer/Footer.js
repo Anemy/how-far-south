@@ -10,7 +10,7 @@ class Footer extends Component {
         <div className="footer">
           <div className="footer-divider" />
           <div className="footer-content">
-            <Link to={`/mailing`} className="footer-link">
+            <Link to={`/mailing`} className="footer-link" title="Join our mailing list">
               Join our mailing list
             </Link>
           </div>

@@ -214,6 +214,8 @@ p {
 a {
   color: inherit;
   font-weight: bold;
+  text-decoration: underline;
+  position: relative;
 
   &:hover {
     cursor: pointer;
@@ -222,6 +224,26 @@ a {
   &.blue:hover {
     color: $darkblue;
   }
+}
+
+a:hover {
+  &:before {
+    width: 100%;
+  }
+}
+
+a:before {
+  content: attr(title);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0px;
+  text-decoration: underline;
+  transition: all 0.3s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  text-decoration-color: #60daaa;
+  overflow: hidden;
 }
 
 .link-button {

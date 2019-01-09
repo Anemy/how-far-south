@@ -7,10 +7,8 @@ export default {
   description: 'We start biking late this January in Seattle.',
   content: [
     'Hi from Adam & Rhys!',
-    'We\'re biking from Seattle to Argentina :D',
-    'The plan is to start in late January.',
-    'We\'ll be adding more to this site as our starting date comes closer.',
-    'Stay tuned! Join our mailing list:',
+    'We\'re biking from Seattle to Argentina starting in late January.',
+    'We\'ll be adding more to this site as our starting date comes closer. Stay tuned! Join our mailing list:',
     {type: CONTENT_TYPES.INTERNAL_LINK, text: 'Mailing List', link: '/mailing'}
   ]
 };

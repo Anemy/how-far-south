@@ -20,7 +20,7 @@ class PostItem extends Component {
       );
     } else if (item.type === CONTENT_TYPES.INTERNAL_LINK) {
       return (
-        <Link className="post-link" to={item.link}>
+        <Link className="post-link" to={item.link} title={item.text}>
           {item.text}
         </Link>
       );

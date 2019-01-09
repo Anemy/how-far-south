@@ -32,4 +32,8 @@
 
 .footer-link {
   font-weight: 300;
+
+  &:before {
+    top: -2px;
+  }
 }
