@@ -1,6 +1,6 @@
 import {
   Beginnings,
-  Route
+  // Route
 } from '../../posts';
 
 export default [

@@ -42,6 +42,7 @@ kavrayskiy7Raw.invert = function(x, y) {
 };
 
 // const drawDelay = 3000;
+const pathOffset = [-50, -18];
 
 class Map extends Component {
   state = {
@@ -94,15 +95,31 @@ class Map extends Component {
       .attr('d', path)
       .each(function(d) { d.totalLength = this.getTotalLength(); })
       .attr('stroke-dasharray', function(d) { return d.totalLength + ' ' + d.totalLength; })
-      .attr('stroke-dashoffset', function(d) { return d.totalLength; })
+      .attr('stroke-dashoffset', function(d) { return d.totalLength; });
 
-    // setTimeout(() => {
-      this.drawJourneyPath();
-    // }, drawDelay);
+    // this.drawDescriptionPath();
+    this.drawJourneyPath();
 
     // const elementToClickTrack = document.getElementById('toClickTrack');
     // elementToClickTrack.addEventListener('click', printMousePos);
   }
+
+  // drawDescriptionPath = () => {
+  //   const svg = d3.select(this.svgRef);
+
+  //   const pathDescriptionGroup = svg.append('g')
+  //     .attr('class', 'map-journey-description')
+  //     .attr('transform', `translate(${pathOffset[0]},${pathOffset[1]})`);
+
+  //   pathDescriptionGroup.append('text')
+  //     .attr('x', 350)
+  //     .attr('y', 10)
+  //     .text('We\'re riding our bicycles from here to here');
+  //     // .attr('text-anchor', leftAlign ? 'start' : 'end')
+  //     // .attr('class', 'map-jour');
+
+    
+  // }
 
   addPostMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
     const leftAlign = point.y < mapMarkerRightAlignYThreshold;
@@ -190,7 +207,9 @@ class Map extends Component {
       .attr('cx', point.x)
       .attr('cy', point.y)
       .attr('r', 2)
-      .attr('class', `map-journey-circle-inner map-circle-inner-${markerIndex}`);
+      .attr('class', `map-journey-circle-inner map-circle-inner-${markerIndex}`)
+      .classed('map-circle-todo', passedInProgress)
+      .classed('map-circle-completed', !passedInProgress);
 
     if (isPost) {
       journeyBubbles
@@ -237,8 +256,6 @@ class Map extends Component {
   drawJourneyPath = () => {
     const svg = d3.select(this.svgRef);
 
-    const pathOffset = [-50, -18];
-
     const journeyPaths = svg.append('g')
       .attr('class', 'map-journey-path')
       .attr('transform', `translate(${pathOffset[0]},${pathOffset[1]})`);
@@ -269,6 +286,10 @@ class Map extends Component {
 
       if (i === 0) {
         currentPath += `M ${point.x} ${point.y} `;
+
+        if (point.inprogress) {
+          passedInProgress = true;
+        }
         continue;
       }
 
