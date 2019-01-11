@@ -46,7 +46,7 @@ class Header extends Component {
     } = this.props;
 
     return (
-      <div className="header">
+      <div className="container-large">
         {!showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-burger"></button>}
         {showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-close">X</button>}
         {showLogoTitle && (

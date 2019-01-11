@@ -19,9 +19,9 @@ class Posts extends Component {
 
   render() {
     return (
-      <div className="posts-container">
+      <React.Fragment>
         <Header />
-        <div className="posts">
+        <div className="container container-padding">
           <h1>Posts</h1>
           {PostsData.keys.map(key => (
             <div className="posts-post" key={key}>
@@ -35,7 +35,7 @@ class Posts extends Component {
           ))}
         </div>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

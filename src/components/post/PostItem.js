@@ -14,6 +14,18 @@ class PostItem extends Component {
     item: PropTypes.any.isRequired
   }
 
+  renderItemList = item => {
+    return (
+      <ul className="post-list">
+        {item.content.map((listitem, index) => (
+          <li key={index}>
+            {listitem}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
   render() {
     const { item } = this.props;
 
@@ -53,6 +65,8 @@ class PostItem extends Component {
         alt={item.alt}
         loader={<Loader />}
       />;
+    } else if (item.type === CONTENT_TYPES.LIST) {
+      return this.renderItemList(item);
     }
   }
 }

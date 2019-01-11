@@ -34,14 +34,14 @@ class Post extends Component {
     const postContent = Posts[post].content;
 
     return (
-      <div className="post-container">
+      <React.Fragment>
         <Header />
-        <div className="post">
+        <div className="container container-padding">
           <h1 className="post-title">{postTitle}</h1>
           {postContent.map((item, index) => <PostItem key={`${postLink}_${index}`} item={item} />)}
         </div>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

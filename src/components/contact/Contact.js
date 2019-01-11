@@ -13,13 +13,13 @@ class Contact extends Component {
 
   render() {
     return (
-      <div className="contact-container">
+      <React.Fragment>
         <Header />
-        <div className="contact">
+        <div className="container container-padding">
           <h1>Contact Us</h1>
         </div>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

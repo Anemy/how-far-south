@@ -17,9 +17,9 @@ class Mailing extends Component {
 
   render() {
     return (
-      <div className="mailing-container">
+      <React.Fragment>
         <Header />
-        <div className="mailing">
+        <div className="container container-padding">
           {/* Begin Mailchimp Signup Form */}
           <h1 className="mailing-list-title">Subscribe to our Mailing List</h1>
           <p className="gray mailing-list-description">
@@ -69,7 +69,7 @@ class Mailing extends Component {
           </form>
         </div>
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }

@@ -21,10 +21,20 @@ html {
 
 .container {
   width: 100%;
-  /* padding-right: 15px;
-  padding-left: 15px; */
   margin-right: auto;
   margin-left: auto;
+  position: relative;
+}
+
+.container-large {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.container-padding {
+  padding: 20px;
 }
 
 @media (min-width: 576px) {
@@ -41,13 +51,11 @@ html {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 900px;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
+  .container-large {
+    max-width: 1010px;
   }
 }
 
