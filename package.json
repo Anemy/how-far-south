@@ -26,7 +26,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "heroku-postbuild": "npm run build-topojson && npm run deploy"
+    "heroku-prebuild": "npm run build-topojson",
+    "heroku": "npm run deploy"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0"

@@ -171,6 +171,8 @@ mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/*.
   }
 
   // TODO: We can do this using mapshaper.
+
+  combinedRawTopojson.objects = {};
   
   combinedRawTopojson.objects[outputObjectName] = {
     geometries: newTopojsonGeometries,
@@ -200,25 +202,6 @@ mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/*.
       }
 
       console.log('Simplified the topojson.');
-
-      console.log('Applying a last save to ensure indexing...');
-
-      // Lastly we apply an id to each feature for datamaps.
-      let mergedCleanedTopojson = require(`./${outputFileName}`);
-
-      _.each(mergedCleanedTopojson.objects[outputObjectName].geometries, geometry => {
-        geometry.id = geometry.properties.id;
-      });
-
-      mergedCleanedTopojson.objects[outputObjectName].geometries = _.filter(mergedCleanedTopojson.objects[outputObjectName].geometries,
-        geometry => !!countriesWeCareAboutMappedByIso2[geometry.id]
-      );
-
-      const jsonToSave = JSON.stringify(mergedCleanedTopojson);
-
-      // fs.writeFile(`${directory}/${outputFileName}`, jsonToSave, 'utf8', () => {
-      //   console.log(`Done! Created file '${directory}/${outputFileName}'`);
-      // });
     });
   });
 });
