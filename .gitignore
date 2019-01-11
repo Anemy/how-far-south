@@ -22,3 +22,5 @@ yarn-error.log*
 
 # topojson files
 ne_10m_admin_1_states_provinces_lakes
+
+local
