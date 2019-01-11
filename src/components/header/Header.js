@@ -9,6 +9,7 @@ class Header extends Component {
     showAboutLink: PropTypes.bool,
     showContactLink: PropTypes.bool,
     showHomeLink: PropTypes.bool,
+    showLogoTitle: PropTypes.bool,
     showMailingLink: PropTypes.bool,
     showPostsLink: PropTypes.bool,
     links: PropTypes.array
@@ -18,6 +19,7 @@ class Header extends Component {
     showAboutLink: false,
     showContactLink: false,
     showHomeLink: true,
+    showLogoTitle: true,
     showMailingLink: true,
     showPostsLink: true,
   }
@@ -38,6 +40,7 @@ class Header extends Component {
       showAboutLink,
       showContactLink,
       showHomeLink,
+      showLogoTitle,
       showMailingLink,
       showPostsLink
     } = this.props;
@@ -46,6 +49,13 @@ class Header extends Component {
       <div className="header">
         {!showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-burger"></button>}
         {showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-close">X</button>}
+        {showLogoTitle && (
+          <div
+            className="logo-link"
+          >
+            How <span>F<span className="character-rotate">a</span>r</span> South
+          </div>
+        )}
         <div className={`header-links ${showMobileMenu ? 'header-links-mobile-menu-open' : 'header-links-mobile-menu-closed'}`}>
           {/* {showMobileMenu && <div className="header-mobile-menu-title">Menu</div>} */}
           {showHomeLink && <Link

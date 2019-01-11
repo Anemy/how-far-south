@@ -33,6 +33,8 @@ import Posts from '../../posts';
 const mapMarkerRightAlignYThreshold = 625;
 const markerTextDistanceFromMarker = 80;
 
+const maxMapWidth = 5000;
+
 function kavrayskiy7Raw(lambda, phi) {
   return [3 / (Math.PI * 2) * lambda * Math.sqrt(Math.PI * Math.PI / 3 - phi * phi), phi];
 }
@@ -58,34 +60,41 @@ class Map extends Component {
   }
 
   getMapDimensions = () => {
-    const ourScale = 1.2;
-    const mapScale = 700 * ourScale;
-    const mapHeight = 1382 * ourScale;
-    const mapWidth = 765 * ourScale;
 
-    const mapXOffset = 1240 * ourScale;
-    const mapYOffset = 624 * ourScale; // 640 * ourScale;
+    let mapScale = 1.2;
+    // Allow map to get bigger on bigger screens.
+    // if (window.innerWidth > 765) {
+    //   mapScale =  Math.min(1.2 * (window.innerWidth / 1100), maxMapWidth);
+    // }
+    const geoMapScale = 700 * mapScale;
+    const mapHeight = 1382 * mapScale;
+    const mapWidth = 765 * mapScale;
+
+    const mapXOffset = 1240 * mapScale;
+    const mapYOffset = 624 * mapScale; // 640 * mapScale;
     const mapTranslation = [mapXOffset, mapYOffset];
 
-    return { mapWidth, mapHeight, mapTranslation, mapScale };
+    return { mapWidth, mapHeight, mapTranslation, geoMapScale, mapScale };
   }
 
   buildMap = () => {
     const svg = d3.select(this.svgRef);
 
-    const { mapWidth, mapHeight, mapTranslation, mapScale } = this.getMapDimensions();
+    const { mapWidth, mapHeight, mapTranslation, geoMapScale, mapScale } = this.getMapDimensions();
+
+    this.mapScale = mapScale;
 
     svg.attr('width', mapWidth).attr('height', mapHeight);
-    d3.selectAll('.map-clouds').style('width', `${Math.ceil(mapWidth)}px`);
-    d3.selectAll('.map-clouds').style('height', `${Math.ceil(mapHeight)}px`);
-    // d3.selectAll('.map-clouds').style('background-color', 'purple');
+    d3.selectAll('.js-map-clouds').style('width', `${Math.ceil(mapWidth)}px`);
+    d3.selectAll('.js-map-clouds').style('height', `${Math.ceil(mapHeight)}px`);
+    // d3.selectAll('.js-map-clouds').style('background-color', 'purple');
 
     // Make sure the svg is cleaned.
     svg.selectAll('g').remove();
 
     // Pull in the map boundaries -> project & scale accordingly.
-    const path = d3.geoPath(geoProjection(kavrayskiy7Raw).translate(mapTranslation).scale(mapScale));
-    // const path = d3.geoPath(d3.geoAzimuthalEqualArea().translate(mapTranslation).scale(mapScale))
+    const path = d3.geoPath(geoProjection(kavrayskiy7Raw).translate(mapTranslation).scale(geoMapScale));
+    // const path = d3.geoPath(d3.geoAzimuthalEqualArea().translate(mapTranslation).scale(geoMapScale))
 
     svg.append('g')
       .attr('class', 'map-border')
@@ -122,10 +131,9 @@ class Map extends Component {
   // }
 
   addPostMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
-    const leftAlign = point.y < mapMarkerRightAlignYThreshold;
-
     const markerTextLink = journeyPosts.append('a')
       .attr('href', `/#/${point.post}`)
+      .attr('xlinkHref', `/#/${point.post}`)
       .on('mouseover', function() {
         d3.select(`.map-circle-${markerIndex}`).transition()
           .ease(d3.easeElastic)
@@ -158,44 +166,42 @@ class Map extends Component {
     journeyPosts.append('line')
       .attr('x1', point.x)
       .attr('y1', point.y)
-      .attr('x2', point.x + (leftAlign ? (markerTextDistanceFromMarker + .1) : (-markerTextDistanceFromMarker - .1)))
+      .attr('x2', point.x + (point.leftAlign ? (markerTextDistanceFromMarker + .1) : (-markerTextDistanceFromMarker - .1)))
       .attr('y2', point.y - 2.4)
       .attr('class', 'map-journey-marker-line');
 
     markerTextLink.append('text')
-      .attr('x', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
       .attr('y', point.y - 4)
       .text(Posts[point.post].title)
-      .attr('text-anchor', leftAlign ? 'start' : 'end')
+      .attr('text-anchor', point.leftAlign ? 'start' : 'end')
       .attr('class', `map-journey-post marker-${markerIndex}`)
       .classed('map-post-todo', passedInProgress)
       .classed('map-post-completed', !passedInProgress);
 
     markerTextLink.append('text')
-      .attr('x', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
       .attr('y', point.y + 14)
       .text(point.title)
-      .attr('text-anchor', leftAlign ? 'start' : 'end')
+      .attr('text-anchor', point.leftAlign ? 'start' : 'end')
       .attr('class', `map-journey-post marker-${markerIndex} map-journey-post-text`)
       .classed('map-post-todo', passedInProgress)
       .classed('map-post-completed', !passedInProgress);
   }
 
   addMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
-    const leftAlign = point.y < mapMarkerRightAlignYThreshold;
-
     journeyPosts.append('line')
       .attr('x1', point.x)
       .attr('y1', point.y)
-      .attr('x2', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x2', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
       .attr('y2', point.y)
       .attr('class', 'map-journey-marker-line');
 
     journeyPosts.append('text')
-      .attr('x', point.x + (leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
       .attr('y', point.y + 4)
       .text(point.title)
-      .attr('text-anchor', leftAlign ? 'start' : 'end')
+      .attr('text-anchor', point.leftAlign ? 'start' : 'end')
       .attr('class', `map-journey-post marker-${markerIndex} map-journey-post-text`)
       .classed('map-post-todo', passedInProgress)
       .classed('map-post-completed', !passedInProgress);
@@ -215,6 +221,7 @@ class Map extends Component {
       journeyBubbles
         .append('a')
         .attr('href', `/#/${point.post}`)
+        .attr('xlinkHref', `/#/${point.post}`)
         .append('circle')
         .attr('cx', point.x)
         .attr('cy', point.y)
@@ -256,23 +263,30 @@ class Map extends Component {
   drawJourneyPath = () => {
     const svg = d3.select(this.svgRef);
 
+    const pathScale = this.mapScale / 1.2;
+
     const journeyPaths = svg.append('g')
       .attr('class', 'map-journey-path')
-      .attr('transform', `translate(${pathOffset[0]},${pathOffset[1]})`);
+      .attr('transform', `translate(${pathOffset[0] * pathScale},${pathOffset[1] * pathScale})`);
 
     const journeyBubbles = svg.append('g')
       .attr('class', 'map-journey-bubbles')
-      .attr('transform', `translate(${pathOffset[0]},${pathOffset[1]})`);
+      .attr('transform', `translate(${pathOffset[0] * pathScale},${pathOffset[1] * pathScale})`);
 
     const journeyPosts = svg.append('g')
       .attr('class', 'map-journey-posts')
-      .attr('transform', `translate(${pathOffset[0]},${pathOffset[1]})`);
+      .attr('transform', `translate(${pathOffset[0] * pathScale},${pathOffset[1] * pathScale})`);
 
     let lastPoint = MapMarkers[0];
     let currentPath = '';
     let passedInProgress = false;
     for (let i = 0; i < MapMarkers.length; i++) {
-      const point = MapMarkers[i];
+      const point = {
+        ...MapMarkers[i],
+        leftAlign: MapMarkers[i].y < mapMarkerRightAlignYThreshold
+      };
+      point.x *= pathScale;
+      point.y *= pathScale;
 
       if (point.title) {
         this.addPostMarker(i, passedInProgress, point, !!point.post, journeyBubbles);
@@ -330,14 +344,20 @@ class Map extends Component {
   render() {    
     return (
       <div className="map-container">
-        <h1 className="map-title">
+        <h1
+          className="map-title"
+        >
           HOW <span>F<span className="map-rotate">A</span>R</span> SOUTH
         </h1>
-        <div className="map-clouds"/>
+        <div className="js-map-clouds map-clouds"/>
+        <div className="js-map-clouds map-clouds-2"/>
         <div className="map" id="toClickTrack">
           <svg
             className="map-svg"
             ref={ref => this.svgRef = ref}
+            xmlns="http://www.w3.org/2000/svg"
+            xlinkHref="http://www.w3.org/1999/xlink"
+            version="1.1"
           >
             <defs>
               <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">

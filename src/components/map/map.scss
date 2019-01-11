@@ -80,7 +80,7 @@
 
 .map-clouds {
   animation: animate-clouds 45s linear 0s infinite;
-  opacity: 1;
+  opacity: 0.5;
   -webkit-transform: translateZ(0px);
   -moz-transform: translateZ(0px);
   -ms-transform: translateZ(0px);
@@ -92,6 +92,29 @@
   z-index: 1000;
   min-height: 100%;
   min-width: 100%;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+  background-repeat: repeat-x;
+}
+
+.map-clouds-2 {
+  animation: animate-clouds 90s linear 0s infinite;
+  // animation-direction: reverse;
+  transform: rotate(180deg);
+  animation-delay: -45s;
+  -webkit-transform: translateZ(0px);
+  -moz-transform: translateZ(0px);
+  -ms-transform: translateZ(0px);
+  -o-transform: translateZ(0px);
+  transform: translateZ(0px);
+  background-image: url(/images/cloudbg.png);
+  pointer-events: none;
+  position: absolute;
+  z-index: 1000;
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0.4;
   z-index: 3;
   left: 0px;
   top: 0px;
@@ -205,6 +228,7 @@ $todo-color: $lightgray;
   fill: none;
   stroke: $textColor;
   stroke-width: 0.8px;
+  // stroke-dasharray: 2;
 }
 
 .map-journey-post-text {

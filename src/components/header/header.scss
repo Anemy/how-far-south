@@ -77,9 +77,9 @@
   padding-top: 5px;
   box-shadow: none;
   height: 0; 
-  width: 20px;
-  margin-left: 15px;
-  margin-top: 15px;
+  width: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
 
   display: none;
   visibility: none;
@@ -105,9 +105,39 @@
   font-size: 26px;
 }
 
+.logo-link {
+  text-decoration: none;
+  position: absolute;
+  margin: 0;
+  left: 60px;
+  top: 20px;
+  text-align: left;
+  font-size: 1.4em;
+
+  span {
+    display: inline-block;
+  }
+
+  // .character-rotate {
+  //   font-size: 0.75em;
+  //   margin-left: 0.05em;
+  //   margin-right: 0.05em;
+  //   // top: -0.15em;
+  //   // top: 0.225em;
+  //   top: 0.05em;
+  //   position: relative;
+  //   display: inline-block;
+  //   transform: rotate(180deg);
+  // }
+}
+
 /* Responsive Styles */
 
 @media screen and (max-width : 800px) {
+  .logo-link {
+    left: 80px;
+  }
+
 	.header-link {
     border: none;
     border-bottom: 1px solid $textColor;

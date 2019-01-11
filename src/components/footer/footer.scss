@@ -1,3 +1,5 @@
+@import "../../variables";
+
 // .footer-container {
 //   position: absolute;
 //   bottom: 0;
@@ -32,12 +34,24 @@
 
 .footer-link {
   font-weight: 300;
-
-  &:before {
-    // top: -2px;
-  }
 }
 
 .footer-link-right {
   float: right;
+}
+
+@media screen and (max-width : 800px) {
+  .footer-link {
+    border: none;
+    font-weight: 300;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px;
+    display: inherit;
+  }
+
+  .footer-link-right {
+    float: none;
+  }
 }

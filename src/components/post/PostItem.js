@@ -48,7 +48,7 @@ class PostItem extends Component {
     } else if (item.type === CONTENT_TYPES.IMAGE) {
       // return <Loader />;
       return <Img
-        className="post-image"
+        className={`post-image`}
         src={item.url}
         alt={item.alt}
         loader={<Loader />}

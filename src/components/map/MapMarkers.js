@@ -25,7 +25,7 @@ export default [
   {x: 86, y: 202},
   {x: 89, y: 208},
   {x: 96, y: 210},
-  {x: 94, y: 214, title: 'San Fransisco, California, USA'},
+  {x: 90, y: 214, title: 'San Fransisco, California, USA'},
   {x: 95, y: 218},
   {x: 91, y: 225},
   {x: 97, y: 230},

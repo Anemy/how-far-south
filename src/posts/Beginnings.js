@@ -3,7 +3,7 @@ import { CONTENT_TYPES } from './constants';
 export default {
   url: 'beginnings',
   title: 'Beginnings',
-  date: new Date(2019, 0 /* 0 is January. */, 7 /* 0 is the first of the month. */),
+  date: new Date(2019, 0 /* 0 is January. */, 10 /* 0 is the first of the month. */),
   description: 'We start biking late this January in Seattle.',
   content: [
     'Hi from Adam & Rhys!',
@@ -17,12 +17,16 @@ export default {
       type: CONTENT_TYPES.IMAGE,
       alt: 'bike',
       url: 'bike.jpg'
-    }
-    // , {
-    //   type: CONTENT_TYPES.EXTERNAL_LINK,
-    //   text: 'Rhys\'s website',
-    //   url: 'https://rhyshowell.com',
-    //   target: '_blank'
-    // }
+    }/* , {
+      type: CONTENT_TYPES.EXTERNAL_LINK,
+      text: 'Rhys\'s website',
+      url: 'https://rhyshowell.com',
+      target: '_blank'
+    }*/
   ]
 };
+
+
+/**
+ * Use heroku to deploy the react app to `gh-staging` when a commit is made on master.
+ */

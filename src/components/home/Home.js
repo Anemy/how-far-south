@@ -18,7 +18,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <Header showHomeLink={false} />
+        <Header showHomeLink={false} showLogoTitle={false} />
         {/* <div className="home-line" /> */}
 
         {/* <h4 className="home-under-title">
