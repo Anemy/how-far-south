@@ -22,7 +22,7 @@
   "scripts": {
     "build-topojson": "node ./src/scripts/build-topojson && cp src/scripts/map-data.topo.json src/data/map-data.topo.json && cp src/scripts/map-data.topo.json public/map-data.topo.json",
     "start": "npm run build-topojson && react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && cp CNAME build/CNAME",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
