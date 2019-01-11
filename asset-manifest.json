@@ -1,13 +1,13 @@
 {
-  "main.css": "howfarsouth.com/static/css/main.c0282e0c.chunk.css",
-  "main.js": "howfarsouth.com/static/js/main.896dd421.chunk.js",
-  "main.js.map": "howfarsouth.com/static/js/main.896dd421.chunk.js.map",
-  "static/js/1.e50820d3.chunk.js": "howfarsouth.com/static/js/1.e50820d3.chunk.js",
-  "static/js/1.e50820d3.chunk.js.map": "howfarsouth.com/static/js/1.e50820d3.chunk.js.map",
-  "runtime~main.js": "howfarsouth.com/static/js/runtime~main.8b208150.js",
-  "runtime~main.js.map": "howfarsouth.com/static/js/runtime~main.8b208150.js.map",
-  "static/css/main.c0282e0c.chunk.css.map": "howfarsouth.com/static/css/main.c0282e0c.chunk.css.map",
-  "index.html": "howfarsouth.com/index.html",
-  "precache-manifest.6d7ae4c5ac660e4412814af2c49e5d69.js": "howfarsouth.com/precache-manifest.6d7ae4c5ac660e4412814af2c49e5d69.js",
-  "service-worker.js": "howfarsouth.com/service-worker.js"
+  "main.css": "/static/css/main.c0282e0c.chunk.css",
+  "main.js": "/static/js/main.4340850a.chunk.js",
+  "main.js.map": "/static/js/main.4340850a.chunk.js.map",
+  "static/js/1.315f38f3.chunk.js": "/static/js/1.315f38f3.chunk.js",
+  "static/js/1.315f38f3.chunk.js.map": "/static/js/1.315f38f3.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "static/css/main.c0282e0c.chunk.css.map": "/static/css/main.c0282e0c.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.73aef89cd66f0a47634b5aebe49a7aa2.js": "/precache-manifest.73aef89cd66f0a47634b5aebe49a7aa2.js",
+  "service-worker.js": "/service-worker.js"
 }
