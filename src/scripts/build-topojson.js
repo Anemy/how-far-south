@@ -73,7 +73,7 @@ _.each(countryIsoCodes, country => {
 })
 
 console.log('Importing and merging the shape files into topojson...');
-mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/ne_10m_admin_1_states_provinces_lakes.shp ./src/scripts/ne_10m_admin_1_states_provinces_lakes/ne_10m_admin_1_states_provinces_lakes.dbf combine-files -o ${directory}/${outputFileName} format=topojson`, err => {
+mapshaper.runCommands(`-i ${directory}/ne_10m_admin_1_states_provinces_lakes/ne_10m_admin_1_states_provinces_lakes.shp ${directory}/ne_10m_admin_1_states_provinces_lakes/ne_10m_admin_1_states_provinces_lakes.dbf combine-files -o ${directory}/${outputFileName} format=topojson`, err => {
   if (err) {
     console.error('Error finding shapefiles, importing shapefiles, or running mapshaper. ', err);
     process.exit(1);
