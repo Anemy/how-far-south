@@ -27,7 +27,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "heroku": "npm run deploy"
+    "github-setup": "git remote set-url origin git@github.com:Anemy/how-far-south.git",
+    "heroku": "npm run github-setup && npm run deploy"
   },
   "browserslist": [
     ">0.2%",
