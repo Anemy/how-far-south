@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 
-// import { createBrowserHistory } from 'history';
+import { createBrowserHistory } from 'history';
 
 import About from './components/about';
 import Contact from './components/contact';
@@ -15,7 +15,7 @@ import PostData from './posts';
 class AppRouter extends Component {
   render() {
     return (
-      <HashRouter>
+      <Router basename={process.env.PUBLIC_URL} history={createBrowserHistory()}>
         <Switch>
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
@@ -31,7 +31,7 @@ class AppRouter extends Component {
           ))}
           <Route path="/" component={Home} />
         </Switch>
-      </HashRouter>
+      </Router>
     );
   }
 }

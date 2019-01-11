@@ -216,9 +216,9 @@ mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/*.
 
       const jsonToSave = JSON.stringify(mergedCleanedTopojson);
 
-      fs.writeFile(outputFileName, jsonToSave, 'utf8', () => {
-        console.log(`Done! Created file '${directory}/${outputFileName}'`);
-      });
+      // fs.writeFile(`${directory}/${outputFileName}`, jsonToSave, 'utf8', () => {
+      //   console.log(`Done! Created file '${directory}/${outputFileName}'`);
+      // });
     });
   });
 });
