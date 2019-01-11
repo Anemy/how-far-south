@@ -21,7 +21,7 @@ const mapshaper = require('mapshaper');
 const topojson = require('topojson');
 
 const outputFileName = 'map-data.topo.json';
-const directory = './src/scripts';
+const directory = __dirname;
 
 // https://github.com/mbloch/mapshaper/wiki/Command-Reference#-simplify
 const simplifyTopojsonPercentage = 0.12 /* 12% */;
