@@ -33,7 +33,7 @@ import Posts from '../../posts';
 const mapMarkerRightAlignYThreshold = 625;
 const markerTextDistanceFromMarker = 80;
 
-const maxMapWidth = 5000;
+// const maxMapWidth = 5000; 
 
 function kavrayskiy7Raw(lambda, phi) {
   return [3 / (Math.PI * 2) * lambda * Math.sqrt(Math.PI * Math.PI / 3 - phi * phi), phi];

@@ -1,6 +1,6 @@
 {
   "name": "how-far-south",
-  "homepage": "https://howfarsouth.com",
+  "homepage": "howfarsouth.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
