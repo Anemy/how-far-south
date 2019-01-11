@@ -133,7 +133,7 @@ class Map extends Component {
   addPostMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
     const markerTextLink = journeyPosts.append('a')
       .attr('href', `/${point.post}`)
-      .attr('xlinkHref', `/${point.post}`)
+      .attr('xlink:href', `/${point.post}`)
       .on('mouseover', function() {
         d3.select(`.map-circle-${markerIndex}`).transition()
           .ease(d3.easeElastic)
@@ -221,7 +221,7 @@ class Map extends Component {
       journeyBubbles
         .append('a')
         .attr('href', `/${point.post}`)
-        .attr('xlinkHref', `/${point.post}`)
+        .attr('xlink:href', `/${point.post}`)
         .append('circle')
         .attr('cx', point.x)
         .attr('cy', point.y)
