@@ -170,8 +170,6 @@ mapshaper.runCommands(`-i ./src/scripts/ne_10m_admin_1_states_provinces_lakes/ne
     delete combinedRawTopojson.objects[topojsonObjectsKeys[i]];
   }
 
-  // TODO: We can do this using mapshaper.
-
   combinedRawTopojson.objects = {};
   
   combinedRawTopojson.objects[outputObjectName] = {
