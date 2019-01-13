@@ -27,8 +27,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "github-setup": "git init && git config --global user.email rhysh@live.com && git config --global user.name heroku_bot && git remote add origin git@github.com:Anemy/how-far-south.git",
-    "heroku": "npm run github-setup && npm run deploy"
+    "heroku-github-setup": "git init && git config --global user.email rhysh@live.com && git config --global user.name heroku_bot && git remote add origin git@github.com:Anemy/how-far-south.git",
+    "heroku": "npm run heroku-github-setup && npm run deploy"
   },
   "browserslist": [
     ">0.2%",
