@@ -58,7 +58,6 @@ class PostItem extends Component {
         </Link>
       );
     } else if (item.type === CONTENT_TYPES.IMAGE) {
-      // return <Loader />;
       return (
         <div className="post-image-container">
           <Img
@@ -74,6 +73,8 @@ class PostItem extends Component {
           )}
         </div>
       );
+    } else if (item.type === CONTENT_TYPES.HTML) {
+      return <div className="post-html-container" dangerouslySetInnerHTML={{__html: item.html}}/>;
     } else if (item.type === CONTENT_TYPES.LIST) {
       return this.renderItemList(item);
     }

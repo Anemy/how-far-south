@@ -17,8 +17,12 @@ export default {
       type: CONTENT_TYPES.IMAGE,
       alt: 'bike',
       url: 'bike.jpg',
+      grid: 4, // This is out of 12 how much space it takes up.
       // description: 'A unkown bike we took off of unsplash'
-    }
+    }/*, {
+    //   type: CONTENT_TYPES.HTML,
+    //   html: 'This is some html with <strong>strong</strong> and then a link: <a href="/mailing">nice</a>. ok we done'
+    }*/
     /* , {
       type: CONTENT_TYPES.EXTERNAL_LINK,
       text: 'Rhys\'s website',

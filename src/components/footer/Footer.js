@@ -10,7 +10,7 @@ class Footer extends Component {
     const mostRecentPostTitle = Posts[Posts.mostRecent].title;
 
     return (
-      <div className="mt-5 container-large">
+      <div className="mt-5 mb-5 container-large">
         <div className="footer-divider" />
         <div className="footer-content container-padding">
           <Link to={`/mailing`} className="nice-link footer-link" data-title="Get updates">
