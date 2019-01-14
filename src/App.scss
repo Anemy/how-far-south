@@ -37,6 +37,32 @@
       fill: $red;
     }
   }
+
+  textarea {
+    border: 1px solid $lightgray;
+    border-radius: 4px;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    padding: 8px;
+
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.1s ease-in-out;
+    width: 100%;
+    min-height: 110px;
+    min-width: 50%;
+    max-width: 100%;
+    margin: 0px;
+    margin-bottom: 12px;
+  }
+
+  textarea:focus {
+    outline: 0;
+    border: 1px solid $blue;
+    box-shadow: 0 0 0 1px $blue;
+  }  
 }
 
 .app {
@@ -240,6 +266,7 @@ a {
 .nice-link:after {
   content: attr(data-title);
   position: absolute;
+  color: transparent;
   top: 0;
   left: 0;
   height: 100%;

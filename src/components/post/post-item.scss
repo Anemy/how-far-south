@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .post-link {
   display: inline-block;
 }
@@ -7,11 +9,17 @@
   margin: 4px 0px;
 }
 
-.post-image {
-  max-width: 100%;
+.post-image-container {
+  width: 100%;
+  text-align: center;
 
   padding: 6px;
   margin: 6px 0px;
+}
+
+.post-image {
+  max-width: 100%;
+  border: 1px solid $textColor;
 }
 
 .post-list {

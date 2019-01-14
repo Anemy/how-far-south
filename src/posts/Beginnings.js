@@ -8,7 +8,7 @@ export default {
   content: [
     'Hi from Adam & Rhys!',
     'We\'re biking from Seattle to Argentina starting in late January.',
-    'We\'ll be adding more to this site as our starting date comes closer. Stay tuned! Join our mailing list:',
+    'We\'ll be adding more to this site as our starting date comes closer. Stay tuned! Join the mailing list:',
     {
       type: CONTENT_TYPES.INTERNAL_LINK,
       text: 'Mailing List',
@@ -16,8 +16,10 @@ export default {
     }, {
       type: CONTENT_TYPES.IMAGE,
       alt: 'bike',
-      url: 'bike.jpg'
-    }/* , {
+      url: 'bike.jpg',
+      // description: 'A unkown bike we took off of unsplash'
+    }
+    /* , {
       type: CONTENT_TYPES.EXTERNAL_LINK,
       text: 'Rhys\'s website',
       url: 'https://rhyshowell.com',

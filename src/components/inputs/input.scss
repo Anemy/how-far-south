@@ -5,7 +5,7 @@
   max-width: 400px;
   height: $inputHeight;
   position: relative;
-  margin-bottom: 20px;
+  margin: 14px 0px;
 
   &.flex {
     width: 0;
@@ -23,7 +23,7 @@
   pointer-events: none;
   transform-origin: 0% 0%;
   z-index: 1;
-  color: $lightgray;
+  color: $mediumgray;
   font-family: 'IBM Plex Sans', sans-serif;
   border-radius: 2.85px;
 }
@@ -34,7 +34,6 @@
   box-shadow: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  outline: 0;
   font-size: 1rem;
   transition: all 0.1s ease-in-out;
   width: 100%;

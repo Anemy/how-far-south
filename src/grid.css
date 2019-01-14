@@ -51,11 +51,11 @@ html {
 
 @media (min-width: 992px) {
   .container {
-    max-width: 900px;
+    max-width: 720px;
   }
 
   .container-large {
-    max-width: 1010px;
+    max-width: 900px;
   }
 }
 

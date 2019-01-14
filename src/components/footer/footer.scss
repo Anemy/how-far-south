@@ -22,10 +22,13 @@
 
 .footer-link {
   font-weight: 300;
+  float: left;
+  clear: left;
 }
 
 .footer-link-right {
   float: right;
+  clear: right;
 }
 
 @media screen and (max-width : 800px) {
@@ -39,6 +42,7 @@
   }
 
   .footer-link-right {
-    float: none;
+    float: left;
+    clear: left;
   }
 }

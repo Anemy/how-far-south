@@ -13,12 +13,14 @@ class Footer extends Component {
       <div className="mt-5 container-large">
         <div className="footer-divider" />
         <div className="footer-content container-padding">
-          <Link to={`/mailing`} className="nice-link footer-link" data-title="Join our mailing list">
-            Join our mailing list
+          <Link to={`/mailing`} className="nice-link footer-link" data-title="Get updates">
+            Get updates
           </Link>
-
           <Link to={Posts.mostRecent} className="nice-link footer-link footer-link-right" data-title={`Most recent post: ${mostRecentPostTitle}`}>
             Most recent post: {mostRecentPostTitle}
+          </Link>
+          <Link to={`/contact`} className="nice-link footer-link" data-title="Contact us">
+            Contact us
           </Link>
         </div>
       </div>

@@ -37,7 +37,7 @@ class Post extends Component {
       <React.Fragment>
         <Header />
         <div className="container container-padding">
-          <h1 className="post-title">{postTitle}</h1>
+          <h1>{postTitle}</h1>
           {postContent.map((item, index) => <PostItem key={`${postLink}_${index}`} item={item} />)}
         </div>
         <Footer />
