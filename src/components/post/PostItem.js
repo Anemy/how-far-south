@@ -57,9 +57,21 @@ class PostItem extends Component {
           {item.text}
         </Link>
       );
+    } else if (item.type === CONTENT_TYPES.GRID) {
+      return (
+        <div className="row post-image-grid">
+          {item.items.map((item, index) => <PostItem item={item} key={index}/>)}
+        </div>
+      );
+    } else if (item.type === CONTENT_TYPES.HEADING) {
+      return (
+        <h2 className="row post-heading">
+          {item.text}
+        </h2>
+      );
     } else if (item.type === CONTENT_TYPES.IMAGE) {
       return (
-        <div className="post-image-container">
+        <div className={`post-image-container ${item.grid ? item.grid : ''}`}>
           <Img
             className={`post-image`}
             src={item.url}
