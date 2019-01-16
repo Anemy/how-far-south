@@ -9,7 +9,7 @@ export default {
   content: [
     'Hi from Adam & Rhys!',
     'We\'re biking from Seattle to Argentina starting in late January.',
-    'We\'ll be adding more to this site as our starting date comes closer. Stay tuned! Join the mailing list:',
+    'Stay tuned! Join the mailing list:',
     {
       type: CONTENT_TYPES.INTERNAL_LINK,
       text: 'Mailing List',
@@ -51,3 +51,17 @@ export default {
 /**
  * Use heroku to deploy the react app to `gh-staging` when a commit is made on master.
  */
+
+/**
+Pilot
+
+We haven't started biking yet, so this post is a bit about our current mindset, and what sorts of preperations and expectations we have.
+
+This first leg is going to be like the first episode of a new tv show, the pilot. This first episode is going to test us andsee if we're really capable of making the route happen. We want to make it all the way down to Argentina, but that's many months, miles, and many countries away.
+
+We're hyped to go. Every time we chat we can't wait to hop on our bikes.
+
+Much like the start of any new tv show, we don't know if we're going to make it. It's early on, and we're doing something that honestly frightens us. We don't know how long it's going to take, or our exact route.
+
+
+*/

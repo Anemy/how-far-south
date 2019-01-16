@@ -12,8 +12,15 @@ import MapMarkers from './MapMarkers';
 
 // TODO: Async load.
 import topology from '../../data/map-data.topo.json';
+import CountryEmojis from '../../data/country-emojis.json';
 
 import Posts from '../../posts';
+
+// const countryMap = {};
+console.log('CountryEmojis', CountryEmojis);
+
+// CountryEmojis.map(emoji => countryMap[emoji.code] = emoji);
+// console.log('countryMap', countryMap);
 
 // let mousePositions = [];
 
@@ -29,6 +36,11 @@ import Posts from '../../posts';
 // window.globalFunc = () => {
 //   console.log('mousePositions:', mousePositions);
 // }
+
+function getLocationString(location) {
+  const regionString = location.region ? `${location.region}, ` : '';
+  return `${location.city}, ${regionString}${CountryEmojis[location.countryCode].name} ${CountryEmojis[location.countryCode].emoji}`;
+}
 
 const mapMarkerRightAlignYThreshold = 625;
 const markerTextDistanceFromMarker = 80;
@@ -170,6 +182,8 @@ class Map extends Component {
       .attr('y2', point.y - 2.4)
       .attr('class', 'map-journey-marker-line');
 
+    const locationString = getLocationString(point.location);
+
     markerTextLink.append('text')
       .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
       .attr('y', point.y - 4)
@@ -182,7 +196,7 @@ class Map extends Component {
     markerTextLink.append('text')
       .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
       .attr('y', point.y + 14)
-      .text(point.title)
+      .text(locationString)
       .attr('text-anchor', point.leftAlign ? 'start' : 'end')
       .attr('class', `map-journey-post marker-${markerIndex} map-journey-post-text`)
       .classed('map-post-todo', passedInProgress)
@@ -190,17 +204,19 @@ class Map extends Component {
   }
 
   addMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
+    const locationString = getLocationString(point.location);
+
     journeyPosts.append('line')
       .attr('x1', point.x)
       .attr('y1', point.y)
-      .attr('x2', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x2', point.x + (point.leftAlign ? markerTextDistanceFromMarker - 2 : -markerTextDistanceFromMarker + 2))
       .attr('y2', point.y)
       .attr('class', 'map-journey-marker-line');
 
     journeyPosts.append('text')
       .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
       .attr('y', point.y + 4)
-      .text(point.title)
+      .text(locationString)
       .attr('text-anchor', point.leftAlign ? 'start' : 'end')
       .attr('class', `map-journey-post marker-${markerIndex} map-journey-post-text`)
       .classed('map-post-todo', passedInProgress)
@@ -288,7 +304,7 @@ class Map extends Component {
       point.x *= pathScale;
       point.y *= pathScale;
 
-      if (point.title) {
+      if (point.location) {
         this.addPostMarker(i, passedInProgress, point, !!point.post, journeyBubbles);
 
         if (point.post) {

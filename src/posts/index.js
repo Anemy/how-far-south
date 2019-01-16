@@ -6,7 +6,7 @@ import Route from './Route';
 const posts = {
   [Beginnings.url]: Beginnings,
   // [Gear.url]: Gear,
-  // [Route.url]: Route,
+  [Route.url]: Route,
   // [Daily.url]: Daily
 };
 

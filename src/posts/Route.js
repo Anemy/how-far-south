@@ -26,8 +26,19 @@ export default {
         'Chile',
         'Argentina'
       ]
-    },
-    'The path winds south down the west coast of the Americas.',
+    }, {
+      type: CONTENT_TYPES.GRID,
+      items: [{
+        type: CONTENT_TYPES.GEO,
+        country_code: 'USA',
+        url: 'bike.jpg',
+        grid: 'col-sm-8', // This is out of 12 how much space it takes up.
+      }, {
+        type: CONTENT_TYPES.HEADING,
+        text: 'USA',
+        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+      }]
+    }
   ]
 };
 
