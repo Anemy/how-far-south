@@ -47,6 +47,10 @@ class Post extends Component {
   }
 
   componentDidUpdate(prevProps) {
+    const { post } = this.props;
+
+    document.title = `How Far South - ${Posts[post].title}`;
+
     if (this.props.post !== prevProps.post) {
       global.disqusConfig = function() {
         this.page.url = `${window.location.origin}/${window.location.pathname}`; // + window.location.pathname
@@ -58,12 +62,6 @@ class Post extends Component {
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
     }
-  }
-
-  componentDidUpdate() {
-    const { post } = this.props;
-
-    document.title = `How Far South - ${Posts[post].title}`;
   }
 
   render() {

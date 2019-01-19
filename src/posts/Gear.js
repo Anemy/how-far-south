@@ -8,3 +8,16 @@ export default {
     'Any two wheels can take you there.'
   ]
 };
+
+
+/*
+
+Other gearlists to check out:
+
+https://www.bikehikesafari.com/bicycle-touring-gear-list/
+https://www.cyclingabout.com/gear-list-cyclingabout-the-americas/
+http://www.roughchop.net/mawson-trail-kit-list/
+https://www.highlux.co.nz/2017/02/baja-divide-a-packing-list/
+https://www.tales-on-tyres.com/single-post/2016/10/19/Our-Miraculous-Packlist
+
+*/

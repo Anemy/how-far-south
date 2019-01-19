@@ -2,6 +2,7 @@
 
 .post-link {
   display: inline-block;
+  overflow-wrap: break-word;
 }
 
 .post-text {
@@ -28,4 +29,8 @@
 
 .post-heading {
   margin-top: 16px;
+}
+
+.post-html-container {
+  overflow-wrap: break-word;
 }

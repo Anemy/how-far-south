@@ -17,7 +17,7 @@ import CountryEmojis from '../../data/country-emojis.json';
 import Posts from '../../posts';
 
 // const countryMap = {};
-console.log('CountryEmojis', CountryEmojis);
+// console.log('CountryEmojis', CountryEmojis);
 
 // CountryEmojis.map(emoji => countryMap[emoji.code] = emoji);
 // console.log('countryMap', countryMap);
@@ -36,6 +36,26 @@ console.log('CountryEmojis', CountryEmojis);
 // window.globalFunc = () => {
 //   console.log('mousePositions:', mousePositions);
 // }
+
+// const isosWePass = {
+//   MX: 'MX',
+//   GT: 'GT',
+//   SV: 'SV',
+//   HN: 'HN',
+//   NI: 'NI',
+//   CR: 'CR',
+//   PA: 'PA',
+//   CO: 'CO',
+//   EC: 'EC',
+//   PE: 'PE',
+//   BO: 'BO',
+//   CL: 'CL',
+//   AR: 'AR',
+
+//   'US-CA': 'US-CA',
+//   'US-WA': 'US-WA',
+//   'US-OR': 'US-OR'
+// };
 
 function getLocationString(location) {
   const regionString = location.region ? `${location.region}, ` : '';
@@ -97,10 +117,11 @@ class Map extends Component {
     this.mapScale = mapScale;
 
     svg.attr('width', mapWidth).attr('height', mapHeight);
-    d3.selectAll('.js-map-clouds').style('width', `${Math.ceil(mapWidth)}px`);
-    d3.selectAll('.js-map-clouds').style('height', `${Math.ceil(mapHeight)}px`);
-    // d3.selectAll('.js-map-clouds').style('background-color', 'purple');
-
+    // d3.selectAll('.js-map-clouds').style('width', `${Math.ceil(mapWidth)}px`);
+    // d3.selectAll('.js-map-clouds').style('height', `${Math.ceil(mapHeight)}px`);
+    d3.selectAll('.js-map-background').style('width', `${Math.ceil(mapWidth)}px`);
+    d3.selectAll('.js-map-background').style('height', `${Math.ceil(mapHeight) + 500}px`);
+    
     // Make sure the svg is cleaned.
     svg.selectAll('g').remove();
 
@@ -117,6 +138,14 @@ class Map extends Component {
       .each(function(d) { d.totalLength = this.getTotalLength(); })
       .attr('stroke-dasharray', function(d) { return d.totalLength + ' ' + d.totalLength; })
       .attr('stroke-dashoffset', function(d) { return d.totalLength; });
+      // .attr('class', function(feature) {
+      //   // console.log('d', feature);
+      //   // properties:
+      //   //   ISO_3166_2: "US-WV"
+      //   //   ISO_A2: "US"
+      //   //   id: "US-WV"
+      //   return isosWePass[feature.properties.id] ? 'map-border-active' : 'map-border-inactive';
+      // })
 
     // this.drawDescriptionPath();
     this.drawJourneyPath();
@@ -360,13 +389,15 @@ class Map extends Component {
   render() {    
     return (
       <div className="map-container">
+        <div className="map-background js-map-background"/>
         <h1
           className="map-title"
         >
           HOW <span>F<span className="map-rotate">A</span>R</span> SOUTH
         </h1>
-        <div className="js-map-clouds map-clouds"/>
-        <div className="js-map-clouds map-clouds-2"/>
+        {/* <div className="js-map-clouds map-clouds"/> */}
+        {/* <div className="js-map-clouds map-clouds-2"/> */}
+        {/* <img src="images/cloudbg.png" className="js-map-clouds map-clouds"/> */}
         <div className="map" id="toClickTrack">
           <svg
             className="map-svg"

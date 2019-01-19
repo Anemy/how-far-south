@@ -52,7 +52,7 @@ class PostItem extends Component {
       <ul className="post-list">
         {item.content.map((listitem, index) => (
           <li key={index}>
-            {listitem}
+            <PostItem item={listitem} />
           </li>
         ))}
       </ul>
@@ -90,7 +90,7 @@ class PostItem extends Component {
           href={item.url}
           data-title={item.text}
           rel="noopener noreferrer"
-          target={item.target ? item.target : '_self'}
+          target={item.target ? item.target : '_blank'}
         >
           {item.text}
         </a>

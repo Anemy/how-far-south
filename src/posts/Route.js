@@ -51,10 +51,32 @@ How we can do this:
 
 Countries
 USA
+https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast/
+
+Central America
+http://travellingtwo.com/resources/10questions/centralamerica
+http://nicholasgault.com/known-hotspots-in-latin-america/
+http://www.rideforclimate.com/LA.php
+
 Mexico
+https://bajadivide.com/route-details/
+https://www.davestravelpages.com/cycling-mexico-bike-ride/
+https://www.tales-on-tyres.com/blog/category/Mexico
+https://www.headed-south.com/home/2018/11/14/baja-tiempo
+Maybe avoid Michoacán
+Caution in Chiapas - 2 cyclists killed kilometer 158 of the road between Ocosingo and San Cristóbal de Las Casas
+
+
 Guatemala
+https://maggiemwoo.wordpress.com/2014/03/22/reflection-on-guatemala-dangers-of-travelling-and-not-travelling/
+http://www.contoursofacountry.com/2014/10/30/the-bit-in-the-middle/
+
+
 El Salvador
 Honduras?
+
+https://maggiemwoo.wordpress.com/2014/04/07/reflection-on-honduras-the-four-cs-in-conversations-in-honduras/
+
 Nicaragua
 Costa Rica
 Panama
@@ -64,5 +86,6 @@ Peru
 Bolivia
 Chile
 Argentina
+Probably wont hit it but avoid Mendoza (Ruta 40)
 
 */
