@@ -72,13 +72,13 @@ export default {
       type: CONTENT_TYPES.LIST,
       content: [{
         type: CONTENT_TYPES.HTML,
-        html: 'bikepacking.com - This site is awesome! It contains a number of gear reviews, trip stories, and very detailed routes people have done and recomend with some great analysis: <a href="http://www.bikepacking.com/bikepacking-routes/">http://www.bikepacking.com/bikepacking-routes/</a>'
+        html: 'bikepacking.com - This site is awesome! It contains a number of gear reviews, trip stories, and very detailed routes people have done and recomend with some great analysis: <a href="http://www.bikepacking.com/bikepacking-routes/" rel="noopener noreferrer">http://www.bikepacking.com/bikepacking-routes/</a>'
       }, {
         type: CONTENT_TYPES.HTML,
-        html: 'Pacific Coast (Maps): <a href="https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast/">https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast/</a>'
+        html: 'Pacific Coast (Maps): <a href="https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast/" rel="noopener noreferrer">https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast/</a>'
       }, {
         type: CONTENT_TYPES.HTML,
-        html: 'The Baja Divide is a route through Baja California, Mexico, which we are going to do bits and parts of. The site has lots of information you need for it: <a href="https://bajadivide.com/route-details/">https://bajadivide.com/route-details/</a>'
+        html: 'The Baja Divide is a route through Baja California, Mexico, which we are going to do bits and parts of. The site has lots of information you need for it: <a href="https://bajadivide.com/route-details/" rel="noopener noreferrer">https://bajadivide.com/route-details/</a>'
       }]
     }, {
       type: CONTENT_TYPES.HEADING,
@@ -108,7 +108,7 @@ export default {
       content: [
         {
           type: CONTENT_TYPES.HTML,
-          html: 'I have read the Adventure Cycle Touring Handbook cover to cover. It\'s a great resources for choosing your route, gear, and general information about bike touring (beginner friendly): <a href="https://www.amazon.com/Adventure-Cycle-Touring-Handbook-Worldwide-Trailblazer/">https://www.amazon.com/Adventure-Cycle-Touring-Handbook-Worldwide-Trailblazer/</a>'
+          html: 'I have read the Adventure Cycle Touring Handbook cover to cover. It\'s a great resources for choosing your route, gear, and general information about bike touring (beginner friendly): <a href="https://www.amazon.com/Adventure-Cycle-Touring-Handbook-Worldwide-Trailblazer/dp/190586468X" rel="noopener noreferrer">https://www.amazon.com/Adventure-Cycle-Touring-Handbook-Worldwide-Trailblazer/dp/190586468X</a>'
         },
         '* Looking for some suggestions.'
       ]
