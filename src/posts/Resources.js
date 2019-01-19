@@ -60,7 +60,7 @@ const video_links = [{
 export default {
   url: 'resources',
   title: 'Resources',
-  date: new Date(2019, 0 /* 0 is January. */, 20 /* 0 is the first of the month. */),
+  date: new Date(2019, 0 /* 0 is January. */, 18 /* 0 is the first of the month. */),
   description: 'Related blogs and information sources for bike touring.',
   categories: [CATEGORIES.NORTH_AMERICA],
   content: [
@@ -168,6 +168,7 @@ http://www.rideforclimate.com/LA.php
 http://www.ribbonofroad.com/route.html
 http://elpedalero.com/
 http://www.roughchop.net/
+http://www.pro8000.com/
 https://www.cyclingabout.com/get-started-on-cyclingabout-com/
 https://www.crazyguyonabike.com/
 http://www.bikewanderer.com/
