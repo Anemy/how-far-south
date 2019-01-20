@@ -137,7 +137,7 @@ class PostItem extends Component {
       );
     } else if (item.type === CONTENT_TYPES.HTML) {
       return <div
-        className={`post-html-container ${item.grid ? item.grid : ''}`}
+        className={`post-html ${item.grid ? item.grid : ''}`}
         dangerouslySetInnerHTML={{__html: item.html}
       }/>;
     } else if (item.type === CONTENT_TYPES.LIST) {
