@@ -22,6 +22,7 @@ class Contact extends Component {
         <Header />
         <div className="container container-padding">
           <h1>Contact Us</h1>
+          {/* <p>Have a place we can stay for an evening?</p> */}
           <form action="https://formspree.io/rhysh@live.com" method="POST">
             <Input
               type="text"

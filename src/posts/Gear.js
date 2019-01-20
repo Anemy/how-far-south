@@ -20,4 +20,7 @@ http://www.roughchop.net/mawson-trail-kit-list/
 https://www.highlux.co.nz/2017/02/baja-divide-a-packing-list/
 https://www.tales-on-tyres.com/single-post/2016/10/19/Our-Miraculous-Packlist
 
+Greg's:
+https://docs.google.com/spreadsheets/d/1Z40AEnY5a8n84SIKRZ1L10ZCUJ1WkzK6fSbYXenhxHQ/edit?ts=5c44f25e#gid=0
+
 */

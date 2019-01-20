@@ -57,6 +57,8 @@ Central America
 http://travellingtwo.com/resources/10questions/centralamerica
 http://nicholasgault.com/known-hotspots-in-latin-america/
 http://www.rideforclimate.com/LA.php
+https://www.crazyguyonabike.com/doc/locales/?o=1mr&locale_id=7160710&doctype=journal
+http://www.bikepacking.com/tag/bike-touring-central-america/
 
 Mexico
 https://bajadivide.com/route-details/

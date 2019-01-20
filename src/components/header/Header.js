@@ -17,7 +17,7 @@ class Header extends Component {
 
   static defaultProps = {
     showAboutLink: false,
-    showContactLink: false,
+    showContactLink: true,
     showHomeLink: true,
     showLogoTitle: true,
     showMailingLink: true,
