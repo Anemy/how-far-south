@@ -61,10 +61,14 @@ https://www.crazyguyonabike.com/doc/locales/?o=1mr&locale_id=7160710&doctype=jou
 http://www.bikepacking.com/tag/bike-touring-central-america/
 
 Mexico
-https://bajadivide.com/route-details/
+https://bajadivide.com/route-details/ - https://theredheadednomad.com/category/baja-divide/
 https://www.davestravelpages.com/cycling-mexico-bike-ride/
+http://www.whileoutriding.com/category/central-america-2/mexico/page/2
 https://www.tales-on-tyres.com/blog/category/Mexico
 https://www.headed-south.com/home/2018/11/14/baja-tiempo
+https://theredheadednomad.com/category/mexico/
+Fly La Paz to Guadalajara
+Guadalajara to Valle de Bravo to Taxco, to Oaxaca, to Chiapas, to Lago Atitlan
 Maybe avoid Michoacán
 Caution in Chiapas - 2 cyclists killed kilometer 158 of the road between Ocosingo and San Cristóbal de Las Casas
 
@@ -90,4 +94,21 @@ Chile
 Argentina
 Probably wont hit it but avoid Mendoza (Ruta 40)
 
+Miles (Approx.):
+1400 - West Coast USA -> Seattle to San Diego
+1600 - Baja Divide, Mexico - 3000
+1400 - Guadalara Mexico -> Lago Atitlan - 4400
+800 - Lago Atitlan -> Nicaragua - 5200
+900 - Nicaragua -> Panama City - 6100
+900 - Medellín -> Quito - 7000
+1800 - Quito -> Cusco - 8800
+900 - Cusco -> Sucre - 9700
+900 - Sucro -> Copiapó - 10600
+2600 Copiapó -> Ushuaia - 13200
+
+4400
+5200
+6100
+7000
 */
+
