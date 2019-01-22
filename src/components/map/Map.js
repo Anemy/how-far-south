@@ -12,9 +12,10 @@ import MapMarkers from './MapMarkers';
 
 // TODO: Async load.
 import topology from '../../data/map-data.topo.json';
-import CountryEmojis from '../../data/country-emojis.json';
 
 import Posts from '../../posts';
+
+import { kavrayskiy7Raw, getLocationString } from '../../constants';
 
 // const countryMap = {};
 // console.log('CountryEmojis', CountryEmojis);
@@ -57,23 +58,10 @@ import Posts from '../../posts';
 //   'US-OR': 'US-OR'
 // };
 
-function getLocationString(location) {
-  const regionString = location.region ? `${location.region}, ` : '';
-  return `${location.city}, ${regionString}${CountryEmojis[location.countryCode].name} ${CountryEmojis[location.countryCode].emoji}`;
-}
-
 const mapMarkerRightAlignYThreshold = 625;
 const markerTextDistanceFromMarker = 80;
 
 // const maxMapWidth = 5000; 
-
-function kavrayskiy7Raw(lambda, phi) {
-  return [3 / (Math.PI * 2) * lambda * Math.sqrt(Math.PI * Math.PI / 3 - phi * phi), phi];
-}
-
-kavrayskiy7Raw.invert = function(x, y) {
-  return [(Math.PI * 2) / 3 * x / Math.sqrt(Math.PI * Math.PI / 3 - y * y), y];
-};
 
 // const drawDelay = 3000;
 const pathOffset = [-50, -18];

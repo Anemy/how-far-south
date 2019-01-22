@@ -1,4 +1,5 @@
 import * as d3 from 'd3';
+import { geoProjection } from 'd3-geo';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
@@ -8,6 +9,7 @@ import * as topojson from 'topojson-client';
 import './post-item.scss';
 
 import { CONTENT_TYPES } from '../../posts/constants';
+import { kavrayskiy7Raw } from '../../constants';
 
 import Loader from '../loader';
 
@@ -34,7 +36,10 @@ class PostItem extends Component {
 
     svg.selectAll('g').remove();
 
-    const path = d3.geoPath();
+    // const path = d3.geoPath();
+    const mapScale = 700;
+    const mapTranslation = [1240, 640];
+    const path = d3.geoPath(geoProjection(kavrayskiy7Raw).translate(mapTranslation).scale(mapScale));
 
     svg.append('g')
       .attr('class', 'map-border')
@@ -68,8 +73,8 @@ class PostItem extends Component {
         xmlns="http://www.w3.org/2000/svg"
         xlinkHref="http://www.w3.org/1999/xlink"
         version="1.1"
-        width="600"
-        height="600"
+        width="500"
+        height="500"
       />
     );
   }

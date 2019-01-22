@@ -20,6 +20,7 @@ http://www.roughchop.net/mawson-trail-kit-list/
 https://www.highlux.co.nz/2017/02/baja-divide-a-packing-list/
 https://www.tales-on-tyres.com/single-post/2016/10/19/Our-Miraculous-Packlist
 http://www.bikepacking.com/gear/panam-bike-touring-packlist/
+http://www.bikewanderer.com/the-bike/
 http://www.whileoutriding.com/packlist
 
 Greg's:

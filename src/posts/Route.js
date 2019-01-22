@@ -6,8 +6,9 @@ export default {
   date: new Date(2019, 0 /* 0 is January. */, 30 /* 0 is the first of the month. */),
   description: 'How we\'re going from Seattle -> Argentina',
   content: [
-    'Through deserts, over mountains, around volcanoes - this post is all about the route we\'ve taken so far, and our plan for places we have not yet reached. Bear in mind if we plan to go somewhere a ways out we might not make it there. Adventures arise, detours pop up, and there are more than enough roads to choose from to connect our start with our destination.',
-    'Our route takes us through a number of countries:',
+    // 'Through deserts, over mountains, around volcanoes - this post is all about the route we\'ve taken so far, and our plan for places we have not yet reached. Adventures arise, plans change, and there are more than enough roads to choose from to connect our start with our destination - the future route is not set, it is only guessed at.',
+    // 'Our route takes us through a number of countries:',
+    'Here are the countries we\'re planning to cycle through:',
     {
       type: CONTENT_TYPES.LIST,
       content: [
@@ -32,11 +33,11 @@ export default {
         type: CONTENT_TYPES.GEO,
         country_code: 'USA',
         url: 'bike.jpg',
-        grid: 'col-sm-8', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-7', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.HEADING,
         text: 'USA',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-5', // This is out of 12 how much space it takes up.
       }]
     }
   ]
