@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import * as d3 from 'd3';
 import { geoProjection } from 'd3-geo';
 import PropTypes from 'prop-types';
@@ -36,15 +37,39 @@ class PostItem extends Component {
 
     svg.selectAll('g').remove();
 
+
+    let boundaryMinX = 1240;
+    let boundaryMinY = 640;
+    const boundaries = _.filter(topojson.feature(topology, topology.objects.customWorld).features, feature => {
+      if (feature.properties.ISO_A2 === this.props.item.countryCode) {
+        console.log('feature', feature);
+        // for () {
+        feature.geometry.coordinates.map(coordinates => {
+          coordinates.map(coordinate => {
+            if (coordinate[0] < boundaryMinX) {
+              // boundaryMinX = coordinate[0];
+            }
+
+            if (coordinate[1] > boundaryMinY) {
+              // boundaryMinY = coordinate[1];
+            }
+          })
+        })
+        // }
+      }
+
+      return feature.properties.ISO_A2 === this.props.item.countryCode
+    });
+
     // const path = d3.geoPath();
     const mapScale = 700;
-    const mapTranslation = [1240, 640];
+    const mapTranslation = [boundaryMinX, boundaryMinY];
     const path = d3.geoPath(geoProjection(kavrayskiy7Raw).translate(mapTranslation).scale(mapScale));
 
     svg.append('g')
       .attr('class', 'map-border')
       .selectAll('path')
-      .data(topojson.feature(topology, topology.objects.customWorld).features)
+      .data(boundaries)
       .enter().append('path')
       .attr('d', path)
       .each(function(d) { d.totalLength = this.getTotalLength(); })

@@ -31,13 +31,23 @@ export default {
       type: CONTENT_TYPES.GRID,
       items: [{
         type: CONTENT_TYPES.GEO,
-        country_code: 'USA',
-        url: 'bike.jpg',
-        grid: 'col-sm-7', // This is out of 12 how much space it takes up.
+        countryCode: 'US',
+        grid: 'col-sm-7'
       }, {
         type: CONTENT_TYPES.HEADING,
         text: 'USA',
-        grid: 'col-sm-5', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-5'
+      }]
+    }, {
+      type: CONTENT_TYPES.GRID,
+      items: [{
+        type: CONTENT_TYPES.HEADING,
+        text: 'Mexico',
+        grid: 'col-sm-5'
+      }, {
+        type: CONTENT_TYPES.GEO,
+        countryCode: 'MX',
+        grid: 'col-sm-7'
       }]
     }
   ]
