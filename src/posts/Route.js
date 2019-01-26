@@ -35,7 +35,7 @@ export default {
         grid: 'col-sm-7'
       }, {
         type: CONTENT_TYPES.HEADING,
-        text: 'USA',
+        text: 'The United States (West Coast)',
         grid: 'col-sm-5'
       }]
     }, {
@@ -48,6 +48,17 @@ export default {
         type: CONTENT_TYPES.GEO,
         countryCode: 'MX',
         grid: 'col-sm-7'
+      }]
+    }, {
+      type: CONTENT_TYPES.GRID,
+      items: [{
+        type: CONTENT_TYPES.GEO,
+        countryCode: 'MX',
+        grid: 'col-sm-7'
+      }, {
+        type: CONTENT_TYPES.HEADING,
+        text: 'Mexico',
+        grid: 'col-sm-5'
       }]
     }
   ]
@@ -117,9 +128,5 @@ Miles (Approx.):
 900 - Sucro -> Copiapó - 10600
 2600 Copiapó -> Ushuaia - 13200
 
-4400
-5200
-6100
-7000
 */
 

@@ -19,6 +19,9 @@ import topology from '../../data/map-data.topo.json';
 
 // const mapScale = 700;
 
+const mapSizeX = 500;
+const mapSizeY = 500;
+
 class PostItem extends Component {
   static propTypes = {
     item: PropTypes.any.isRequired
@@ -38,33 +41,66 @@ class PostItem extends Component {
     svg.selectAll('g').remove();
 
 
-    let boundaryMinX = 1240;
-    let boundaryMinY = 640;
+    let boundaryMinX;
+    let boundaryMinY;
+    let boundaryMaxX;
+    let boundaryMaxY;
     const boundaries = _.filter(topojson.feature(topology, topology.objects.customWorld).features, feature => {
       if (feature.properties.ISO_A2 === this.props.item.countryCode) {
-        console.log('feature', feature);
+        // console.log('feature', feature);
         // for () {
-        feature.geometry.coordinates.map(coordinates => {
-          coordinates.map(coordinate => {
-            if (coordinate[0] < boundaryMinX) {
-              // boundaryMinX = coordinate[0];
-            }
+        feature.geometry.coordinates.forEach(coordinatesArray => {
+          coordinatesArray.forEach(coordinates => {
+            coordinates.forEach(coordinate => {
+              // if (Math.random() > 0.95) {
+              //   console.log('coordinate', coordinate);
+              // }
+              if (boundaryMinX === undefined) {
+                boundaryMinX = coordinate[0];
+                boundaryMinY = coordinate[1];
+                boundaryMaxX = coordinate[0];
+                boundaryMaxY = coordinate[1];
+              }
+              if (coordinate[0] < boundaryMinX) {
+                boundaryMinX = coordinate[0];
+              }
+              if (coordinate[1] < boundaryMinY) {
+                boundaryMinY = coordinate[1];
+              }
 
-            if (coordinate[1] > boundaryMinY) {
-              // boundaryMinY = coordinate[1];
-            }
-          })
-        })
+              if (coordinate[0] > boundaryMaxX) {
+                boundaryMaxX = coordinate[0];
+              }
+              if (coordinate[1] > boundaryMaxY) {
+                boundaryMaxY = coordinate[1];
+              }
+            });
+          });
+        });
         // }
       }
 
       return feature.properties.ISO_A2 === this.props.item.countryCode
     });
 
+    console.log('boundaries: ', boundaryMinX, boundaryMinY);
+
     // const path = d3.geoPath();
-    const mapScale = 700;
-    const mapTranslation = [boundaryMinX, boundaryMinY];
-    const path = d3.geoPath(geoProjection(kavrayskiy7Raw).translate(mapTranslation).scale(mapScale));
+    // const maxSizeToCover = Math.max(Math.abs(boundaryMinX - boundaryMaxX), Math.abs(boundaryMinY - boundaryMaxY));
+    // const normalizedCover = (maxSizeToCover / 2000);
+    // const mapScale = normalizedCover * 700 * 100;
+    // const mapXTranslation = boundaryMinX * 15 + 3600;
+    // const mapYTranslation = 1000 - boundaryMinY * 15;
+    // const mapTranslation = [mapXTranslation, mapYTranslation];
+    // console.log('mapScale', mapScale, 'mapTranslation', mapTranslation);
+
+    const geoWidth = Math.abs(boundaryMinX - boundaryMaxX);
+    const geoHeight = Math.abs(boundaryMinY - boundaryMaxY);
+
+    const maxSizeToCover = Math.min(geoWidth / mapSizeX, geoHeight /mapSizeY);
+    const mapScale = maxSizeToCover * 100000;
+    // .translate(mapTranslation)
+    const path = d3.geoPath(geoProjection(kavrayskiy7Raw).scale(mapScale));
 
     svg.append('g')
       .attr('class', 'map-border')
@@ -90,7 +126,6 @@ class PostItem extends Component {
   }
 
   renderGeo = item => {
-    console.log('here');
     return (
       <svg
         className={`post-geo ${item.grid ? item.grid : ''}`}

@@ -377,13 +377,13 @@ class Map extends Component {
   render() {    
     return (
       <div className="map-container">
-        <div className="map-background js-map-background"/>
+        {/* <div className="map-background js-map-background"/> */}
         <h1
           className="map-title"
         >
           HOW <span>F<span className="map-rotate">A</span>R</span> SOUTH
         </h1>
-        {/* <div className="js-map-clouds map-clouds"/> */}
+        <div className="js-map-clouds map-clouds"/>
         {/* <div className="js-map-clouds map-clouds-2"/> */}
         {/* <img src="images/cloudbg.png" className="js-map-clouds map-clouds"/> */}
         <div className="map" id="toClickTrack">
