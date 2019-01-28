@@ -105,8 +105,8 @@ class Map extends Component {
     this.mapScale = mapScale;
 
     svg.attr('width', mapWidth).attr('height', mapHeight);
-    // d3.selectAll('.js-map-clouds').style('width', `${Math.ceil(mapWidth)}px`);
-    // d3.selectAll('.js-map-clouds').style('height', `${Math.ceil(mapHeight)}px`);
+    d3.selectAll('.js-map-clouds').style('width', `${Math.ceil(mapWidth)}px`);
+    d3.selectAll('.js-map-clouds').style('height', `${Math.ceil(mapHeight)}px`);
     d3.selectAll('.js-map-background').style('width', `${Math.ceil(mapWidth)}px`);
     d3.selectAll('.js-map-background').style('height', `${Math.ceil(mapHeight) + 500}px`);
     
