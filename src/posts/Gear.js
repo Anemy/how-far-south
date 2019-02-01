@@ -22,8 +22,14 @@ https://www.tales-on-tyres.com/single-post/2016/10/19/Our-Miraculous-Packlist
 http://www.bikepacking.com/gear/panam-bike-touring-packlist/
 http://www.bikewanderer.com/the-bike/
 http://www.whileoutriding.com/packlist
+https://thenextchallenge.org/round-world-cyclists-kit-lists/
+^^ From that:
+- http://www.14degrees.org/gear-heavy-stuff/lightweight-gear-list-cycling/
 
 Greg's:
 https://docs.google.com/spreadsheets/d/1Z40AEnY5a8n84SIKRZ1L10ZCUJ1WkzK6fSbYXenhxHQ/edit?ts=5c44f25e#gid=0
+
+To look at
+https://theradavist.com/ryan-wilson/
 
 */

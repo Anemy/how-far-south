@@ -68,6 +68,10 @@ export default {
 
 We leave ourselves open to detours.
 
+Full maps:
+http://www.welostthemap.com/map.html
+
+
 
 How we can do this:
 
