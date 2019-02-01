@@ -4,11 +4,11 @@ export default {
   url: 'beginnings',
   title: 'Beginnings',
   date: new Date(2019, 0 /* 0 is January. */, 10 /* 0 is the first of the month. */),
-  description: 'We\'re starting to bike on February 2nd, in Seattle.',
+  description: 'We\'re getting on our bikes on February 2nd, in Seattle.',
   categories: [CATEGORIES.NORTH_AMERICA],
   content: [
     'Hi from Adam & Rhys!',
-    'We\'re biking from Seattle to Argentina. We\'re beginning our trek on Saturday, February 2nd, from Gas Works Park in Seattle (Around 11 am).',
+    'We\'re biking from Seattle to Argentina. Our trek begins on Saturday, February 2nd, from Gas Works Park in Seattle (Around 11 am) - come grab a bagel and say farewell!',
     'Stay tuned! Join the mailing list:',
     {
       type: CONTENT_TYPES.INTERNAL_LINK,
