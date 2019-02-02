@@ -4,7 +4,7 @@ export default {
   url: 'beginnings',
   title: 'Beginnings',
   date: new Date(2019, 0 /* 0 is January. */, 10 /* 0 is the first of the month. */),
-  description: 'We\'re getting on our bikes on February 2nd, in Seattle.',
+  description: 'We\'re getting on our bikes February 2nd, in Seattle.',
   categories: [CATEGORIES.NORTH_AMERICA],
   content: [
     'Hi from Adam & Rhys!',

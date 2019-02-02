@@ -22,6 +22,16 @@ class Footer extends Component {
           <Link to={`/contact`} className="nice-link footer-link" data-title="Contact us">
             Contact us
           </Link>
+          <a
+            href="https://github.com/Anemy/how-far-south"
+            className="nice-link footer-link footer-link-right"
+            data-title="Source Code"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Source Code
+          </a>
+          
         </div>
       </div>
     );
