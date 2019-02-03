@@ -4,9 +4,10 @@
 Seattle
 - Jack
 - Justine & Dan
-- Tyler/Brady/Ben/Yuval/Ilana/Shawn/Everyone else
+- Yuval/Ilana/Tyler/Brady/Ben/Shawn/Everyone else
 - Shawna? & Niki - Free Range Cycles
-- Josh @ UW bikes
-- Oliver @ UW bikes
-
+- Josh, Oliver, Nick @ UW bikes
+- Everyon who came out.
+Olympic Peninsula
+- Anna's parents - Awesome watertower by the shore.
 **/
