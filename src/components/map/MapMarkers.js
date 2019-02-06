@@ -1,7 +1,6 @@
-import {
-  Beginnings,
-  // Route
-} from '../../posts';
+import { Beginnings } from '../../posts';
+
+// console.log('posts', Posts);
 
 export default [
   {
@@ -12,13 +11,14 @@ export default [
       region: 'Washington',
       countryCode: 'US'
     },
-    post: Beginnings.url,
-    inprogress: true
+    post: Beginnings.url
   },
-  {x: 150, y: 83},
-  {x: 143, y: 86},
-  {x: 135, y: 93},
-  {x: 135, y: 102},
+  {x: 152, y: 64}, // Kingston, WA, US
+  {x: 148, y: 63}, // The Detour, WA, US
+  {x: 147, y: 72}, // Dosewallips, WA, US
+  {x: 144, y: 85}, 
+  {x: 146, y: 93, inprogress: true}, 
+  {x: 145, y: 102},
   {
     x: 134,
     y: 117,
