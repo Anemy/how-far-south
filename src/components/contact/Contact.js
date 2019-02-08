@@ -45,7 +45,7 @@ class Contact extends Component {
               autoCorrect="off"
             />
             <textarea name="message" placeholder="Type a message..." />
-            <button type="submit">Send</button>
+            <button className="button" type="submit">Send</button>
           </form>
         </div>
         <Footer />

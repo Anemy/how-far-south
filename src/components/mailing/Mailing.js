@@ -54,7 +54,7 @@ class Mailing extends Component {
               value={this.state.lNameValue}
               onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
             />
-            <button type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+            <button className="button" type="submit" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
 
             <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
               <label htmlFor="b_name">Name: </label>
