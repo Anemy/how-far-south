@@ -217,11 +217,9 @@ $todo-color: $lightgray;
   stroke-width: 1px;
   // transform-origin: 50% 50%;
 }
-// .map-journey-bubbles circle:hover {
-//   // fill-opacity: 1;
-//   // fill: white;
-//   // transform: scale(0.8);
-// }
+.map-journey-bubbles circle:hover {
+  cursor: pointer;
+}
 .map-journey-bubbles {
   outline: none;
 }
@@ -233,6 +231,14 @@ $todo-color: $lightgray;
 .map-journey-post {
   font-size: 16px;
   fill: $textColor;
+}
+
+.map-marker-post-link {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.map-marker-post-link:hover {
+  cursor: pointer;
 }
 
 .map-journey-marker-line {

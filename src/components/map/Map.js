@@ -160,9 +160,15 @@ class Map extends Component {
   // }
 
   addPostMarkerText = (markerIndex, passedInProgress, point, journeyPosts) => {
-    const markerTextLink = journeyPosts.append('a')
-      .attr('href', `/${point.post}`)
-      .attr('xlink:href', `/${point.post}`)
+    const markerTextLink = journeyPosts
+      .append('g')
+      .attr('class', 'map-marker-post-link')
+      // .append('a')
+      // .attr('href', `/${point.post}`)
+      // .attr('xlink:href', `/${point.post}`)
+      .on('click', () => {
+        this.props.history.push(`/${point.post}`);
+      })
       .on('mouseover', function() {
         d3.select(`.map-circle-${markerIndex}`).transition()
           .ease(d3.easeElastic)
@@ -252,13 +258,16 @@ class Map extends Component {
 
     if (isPost) {
       journeyBubbles
-        .append('a')
-        .attr('href', `/${point.post}`)
-        .attr('xlink:href', `/${point.post}`)
+        // .append('a')
+        // .attr('href', `/${point.post}`)
+        // .attr('xlink:href', `/${point.post}`)
         .append('circle')
         .attr('cx', point.x)
         .attr('cy', point.y)
         .attr('r', 10)
+        .on('click', () => {
+          this.props.history.push(`/${point.post}`);
+        })
         .on('mouseover', function() {
           d3.select(this).transition()
             .ease(d3.easeElastic)
