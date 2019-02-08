@@ -8,16 +8,16 @@ import Route from './Route';
 // console.log('North', North);
 
 const posts = {
-  [Beginnings.url]: Beginnings,
+  // [Beginnings.url]: Beginnings,
   // [Gear.url]: Gear,
-  // [North.url]: North,
+  [North.url]: North,
   [Resources.url]: Resources,
   // [Route.url]: Route,
   // [Daily.url]: Daily
 };
 
 posts.keys = Object.keys(posts);
-posts.mostRecent = Resources.url;
+posts.mostRecent = North.url;
 
 export default posts;
 export { Beginnings, Resources, North, Gear, Route, Daily };

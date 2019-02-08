@@ -24,7 +24,8 @@ const mapSizeY = 500;
 
 class PostItem extends Component {
   static propTypes = {
-    item: PropTypes.any.isRequired
+    item: PropTypes.any.isRequired,
+    onImageClick: PropTypes.func
   }
 
   svgRef = null;
@@ -140,12 +141,18 @@ class PostItem extends Component {
   }
 
   render() {
-    const { item } = this.props;
+    const { onImageClick, item } = this.props;
 
     if (!item.type) {
       return (
         <p className={`post-text ${item.grid ? item.grid : ''}`}>
           {item}
+        </p>
+      );
+    } else if (item.type === CONTENT_TYPES.TEXT) {
+      return (
+        <p className={`post-text ${item.grid ? item.grid : ''}`}>
+          {item.text}
         </p>
       );
     } else if (item.type === CONTENT_TYPES.EXTERNAL_LINK) {
@@ -175,7 +182,7 @@ class PostItem extends Component {
     } else if (item.type === CONTENT_TYPES.GRID) {
       return (
         <div className={`row post-grid ${item.grid ? item.grid : ''}`}>
-          {item.items.map((item, index) => <PostItem item={item} key={index}/>)}
+          {item.items.map((item, index) => <PostItem onImageClick={imageUrl => onImageClick(imageUrl)} item={item} key={index}/>)}
         </div>
       );
     } else if (item.type === CONTENT_TYPES.HEADING) {
@@ -189,9 +196,11 @@ class PostItem extends Component {
         <div className={`post-image-container ${item.grid ? item.grid : ''}`}>
           <Img
             className={`post-image`}
+            onClick={() => onImageClick(item.url)} 
             src={item.url}
             alt={item.alt}
             loader={<Loader />}
+            unloader={<img className={`post-image`} src={item.url} alt={item.alt} onClick={() => onImageClick(item.url)}/>}
           />
           {item.description && (
             <div className="post-image-description">
@@ -200,7 +209,21 @@ class PostItem extends Component {
           )}
         </div>
       );
-    } else if (item.type === CONTENT_TYPES.HTML) {
+    } else if (item.type === CONTENT_TYPES.GDRIVE_IMAGE) {
+      return (
+        <div className={`post-image-container ${item.grid ? item.grid : ''}`}>
+          <iframe
+            className={`post-image`}
+            src={item.url}
+          />
+          {item.description && (
+            <div className="post-image-description">
+              {item.description}
+            </div>
+          )}
+        </div>
+      );
+    }else if (item.type === CONTENT_TYPES.HTML) {
       return <div
         className={`post-html ${item.grid ? item.grid : ''}`}
         dangerouslySetInnerHTML={{__html: item.html}

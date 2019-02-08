@@ -7,20 +7,28 @@
 
 .post-text {
   line-height: 1.4em;
-  margin: 4px 0px;
+  margin: 14px 0px;
 }
 
 .post-image-container {
   width: 100%;
   text-align: center;
 
-  padding: 6px;
+  padding: 0px 6px;
+  // margin: 6px;
+}
+
+.post-image:hover {
+  cursor: pointer;
+}
+
+.post-grid {
   margin: 6px 0px;
 }
 
 .post-image {
   max-width: 100%;
-  border: 1px solid $textColor;
+  // border: 1px solid $textColor;
 }
 
 .post-list {

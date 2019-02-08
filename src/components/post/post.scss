@@ -1,0 +1,30 @@
+@import "../../variables";
+
+.image-gallery {
+  background-color: $backgroundColor;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 50;
+}
+
+// .post-gallery-background {
+//   background-color: rgba(0, 0, 0, 0.2);
+// }
+
+.post-gallery-close {
+  font-size: 2.5em;
+  font-weight: bold;
+  position: fixed;
+  right: 14px;
+  top: 8px;
+  color: white;
+  z-index: 500;
+  text-shadow: 0 2px 2px #1a1a1a;
+}
+.post-gallery-close:hover {
+  cursor: pointer;
+}
+

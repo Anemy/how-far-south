@@ -1,4 +1,5 @@
-import { Beginnings } from '../../posts';
+// import { Beginnings } from '../../posts';
+import Posts from '../../posts';
 
 // console.log('posts', Posts);
 
@@ -11,23 +12,23 @@ export default [
       region: 'Washington',
       countryCode: 'US'
     },
-    post: Beginnings.url
+    post: Posts.North.url
   },
   {x: 152, y: 64}, // Kingston, WA, US
   {x: 148, y: 63}, // The Detour, WA, US
   {x: 147, y: 72}, // Dosewallips, WA, US
-  {x: 144, y: 85}, 
-  {x: 146, y: 93, inprogress: true}, 
-  {x: 145, y: 102},
+  {x: 144, y: 85}, // Olympia, WA, US
+  {x: 146, y: 93}, // Kelso, WA, US
   {
-    x: 134,
-    y: 117,
+    x: 140,
+    y: 103,
     location: {
       city: 'Portland',
       region: 'Oregon',
       countryCode: 'US'
     }
   },
+  {x: 132, y: 110, inprogress: true},
   {x: 124, y: 120},
   {x: 116, y: 122},
   {x: 112, y: 126},

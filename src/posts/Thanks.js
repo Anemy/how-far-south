@@ -9,5 +9,8 @@ Seattle
 - Josh, Oliver, Nick @ UW bikes
 - Everyon who came out.
 Olympic Peninsula
-- Anna's parents - Awesome watertower by the shore.
+- Anna's parents - Awesome watertower by the shore
+- Kris & Erin - Yurt (And Aragorn + Donald)
+- Beth & Pete + Raven & kids ()
+- Joel
 **/

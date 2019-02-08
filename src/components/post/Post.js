@@ -1,9 +1,12 @@
+import $ from 'jquery';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
-import $ from 'jquery';
+import ImageGallery from 'react-image-gallery';
 
 import './post.scss';
+import 'react-image-gallery/styles/css/image-gallery.css';
 
+import { CONTENT_TYPES } from '../../posts/constants';
 import Posts from '../../posts';
 
 import Footer from '../footer';
@@ -14,6 +17,10 @@ class Post extends Component {
   static propTypes = {
     post: PropTypes.string.isRequired
   }
+
+  state = {
+    galleryImage: ''
+  };
 
   componentDidMount() {
     const { post } = this.props;
@@ -29,20 +36,15 @@ class Post extends Component {
       });
     }, 300);
 
-    global.disqusConfig = function() {
-      this.page.url = `${window.location.origin}/${window.location.pathname}`; // + window.location.pathname
-      this.page.identifier = `${post}`;
-    }
+    this.loadDisqus();
 
-    const d = document, s = d.createElement('script');
-    s.src = 'https://how-far-south.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
+    this.prepGallery();
   }
 
   componentWillUnmount() {
     if (this.adChecker) {
       clearInterval(this.adChecker);
+      this.adChecker = null;
     }
   }
 
@@ -52,20 +54,62 @@ class Post extends Component {
     document.title = `How Far South - ${Posts[post].title}`;
 
     if (this.props.post !== prevProps.post) {
-      global.disqusConfig = function() {
-        this.page.url = `${window.location.origin}/${window.location.pathname}`; // + window.location.pathname
-        this.page.identifier = `${this.props.post}`;
-      }
+      this.loadDisqus();
 
-      const d = document, s = d.createElement('script');
-      s.src = 'https://how-far-south.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
+      this.prepGallery();
     }
+  }
+
+  loadDisqus = () => {
+    global.disqusConfig = function() {
+      this.page.url = `${window.location.origin}/${window.location.pathname}`; // + window.location.pathname
+      this.page.identifier = `${this.props.post}`;
+    }
+
+    const d = document, s = d.createElement('script');
+    s.src = 'https://how-far-south.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+
+  prepGallery = () => {
+    // Pull all the images together. When one is clicked we enter gallery mode.
+    // Gallery mode can be used to go image to image. Exit button at top right. Borders on big width.
+
+    this.imageUrlsForGallery = [];
+
+    const { post } = this.props;
+    const postContent = Posts[post].content;
+
+    const checkItemForImages = item => {
+      if (item.type === CONTENT_TYPES.GRID) {
+        item.items.map(checkItemForImages);
+      } else if (item.type === CONTENT_TYPES.IMAGE) {
+        this.imageUrlsForGallery.push({original: item.url, thumbnail: item.thumbnailUrl ? item.thumbnailUrl : item.url});
+      }
+    }
+
+    postContent.map(checkItemForImages);
+  }
+
+  imageClicked = imageUrl => {
+    let imageIndex = 0;
+
+    for (let i = 0; i < this.imageUrlsForGallery.length; i++) {
+      if (this.imageUrlsForGallery[i].original === imageUrl) {
+        imageIndex = i;
+      }
+    }
+
+    this.setState({
+      showGallery: true,
+      galleryImageIndex: imageIndex
+    });
   }
 
   render() {
     const { post } = this.props;
+    const { showGallery, galleryImageIndex } = this.state;
 
     const postLink = Posts[post].link;
     const postTitle = Posts[post].title;
@@ -73,11 +117,24 @@ class Post extends Component {
 
     return (
       <React.Fragment>
+        {showGallery && (
+          <div className="post-gallery">
+            <div className="post-gallery-background" onClick={() => this.setState({showGallery: false})}/>
+            <div className="post-gallery-container">
+              <ImageGallery
+                items={this.imageUrlsForGallery}
+                startIndex={galleryImageIndex}
+                showPlayButton={false}
+              />
+              <div className="post-gallery-close" onClick={() => this.setState({showGallery: false})}>X</div>
+            </div>
+          </div>
+        )}
         <Header />
         <div className="container">
           <div className="container-padding">
             <h1>{postTitle}</h1>
-            {postContent.map((item, index) => <PostItem key={`${postLink}_${index}`} item={item} />)}
+            {postContent.map((item, index) => <PostItem onImageClick={this.imageClicked} key={`${postLink}_${index}`} item={item} />)}
           </div>
           {/* <div className="commentbox" /> */}
           <div id="disqus_thread" />
