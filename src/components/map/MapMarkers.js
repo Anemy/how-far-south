@@ -28,10 +28,10 @@ export default [
       countryCode: 'US'
     }
   },
-  {x: 132, y: 110, inprogress: true},
-  {x: 124, y: 120},
-  {x: 116, y: 122},
-  {x: 112, y: 126},
+  {x: 132, y: 110}, // Salem, OR, US
+  {x: 132, y: 110}, // Otis, OR, US
+  {x: 116, y: 115}, // Newport, OR, US
+  {x: 114, y: 124, inprogress: true},
   {x: 109, y: 134},
   {x: 104, y: 139},
   {x: 97, y: 149},
