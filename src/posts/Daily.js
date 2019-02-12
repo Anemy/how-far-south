@@ -27,7 +27,7 @@ export default {
       text: 'Day 2 - Kingston WA, WA -> The Detour',
       stay: STAY_KINDS.RANDOM_NEW_FRIENDS
     },
-    '32 miles - 2 going wrong way',
+    '32 miles - 2 going wrong way. Snow storm after bridge when we say dolphins.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 3 - Kingston WA -> Dosewallips State Park, WA',
