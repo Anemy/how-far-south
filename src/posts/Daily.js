@@ -52,7 +52,7 @@ export default {
       text: 'Day 6 - Kelso, WA -> Portland, OR',
       stay: STAY_KINDS.FRIENDS_FAMILY
     },
-    '58 miles - Cool bridge into Oregon, PST trail, then chill oregon highway - didn\'t feel very remote, neat bridge and mountains around Portland, and biking around Portland',
+    '58 miles - Cool bridge into Oregon, PST trail, then chill oregon highway - didn\'t feel very remote, neat bridge and mountains around Portland, and biking around Portland.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 7 - Portland, OR Rest Day',
@@ -73,10 +73,16 @@ export default {
     '49 miles - Over a pass before the rains starts back up tonight/tomorrow. About to be a 7 day storm with snow on the road/pass we\'re taking. Camped next to river.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 10 - Otis, OR -> Newport, OR',
+      text: 'Day 10 - Otis, OR -> Newport, OR', // Feb 11
       stay: STAY_KINDS.FRIENDS_FAMILY
     },
-    '36 miles - Into highway 101. Went on the beautiful otter crest loop. Some big sur nice. Nice wind rain',
+    '36 miles - Into highway 101. Went on the beautiful otter crest loop. Some big sur nice. Nice wind rain. Stayed in econolodge lol',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 11 - Newport, OR -> Waldport, OR', // Feb 11
+      stay: STAY_KINDS.FRIENDS_FAMILY
+    },
+    '17 miles - Worked on blogpost in coffee shop for the morning, rainy bike along 101. nice coastline. got gopro working. Stayed at Harper & Nick & Airee?\'s place.'
   ]
 }
 

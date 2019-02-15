@@ -12,6 +12,7 @@ const plain_blog_links = [
   'http://www.rideforclimate.com/LA.php',
   'http://www.ribbonofroad.com/route.html',
   'http://elpedalero.com/',
+  'https://pedalingtheglobe.com',
   'http://www.roughchop.net/',
   'https://www.cyclingabout.com/get-started-on-cyclingabout-com/',
   'https://www.crazyguyonabike.com/',
@@ -167,6 +168,7 @@ http://www.contoursofacountry.com/the-americas/
 http://www.rideforclimate.com/LA.php
 http://www.ribbonofroad.com/route.html
 http://elpedalero.com/
+https://pedalingtheglobe.com
 http://www.roughchop.net/
 http://www.pro8000.com/
 https://www.cyclingabout.com/get-started-on-cyclingabout-com/

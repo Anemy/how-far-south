@@ -14,9 +14,32 @@
   width: 100%;
   text-align: center;
 
-  padding: 0px 6px;
+  // padding: 0px 6px;
   // margin: 6px;
 }
+
+// .post-image:not(:first-child):not(:last-child) {
+//   padding: 0px 6px !important;
+// }
+.post-image-container {
+  padding: 0px 6px;
+}
+
+// .post-image-container:first-child:not(:last-child) {
+//   padding-left: 0px;
+// }
+
+.post-image-container:first-child {
+  margin-left: -6px !important;
+}
+
+.post-image-container:last-child {
+  margin-right: -6px !important;
+}
+
+// .post-image-container:not(:first-child):not(:last-child) {
+//   padding: 0px 6px !important;
+// }
 
 .post-image:hover {
   cursor: pointer;

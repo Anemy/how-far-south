@@ -31,10 +31,10 @@ export default [
   {x: 132, y: 110}, // Salem, OR, US
   {x: 132, y: 110}, // Otis, OR, US
   {x: 116, y: 115}, // Newport, OR, US
-  {x: 114, y: 124, inprogress: true},
-  {x: 109, y: 134},
-  {x: 104, y: 139},
-  {x: 97, y: 149},
+  {x: 112, y: 124}, // Waldport, OR, US
+  {x: 106, y: 134}, // Winchester Bay, OR, US
+  {x: 102, y: 139}, // Bandon, OR, US
+  {x: 97, y: 149, inprogress: true},
   {x: 97, y: 159},
   {x: 96, y: 168},
   {x: 92, y: 174},

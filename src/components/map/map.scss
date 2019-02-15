@@ -150,8 +150,9 @@
 // }
 
 // .map-border-inactive {
-//   stroke: $verylightgray;
-//   z-index: 1;
+//   // display: none;
+//   stroke: rgba(0, 0, 0, 0.1);
+//   // z-index: 1;
 // }
 
 .map-border path {

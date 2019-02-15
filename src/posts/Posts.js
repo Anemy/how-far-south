@@ -2,6 +2,7 @@ import Beginnings from './Beginnings';
 import Daily from './Daily';
 import Gear from './Gear';
 import North from './North';
+import SalemSoiree from './SalemSoiree';
 import Resources from './Resources';
 import Route from './Route';
 
@@ -11,6 +12,7 @@ const posts = {
   // [Beginnings.url]: Beginnings,
   // [Gear.url]: Gear,
   [North.url]: North,
+  // [SalemSoiree.url]: SalemSoiree,
   [Resources.url]: Resources,
   // [Route.url]: Route,
   // [Daily.url]: Daily
