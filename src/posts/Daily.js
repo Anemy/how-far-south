@@ -2,6 +2,7 @@ import { CONTENT_TYPES } from './constants';
 
 const STAY_KINDS = {
   CAMPING: 'CAMPINGS',
+  LODGE: 'LODGE',
   WARM_SHOWERS: 'WARM_SHOWERS',
   RANDOM_NEW_FRIENDS: 'RANDOM_NEW_FRIENDS',
   STEALTH_CAMPING: 'STEALTH_CAMPING',
@@ -55,7 +56,8 @@ export default {
     '58 miles - Cool bridge into Oregon, PST trail, then chill oregon highway - didn\'t feel very remote, neat bridge and mountains around Portland, and biking around Portland.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 7 - Portland, OR Rest Day',
+      text: 'Day 7 - Portland, OR',
+      restDay: true,
       stay: STAY_KINDS.FRIENDS_FAMILY
     },
     'Hanging out at Zoe\'s - Thanks for hosting!',
@@ -74,15 +76,34 @@ export default {
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 10 - Otis, OR -> Newport, OR', // Feb 11
-      stay: STAY_KINDS.FRIENDS_FAMILY
+      stay: STAY_KINDS.LODGE
     },
     '36 miles - Into highway 101. Went on the beautiful otter crest loop. Some big sur nice. Nice wind rain. Stayed in econolodge lol',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 11 - Newport, OR -> Waldport, OR', // Feb 11
+      text: 'Day 11 - Newport, OR -> Waldport, OR',
       stay: STAY_KINDS.FRIENDS_FAMILY
     },
-    '17 miles - Worked on blogpost in coffee shop for the morning, rainy bike along 101. nice coastline. got gopro working. Stayed at Harper & Nick & Airee?\'s place.'
+    '17 miles - Worked on blogpost in coffee shop for the morning, rainy bike along 101. nice coastline. got gopro working. Stayed at Harper & Nick & Airee?\'s place.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 12 - Waldport, OR -> Winchester Bay, OR',
+      stay: STAY_KINDS.STEALTH_CAMPING
+    },
+    '63 miles - Beautiful Oregon coastline. Over nice hills. Through a tunnel after a lighthouse. Camped in Umpqua state park on some dunes.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 13 - Winchester Bay, OR -> Bandon, OR',
+      stay: STAY_KINDS.WARM_SHOWERS
+    },
+    '48 miles - Staying at Brian\'s. He leads Coosboattours. We\'ll be helping out with the Gorse Blossom Festival.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 14 - Bandon, OR',
+      stay: STAY_KINDS.WARM_SHOWERS,
+      restDay: true
+    },
+    'Evicerated crab for the Gorse Blossom Festival with Mike - Marine Biologist from Georgia.'
   ]
 }
 
@@ -90,21 +111,23 @@ export default {
 /**
 
 Miles
-1 - 14
-2 - 32
-3 - 26
-4 - 65
-5 - 77
-6 - 58
-7 - Rest
-8 - 55
-9 - 49
-10 - 36
-Total: 412
-Biking Days: 10
-
-Day 1
-
+1 - 14 
+2 - 32 
+3 - 26 
+4 - 65 
+5 - 77 
+6 - 58 
+7 - 0 
+8 - 55 
+9 - 49 
+10 - 36 
+11 - 17 
+12 - 63 
+13 - 48 
+14 - 0 
+Total: 540
+Biking Days: 12
+Average miles per bike day - 45
 
 Metrics to track:
 Days on the road
