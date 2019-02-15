@@ -31,7 +31,7 @@ export default {
     },
     // https://imgur.com/tTFfOr1 -- DSC00167.JPG <- Adam looking up into the snow
     // https://imgur.com/NnA91t2 -- DSC00129.JPG <- Rhys biking towards camera in the snow
-    'Two days ago, January 2nd, Rhys and I finally started pedalling after a wonderful goodbye brunch with old friends and new friends. The past week was a roller coaster of saying goodbyes to people that have have made Seattle a home paired with a looming feeling of excitement and anxious anticipation. After setting off all of those feelings sloughed off and were replaced with the familiar calmness of riding a bike in gloomy ole’ Seattle.',
+    'Three days ago, February 2nd, Rhys and I finally started pedalling after a wonderful goodbye brunch with old friends and new friends. The past week was a roller coaster of saying goodbyes to people that have have made Seattle a home paired with a looming feeling of excitement and anxious anticipation. After setting off all of those feelings sloughed off and were replaced with the familiar calmness of riding a bike in gloomy ole’ Seattle.',
     {
       type: CONTENT_TYPES.GRID,
       items: [{
