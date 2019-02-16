@@ -143,6 +143,8 @@ class PostItem extends Component {
   render() {
     const { onImageClick, item } = this.props;
 
+    console.log('item', item);
+
     if (!item.type) {
       return (
         <p className={`post-text ${item.grid ? item.grid : ''}`}>
@@ -151,7 +153,7 @@ class PostItem extends Component {
       );
     } else if (item.type === CONTENT_TYPES.TEXT) {
       return (
-        <p className={`post-text ${item.grid ? item.grid : ''}`}>
+        <p className={`post-text ${item.grid ? item.grid : ''} ${item.inline ? 'post-inline' : ''}`}>
           {item.text}
         </p>
       );
@@ -170,7 +172,7 @@ class PostItem extends Component {
     } else if (item.type === CONTENT_TYPES.INTERNAL_LINK) {
       return (
         <Link
-          className="post-link nice-link"
+          className={`post-link nice-link ${item.inline ? 'post-inline' : ''}`}
           to={item.url}
           data-title={item.text}
         >

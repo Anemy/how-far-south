@@ -12,14 +12,14 @@ const posts = {
   // [Beginnings.url]: Beginnings,
   // [Gear.url]: Gear,
   [North.url]: North,
-  // [SalemSoiree.url]: SalemSoiree,
+  [SalemSoiree.url]: SalemSoiree,
   [Resources.url]: Resources,
   // [Route.url]: Route,
   // [Daily.url]: Daily
 };
 
 posts.keys = Object.keys(posts);
-posts.mostRecent = North.url;
+posts.mostRecent = SalemSoiree.url;
 
 export default posts;
-export { Beginnings, Resources, North, Gear, Route, Daily };
+export { Beginnings, SalemSoiree, Resources, North, Gear, Route, Daily };

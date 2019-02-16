@@ -2,9 +2,9 @@ import { CONTENT_TYPES, CATEGORIES } from './constants';
 
 export default {
   url: 'Salem',
-  title: 'Short Term Goals to Salem',
+  title: 'Short term goals',
   date: new Date(2019, 1 /* 0 is January. */, 11 /* 0 is the first of the month. */),
-  description: 'Just in time for a party in Salem',
+  description: 'Biking into a party in Salem, Oregon',
   categories: [CATEGORIES.NORTH_AMERICA],
   content: [
     // https://imgur.com/a/uqmI7Oy
@@ -28,26 +28,54 @@ export default {
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
-        alt: 'A cold marsh',
+        alt: 'Tractor line',
         url: 'https://imgur.com/9EyvAti.jpg',
         thumbnailUrl: 'https://imgur.com/9EyvAtit.jpg',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }]
     },
-    'Our first day of driven, goal oriented biking was from Dosewallips to Olympia where we momentarily escaped the snow. That night we stayed in our first warmshowers (couch surfing for bikers) at Beth and Pete’s home and got to hear some of their epic stories biking 28,000 miles around the world in addition to a belly warming lentil soup. We had another warmshowers the next night with Joel in Kelso, WA who treated us to another fantastic meal and amazing stories about fighting fires and walking the Spanish Caminos. Next we made our way to Portland where Rhys’ friend Zoe hosted us for 2 nights in a wonderful college house that felt just like home. We’ve already received so much care and compassion from so many strangers on the road and we are learning how to accept it knowing we can’t immediately give back.',
+    
     // https://www.youtube.com/watch?v=G_7rPbJCC9A - Raven dragging toy
     // https://imgur.com/3OA9hFk - DSC00221.JPG - Past Olympia
     // https://imgur.com/aDReiO4 - DSC00242.JPG - Past Mt Saint Helens
     // https://imgur.com/ALbXZEs - DSC00245.JPG - Tractor line
     {
+      type: CONTENT_TYPES.TEXT,
+      inline: true,
+      text: 'Our first day of driven, goal oriented biking was from Dosewallips to Olympia, Washington where we momentarily escaped ',
+    },
+    {
+      type: CONTENT_TYPES.INTERNAL_LINK,
+      inline: true,
+      text: 'the snow',
+      url: '/North'
+    },
+    {
+      type: CONTENT_TYPES.TEXT,
+      inline: true,
+      text: '. That night we stayed in our first warmshowers (couch surfing for bikers) at Beth and Pete’s home and got to hear some of their epic stories biking 28,000 miles around the world in addition to a belly warming lentil soup. Beautiful, remote country roads guided us to another warmshowers the next night with Joel in Kelso, WA who treated us to a fantastic meal and amazing stories about fighting fires and walking the Spanish Caminos. Next we made our way to Portland where Rhys’ friend Zoe hosted us for 2 nights in a wonderful college house that felt just like home. We’ve already received so much care and compassion from so many strangers on the road and are learning how to accept it knowing we can’t immediately give back.',
+    },
+    {
       type: CONTENT_TYPES.GRID,
-      items: [{
+      items: [
+        {
+          type: CONTENT_TYPES.HTML,
+          // width="560" height="315"
+          // width="352" height="198"
+          html: '<iframe width="215" height="143" style="margin-right: 5px;" src="https://www.youtube.com/embed/G_7rPbJCC9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+          // type: CONTENT_TYPES.IMAGE,
+          // alt: 'video of getting on the ferry',
+          // url: 'ferry.mp4',
+          // grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+          // // description: 'A unkown bike we took off of unsplash'
+        }
+        /*{
         type: CONTENT_TYPES.IMAGE,
         alt: 'Biking past the capital in Olympia, WA',
         url: 'https://imgur.com/3OA9hFk.jpg',
         thumbnailUrl: 'https://imgur.com/3OA9hFkt.jpg',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
-      }, {
+      }*/, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Biking on a road with a view of Mt. Saint Helens',
         url: 'https://imgur.com/aDReiO4.jpg',
@@ -87,7 +115,7 @@ export default {
     // https://imgur.com/tmTQ0AN - MG_3412.CR2 - Bridge and wood - photo through fence
     // https://imgur.com/vWxnG4m - _MG_3413.CR2 - Lifts moving wood onto boats
     // https://imgur.com/KRMoGrj - _MG_3428.CR2 - A boat on the river infront of a factory
-    'These 3 days of biking were punctuated by the towering elegance of the volcanoes of the Pacific Northwest. It was easy to tell that Mt. Saint Helens was in love because what else could have caused something to blow its top like that, and there is definitely some tension between Mt. Hood and Adams in the way that Hood is straining its peak. I mean what is love if not a volcano.',
+    'These 3 days of biking were punctuated by the towering elegance of the volcanoes of the Pacific Northwest. We hadn\'t made it to the party yet, but we could feel love was all around us. It was easy to see that Mt. Saint Helens was crazy in love because what else could have caused something to blow its top like that, and there is definitely some tension between Mt. Hood and Adams in the way that Hood is straining its peak. I mean what is love if not a volcano.',
     {
       type: CONTENT_TYPES.IMAGE,
       alt: 'Adam looking out at a mountain near sunset',
@@ -100,11 +128,27 @@ export default {
       type: CONTENT_TYPES.GRID,
       items: [{
         type: CONTENT_TYPES.IMAGE,
-        alt: 'Adam biking next to chopper',
-        url: 'https://imgur.com/eTwwa6r.jpg',
-        thumbnailUrl: 'https://imgur.com/eTwwa6rt.jpg',
-        grid: 'col-sm-3', // This is out of 12 how much space it takes up.
+        alt: 'Rhys in the rain',
+        url: 'https://imgur.com/CX1N84u.jpg',
+        thumbnailUrl: 'https://imgur.com/CX1N84ut.jpg',
+        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }, {
+        type: CONTENT_TYPES.IMAGE,
+        alt: 'Pumpkins with the faces of presidents painted on them',
+        url: 'https://imgur.com/FFwbxDP.jpg',
+        thumbnailUrl: 'https://imgur.com/FFwbxDPt.jpg',
+        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+      }, {
+        type: CONTENT_TYPES.IMAGE,
+        alt: 'More presidential pumpkins',
+        url: 'https://imgur.com/GNBJGD5.jpg',
+        thumbnailUrl: 'https://imgur.com/GNBJGD5t.jpg',
+        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+      }, ]
+    },
+    {
+      type: CONTENT_TYPES.GRID,
+      items: [{
         type: CONTENT_TYPES.IMAGE,
         alt: 'Shed on fire in the country',
         url: 'https://imgur.com/0YkuGXA.jpg',
@@ -118,9 +162,15 @@ export default {
         grid: 'col-sm-3', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
-        alt: 'Rhys in the rain',
-        url: 'https://imgur.com/CX1N84u.jpg',
-        thumbnailUrl: 'https://imgur.com/CX1N84ut.jpg',
+        alt: 'Adam biking next to chopper',
+        url: 'https://imgur.com/eTwwa6r.jpg',
+        thumbnailUrl: 'https://imgur.com/eTwwa6rt.jpg',
+        grid: 'col-sm-3', // This is out of 12 how much space it takes up.
+      }, {
+        type: CONTENT_TYPES.IMAGE,
+        alt: 'Biking next to Oregon\'s state capitol, Salem',
+        url: 'https://imgur.com/NbUsLJQ.jpg',
+        thumbnailUrl: 'https://imgur.com/NbUsLJQt.jpg',
         grid: 'col-sm-3', // This is out of 12 how much space it takes up.
       }]
     },

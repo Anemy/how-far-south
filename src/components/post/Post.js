@@ -13,6 +13,8 @@ import Footer from '../footer';
 import Header from '../header';
 import PostItem from './PostItem';
 
+const dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
+
 class Post extends Component {
   static propTypes = {
     post: PropTypes.string.isRequired
@@ -111,6 +113,7 @@ class Post extends Component {
     const { post } = this.props;
     const { showGallery, galleryImageIndex } = this.state;
 
+    const postDate = Posts[post].date ? Posts[post].date.toLocaleDateString('en-US', dateOptions) : '';
     const postLink = Posts[post].link;
     const postTitle = Posts[post].title;
     const postContent = Posts[post].content;
@@ -133,7 +136,10 @@ class Post extends Component {
         <Header />
         <div className="container">
           <div className="container-padding">
-            <h1>{postTitle}</h1>
+            <h1 className="post-title">{postTitle}</h1>
+            <div className="post-date">
+              {postDate}
+            </div>
             {postContent.map((item, index) => <PostItem onImageClick={this.imageClicked} key={`${postLink}_${index}`} item={item} />)}
           </div>
           {/* <div className="commentbox" /> */}

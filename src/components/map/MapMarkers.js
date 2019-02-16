@@ -1,4 +1,3 @@
-// import { Beginnings } from '../../posts';
 import Posts from '../../posts';
 
 // console.log('posts', Posts);
@@ -22,15 +21,22 @@ export default [
   {
     x: 140,
     y: 103,
+    // location: {
+    //   city: 'Portland',
+    //   region: 'Oregon',
+    //   countryCode: 'US'
+    // }
+  },
+  {x: 137, y: 113,
     location: {
-      city: 'Portland',
+      city: 'Salem',
       region: 'Oregon',
       countryCode: 'US'
-    }
-  },
-  {x: 132, y: 110}, // Salem, OR, US
-  {x: 132, y: 110}, // Otis, OR, US
-  {x: 116, y: 115}, // Newport, OR, US
+    },
+    post: Posts.Salem.url
+  }, // Salem, OR, US
+  {x: 133, y: 114}, // Otis, OR, US
+  {x: 116, y: 118}, // Newport, OR, US
   {x: 112, y: 124}, // Waldport, OR, US
   {x: 106, y: 134}, // Winchester Bay, OR, US
   {x: 102, y: 139}, // Bandon, OR, US
