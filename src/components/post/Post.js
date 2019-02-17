@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import ImageGallery from 'react-image-gallery';
 
 import './post.scss';
@@ -58,6 +59,8 @@ class Post extends Component {
     if (this.props.post !== prevProps.post) {
       this.loadDisqus();
 
+      window.scrollTo(0, 0)
+
       this.prepGallery();
     }
   }
@@ -110,13 +113,16 @@ class Post extends Component {
   }
 
   render() {
-    const { post } = this.props;
+    const { post: postUrl } = this.props;
+    const post = Posts[postUrl];
     const { showGallery, galleryImageIndex } = this.state;
 
-    const postDate = Posts[post].date ? Posts[post].date.toLocaleDateString('en-US', dateOptions) : '';
-    const postLink = Posts[post].link;
-    const postTitle = Posts[post].title;
-    const postContent = Posts[post].content;
+    const previousPost = post.previousPostUrl ? Posts[post.previousPostUrl] : null;
+    const nextPost = post.nextPostUrl ? Posts[post.nextPostUrl] : null;
+    const postDate = post.date ? post.date.toLocaleDateString('en-US', dateOptions) : '';
+    const postLink = post.link;
+    const postTitle = post.title;
+    const postContent = post.content;
 
     return (
       <React.Fragment>
@@ -142,6 +148,28 @@ class Post extends Component {
             </div>
             {postContent.map((item, index) => <PostItem onImageClick={this.imageClicked} key={`${postLink}_${index}`} item={item} />)}
           </div>
+          {(previousPost || nextPost) && (
+            <div className="post-next-and-prev-container">
+              {previousPost && (
+                <Link
+                  className={`post-previous post-next-and-prev nice-link`}
+                  to={previousPost.url}
+                  data-title={`← Previous Post: ${previousPost.title}`}
+                >
+                  &larr; Previous Post: {previousPost.title}
+                </Link>
+              )}
+              {nextPost && (
+                <Link
+                  className={`post-next post-next-and-prev nice-link`}
+                  to={nextPost.url}
+                  data-title={`→ Next Post: ${nextPost.title}`}
+                >
+                  &rarr; Next Post: {nextPost.title}
+                </Link>
+              )}
+            </div>
+          )}
           {/* <div className="commentbox" /> */}
           <div id="disqus_thread" />
         </div>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Router, Route, Switch } from 'react-router-dom';
+import { Router, Switch } from 'react-router-dom';
 
 import { createBrowserHistory } from 'history';
 
@@ -9,27 +9,32 @@ import Home from './components/home';
 import Mailing from './components/mailing';
 import Post from './components/post';
 import Posts from './components/posts';
+import ScrollToTopRoute from './components/scroll-to-top-route';
 
 import PostData from './posts';
 
 class AppRouter extends Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL} history={createBrowserHistory()}>
+      <Router
+        basename={process.env.PUBLIC_URL}
+        history={createBrowserHistory()}
+        onUpdate={() => window.scrollTo(0, 0)}
+      >
         <Switch>
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/mailing" component={Mailing} />
-          <Route path="/posts" component={Posts} />
-          <Route path="/blog" component={Posts} />
+          <ScrollToTopRoute path="/about" component={About} />
+          <ScrollToTopRoute path="/contact" component={Contact} />
+          <ScrollToTopRoute path="/mailing" component={Mailing} />
+          <ScrollToTopRoute path="/posts" component={Posts} />
+          <ScrollToTopRoute path="/blog" component={Posts} />
           {Object.keys(PostData).map(key => (
-            <Route
+            <ScrollToTopRoute
               path={`/${key}`}
               key={key}
               render={(props) => <Post {...props} post={key} />}
             />
           ))}
-          <Route path="/" component={Home} />
+          <ScrollToTopRoute path="/" component={Home} />
         </Switch>
       </Router>
     );

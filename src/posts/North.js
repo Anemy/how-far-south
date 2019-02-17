@@ -1,4 +1,5 @@
 import { CONTENT_TYPES, CATEGORIES } from './constants';
+import Salem from './SalemSoiree';
 
 // https://imgur.com/a/AMIC5ma
 
@@ -8,6 +9,7 @@ export default {
   date: new Date(2019, 1 /* 0 is January. */, 4),
   description: '"This is the first time it\'s snowed this year"', // N̶o̶r̶t̶h̶ S̶o̶u̶t̶h̶
   categories: [CATEGORIES.NORTH_AMERICA],
+  nextPostUrl: Salem.url,
   content: [
     // 'Seattle -> Edmunds -> Ferry -> Kingston -> The Detour/Snow -> Yurt -> Dosewallips State Park',
     'In the first days of our bike trip, guided by the sole precept of biking as far South in the Americas as possible, we have ended up 10 miles North. We aren’t quite sure how this happened, whether Rhys was holding his phone upside down or we misread the migrations of the birds. Regardless, we are further North and covered in snow.',

@@ -6,6 +6,7 @@ export default {
   date: new Date(2019, 1 /* 0 is January. */, 11 /* 0 is the first of the month. */),
   description: 'Biking into a party in Salem, Oregon',
   categories: [CATEGORIES.NORTH_AMERICA],
+  previousPostUrl: 'North',
   content: [
     // https://imgur.com/a/uqmI7Oy
     'While it\'s wonderful witnessing volcano vistas and mooing at cows, we need something bigger to push us up those hills. Biking to Argentina is a good long term goal - but it\'s easy to get lost in the instant gratification of nutter butters dipped in peanut butter. Luckily we have our carrot on a stick, a lovers soiree valentines party in Salem, OR hosted by the illustrious L.',
