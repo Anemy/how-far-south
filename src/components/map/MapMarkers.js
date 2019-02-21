@@ -39,12 +39,12 @@ export default [
   {x: 116, y: 118}, // Newport, OR, US
   {x: 112, y: 124}, // Waldport, OR, US
   {x: 106, y: 134}, // Winchester Bay, OR, US
-  {x: 102, y: 139}, // Bandon, OR, US
-  {x: 97, y: 149, inprogress: true},
-  {x: 97, y: 159},
-  {x: 96, y: 168},
-  {x: 92, y: 174},
-  {x: 89, y: 176},
+  {x: 104, y: 139}, // Bandon, OR, US
+  {x: 103, y: 142}, // Humbug Mountain, OR, US
+  {x: 100, y: 149}, // Brookings, OR, US
+  {x: 98, y: 155}, // Elk Prairee Campground, CA, US
+  {x: 93, y: 165}, // Eureka, CA, OR
+  {x: 89, y: 170, inprogress: true},
   {x: 88, y: 179},
   {x: 86, y: 187},
   {x: 86, y: 202},
