@@ -11,7 +11,7 @@ const STAY_KINDS = {
   FRIENDS_FAMILY: 'FRIENDS_FAMILY'
 }
 
-export default {
+const Daily = {
   url: 'daily',
   title: 'The Daily',
   date: new Date(2019, 0 /* 0 is January. */, 30 /* 0 is the first of the month. */),
@@ -158,8 +158,23 @@ export default {
     },
     '54 miles - Misty/Rainy morning. Took nice photos next to the elk prairee. More gorgeous red woods. Opening up into huge California coast vistas. Now in more California feeling places with redwoods surrounding this warm showers.'
   ]
+};
+
+let totalMilesBiked = 0;
+let totalBikeDays = 0;
+
+for (let i = 0; i < Daily.content.length; i++) {
+  const item = Daily.content[i];
+
+  if (item.miles && item.miles > 0) {
+    totalBikeDays++;
+    totalMilesBiked += item.miles;
+  }
 }
 
+console.log('Total miles biked:', totalMilesBiked);
+console.log('Total days biked (not including rest):', totalBikeDays);
+console.log('Average miles biked/day:', (totalMilesBiked / totalBikeDays))
 
 /**
 
@@ -201,3 +216,5 @@ Facecams - like caleb on youtube - try it.
 The midwestern american dream - is it a recurring theme
 
 **/
+
+export default Daily;

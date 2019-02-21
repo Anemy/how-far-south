@@ -39,10 +39,10 @@ export default [
   {x: 116, y: 118}, // Newport, OR, US
   {x: 112, y: 124}, // Waldport, OR, US
   {x: 106, y: 134}, // Winchester Bay, OR, US
-  {x: 104, y: 139}, // Bandon, OR, US
-  {x: 103, y: 142}, // Humbug Mountain, OR, US
+  {x: 101, y: 139}, // Bandon, OR, US
+  {x: 102, y: 142}, // Humbug Mountain, OR, US
   {x: 100, y: 149}, // Brookings, OR, US
-  {x: 98, y: 155}, // Elk Prairee Campground, CA, US
+  {x: 96, y: 155}, // Elk Prairee Campground, CA, US
   {x: 93, y: 165}, // Eureka, CA, OR
   {x: 89, y: 170, inprogress: true},
   {x: 88, y: 179},
@@ -221,11 +221,9 @@ export default [
   {x: 772, y: 1549},
   {x: 784, y: 1549},
   {x: 784, y: 1555},
-  {x: 797, y: 1563},
-  {x: 797, y: 1572},
   {
-    x: 797,
-    y: 1577,
+    x: 800,
+    y: 1570,
     location: {
       city: 'Ushuaia',
       region: 'Tierra del Fuego',
