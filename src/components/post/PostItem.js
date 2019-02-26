@@ -84,7 +84,7 @@ class PostItem extends Component {
       return feature.properties.ISO_A2 === this.props.item.countryCode
     });
 
-    console.log('boundaries: ', boundaryMinX, boundaryMinY);
+    // console.log('boundaries: ', boundaryMinX, boundaryMinY);
 
     // const path = d3.geoPath();
     // const maxSizeToCover = Math.max(Math.abs(boundaryMinX - boundaryMaxX), Math.abs(boundaryMinY - boundaryMaxY));
@@ -143,7 +143,7 @@ class PostItem extends Component {
   render() {
     const { onImageClick, item } = this.props;
 
-    console.log('item', item);
+    // console.log('item', item);
 
     if (!item.type) {
       return (
