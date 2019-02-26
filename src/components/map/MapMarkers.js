@@ -44,9 +44,9 @@ export default [
   {x: 100, y: 149}, // Brookings, OR, US
   {x: 96, y: 155}, // Elk Prairee Campground, CA, US
   {x: 93, y: 165}, // Eureka, CA, OR
-  {x: 89, y: 170, inprogress: true},
+  {x: 89, y: 170}, // 
   {x: 88, y: 179},
-  {x: 86, y: 187},
+  {x: 86, y: 187, inprogress: true},
   {x: 86, y: 202},
   {x: 89, y: 208},
   {x: 96, y: 210},

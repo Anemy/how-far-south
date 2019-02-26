@@ -129,34 +129,65 @@ const Daily = {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 16 - Bandon, OR -> Humbug Mountain, OR',
       stay: STAY_KINDS.LEGAL_CAMPING,
-      restDay: true,
       miles: 37
     },
     '37 miles - Helped Brian at the docks with his ship the Fun Sway, and the Bloody Mary walk where we handed out crab legs. Then biked down beautiful coast to Humbug mountain state park campground. Cool tunnel to campsite under road. Got a shower at the hike bike.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 16 - Humbug Mountain, OR -> Crissey Field State Recreation Site, OR',
+      text: 'Day 17 - Humbug Mountain, OR -> Crissey Field State Recreation Site, OR',
       stay: STAY_KINDS.STEALTH_CAMPING,
-      restDay: true,
       miles: 57
     },
     '57 miles - Beautiful Oregon coast line. Lots of nice 101. Stealth camped in a grove next to a stream/river. Beautiful driftwood and full moon.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 16 - Crissey Field State Recreation Site, OR -> Elk Prairie Campground, CA',
+      text: 'Day 18 - Crissey Field State Recreation Site, OR -> Elk Prairie Campground, CA',
       stay: STAY_KINDS.LEGAL_CAMPING,
-      restDay: true,
       miles: 55
     },
-    '55 miles - Into California! At the start of the day. Some nice country roads to start the day. New vegitation. Soon into the Redwoods. Beautiful. A bit of a wild 101 section to start, but then 10 miles of closed beautiful road through the elk prairee park. Got a shower at the hike bike.',
+    '55 miles - Into California! At the start of the day. Some nice country roads to start the day. New vegitation. Soon into the Redwoods. Beautiful. A bit of a wild 101 section to start, but then 10? miles of CLOSED beautiful road through the elk prairee park. Got a shower at the hike bike.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 16 - Elk Prairie Campground, CA -> Eureka, CA',
+      text: 'Day 19 - Elk Prairie Campground, CA -> Eureka, CA',
       stay: STAY_KINDS.WARM_SHOWERS,
-      restDay: true,
       miles: 54
     },
-    '54 miles - Misty/Rainy morning. Took nice photos next to the elk prairee. More gorgeous red woods. Opening up into huge California coast vistas. Now in more California feeling places with redwoods surrounding this warm showers.'
+    '54 miles - Misty/Rainy morning. Took nice photos next to the elk prairee. More gorgeous redwoods. Opening up into huge California coast vistas. Now in more California feeling places with redwoods surrounding this warm showers - at Dick & Cathy\'s.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 20 - Eureka, CA -> Fish Creek, CA',
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 68
+    },
+    '68 miles - Great oatmeal breakfast at Dick\'s in the morning. He dried the fruit for the oatmeal himself from his farm. Biked through Eureka on the water, and then down into the Avenue of the Giants. Really beautiful, not many cars, rode side by side and chatted. Chatted about if money matters and what bigger life goals are. Bathed naked in a cold stream. Camped under huge redwoods at Fish Creek, near Miranda, CA.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 21 - Fish Creek, CA -> Westport, CA',
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 64
+    },
+    '64 miles - More awesome Redwoods on the Avenue of the Giants. Nice big pass after Leggett once we were on the 1, leading down to the coast and beautiful California coastline. Had a nice dinner with fantastic fish and chips in an inn in town. Stealth camped in an RV park lol - super hot coin operated showers.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 22 - Westport, CA -> Boonville, CA',
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 66
+    },
+    '66 miles - On the California coast for the morning. Nice blue waters on the coast and the streams, bays, and rivers. Spent a while thinking about Highway 1 vs 128 at a junction where we saw a nice seal. We decided we would go the way the next RV did not go. Still talked about it and went the way the RV went. Ended up in nice Redwoods, these ones were logged at some point which was an interesting contrast to the old growth in Elk Creek. Eventually ended up in Bouegie wine country. Saw Rhys vineyard. Had nice bread and cheese and tomato and lettuce dinner with a lot of crumbs. Stealth camped in a bend in the road that was nested under a big tree with a creek next to it and a deer track leading into it.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 23 - Boonville, CA -> Sonoma, CA',
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 88
+    },
+    '88 miles - Nice climb to start the morning. Into the mist in wine country. Then a big descent into more wine country, followed by more wine country. Got nice lunch at a taco truck and brushed up on some Spanish. Adam picked an orange from a tree that was super delicious. Ending the day was busy roads and a bit tough. But we made it to Jim & Anne\'s in Sonoma where they had a bunch of neighbors over for a delicious chili dinner. It was a blast and we might have found a cool place to stay/visit in Mexico.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 24 - Sonoma, CA -> San Francisco',
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 36
+    },
+    '36 miles - Biked out of Sonoma, over some nice countryish feeling vineyards. donum. Sped through Napa - busy roads and cars and then took the Vallejo ferry to SF and SF ferry to Oakland. Now at Adam\'s parents house - Dave & Claudia. Awesome dinner and great chats with a view. Excited to spend a bit of time here.'
   ]
 };
 
@@ -193,9 +224,20 @@ Miles
 12 - 63 
 13 - 48 
 14 - 0 
-Total: 540
-Biking Days: 12
-Average miles per bike day - 45
+15 - 0 
+16 - 37 
+17 - 57 
+18 - 55 
+19 - 54 
+20 - 68 
+21 - 64 
+22 - 66 
+23 - 88 
+24 - 36 
+
+Total: 1065
+Biking Days: 21
+Average miles per bike day - 50
 
 Metrics to track:
 Days on the road
