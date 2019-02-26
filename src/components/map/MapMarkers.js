@@ -42,14 +42,12 @@ export default [
   {x: 101, y: 139}, // Bandon, OR, US
   {x: 102, y: 142}, // Humbug Mountain, OR, US
   {x: 100, y: 149}, // Brookings, OR, US
-  {x: 96, y: 155}, // Elk Prairee Campground, CA, US
-  {x: 93, y: 165}, // Eureka, CA, OR
-  {x: 89, y: 170}, // 
-  {x: 88, y: 179},
-  {x: 86, y: 187, inprogress: true},
-  {x: 86, y: 202},
-  {x: 89, y: 208},
-  {x: 96, y: 210},
+  {x: 96, y: 156}, // Elk Prairee Campground, CA, US
+  {x: 93, y: 167}, // Eureka, CA, US
+  {x: 89, y: 173}, // Fish Creek, CA
+  {x: 86, y: 180}, // Westport, CA
+  {x: 91, y: 189}, // Boonville, CA
+  {x: 96, y: 202}, // Sonoma, CA
   {
     x: 90,
     y: 214,
@@ -59,7 +57,7 @@ export default [
       countryCode: 'US'
     }
   },
-  {x: 95, y: 218},
+  {x: 95, y: 218, inprogress: true},
   {x: 91, y: 225},
   {x: 97, y: 230},
   {x: 92, y: 236},
