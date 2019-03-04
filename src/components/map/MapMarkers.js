@@ -58,8 +58,7 @@ export default [
       countryCode: 'US'
     }
   },
-  {x: 95, y: 218, inprogress: true},
-  {x: 91, y: 225},
+  {x: 91, y: 225, inprogress: true},
   {x: 97, y: 230},
   {x: 92, y: 236},
   {x: 95, y: 247},
