@@ -5,21 +5,22 @@ import North from './North';
 import SalemSoiree from './SalemSoiree';
 import Resources from './Resources';
 import Route from './Route';
+import Redwoods from './Redwoods';
 
 // console.log('North', North);
 
 const posts = {
   // [Beginnings.url]: Beginnings,
   // [Gear.url]: Gear,
-  [North.url]: North,
+  [Redwoods.url]: Redwoods,
   [SalemSoiree.url]: SalemSoiree,
+  [North.url]: North,
   [Resources.url]: Resources,
-  // [Route.url]: Route,
   // [Daily.url]: Daily
 };
 
 posts.keys = Object.keys(posts);
-posts.mostRecent = SalemSoiree.url;
+posts.mostRecent = Redwoods.url;
 
 export default posts;
-export { Beginnings, SalemSoiree, Resources, North, Gear, Route, Daily };
+export { Beginnings, SalemSoiree, Resources, North, Redwoods, Gear, Route, Daily };

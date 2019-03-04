@@ -6,7 +6,7 @@ import Salem from './SalemSoiree';
 export default {
   url: 'North',
   title: 'How Far North?',
-  date: new Date(2019, 1 /* 0 is January. */, 4),
+  date: new Date(2019, 1 /* 0 is January. */, 5),
   description: '"This is the first time it\'s snowed this year"', // N̶o̶r̶t̶h̶ S̶o̶u̶t̶h̶
   categories: [CATEGORIES.NORTH_AMERICA],
   nextPostUrl: Salem.url,
@@ -58,7 +58,7 @@ export default {
         type: CONTENT_TYPES.HTML,
         // width="560" height="315"
         // width="352" height="198"
-        html: '<iframe width="215" height="143" style="margin-right: 5px;" src="https://www.youtube.com/embed/4b0mZhSPaBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        html: '<iframe width="215" height="143" style="margin-right: 5px;" title="ferry video" src="https://www.youtube.com/embed/4b0mZhSPaBU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         // type: CONTENT_TYPES.IMAGE,
         // alt: 'video of getting on the ferry',
         // url: 'ferry.mp4',
@@ -92,7 +92,7 @@ export default {
         type: CONTENT_TYPES.HTML,
         // width="560" height="315"
         // width="280"
-        html: '<iframe width="215" height="143" style="margin-right: 5px;" src="https://www.youtube.com/embed/G7syWMgZCbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+        html: '<iframe width="215" height="143" style="margin-right: 5px;" title="video of biking in the snow" src="https://www.youtube.com/embed/G7syWMgZCbY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'yurt at night',

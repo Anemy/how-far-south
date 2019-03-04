@@ -7,6 +7,7 @@ export default {
   description: 'Biking into a party in Salem, Oregon',
   categories: [CATEGORIES.NORTH_AMERICA],
   previousPostUrl: 'North',
+  nextPostUrl: 'Redwoods',
   content: [
     // https://imgur.com/a/uqmI7Oy
     'While it\'s wonderful witnessing volcano vistas and mooing at cows, we need something bigger to push us up those hills. Biking to Argentina is a good long term goal - but it\'s easy to get lost in the instant gratification of nutter butters dipped in peanut butter. Luckily we have our carrot on a stick, a lovers soiree valentines party in Salem, OR hosted by the illustrious L.',
@@ -61,14 +62,7 @@ export default {
       items: [
         {
           type: CONTENT_TYPES.HTML,
-          // width="560" height="315"
-          // width="352" height="198"
-          html: '<iframe width="215" height="143" style="margin-right: 5px;" src="https://www.youtube.com/embed/G_7rPbJCC9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
-          // type: CONTENT_TYPES.IMAGE,
-          // alt: 'video of getting on the ferry',
-          // url: 'ferry.mp4',
-          // grid: 'col-sm-4', // This is out of 12 how much space it takes up.
-          // // description: 'A unkown bike we took off of unsplash'
+          html: '<iframe width="215" height="143" style="margin-right: 5px;" title="video of dog playing" src="https://www.youtube.com/embed/G_7rPbJCC9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
         }
         /*{
         type: CONTENT_TYPES.IMAGE,

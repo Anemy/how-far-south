@@ -187,7 +187,31 @@ const Daily = {
       stay: STAY_KINDS.FRIENDS_FAMILY,
       miles: 36
     },
-    '36 miles - Biked out of Sonoma, over some nice countryish feeling vineyards. donum. Sped through Napa - busy roads and cars and then took the Vallejo ferry to SF and SF ferry to Oakland. Now at Adam\'s parents house - Dave & Claudia. Awesome dinner and great chats with a view. Excited to spend a bit of time here.'
+    '36 miles - Biked out of Sonoma, over some nice countryish feeling vineyards. donum. Sped through Napa - busy roads and cars and then took the Vallejo ferry to SF and SF ferry to Oakland. Now at Adam\'s parents house - Dave & Claudia. Awesome dinner and great chats with a view. Excited to spend a bit of time here.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 25 - San Francisco',
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 26 - San Francisco',
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 24 - San Francisco', // Feb 28
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF.'
   ]
 };
 

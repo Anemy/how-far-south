@@ -20,6 +20,12 @@ const plain_blog_links = [
   'http://www.bikewanderer.com/'
 ];
 
+/*
+To add:
+https://www.rivardrides.com
+http://onlyamazingdays.com/
+*/
+
 function prettyLinkForPrint(link) {
   let prettyLink = link;
 

@@ -51,6 +51,7 @@ export default [
   {
     x: 90,
     y: 214,
+    post: Posts.Redwoods.url,
     location: {
       city: 'San Francisco',
       region: 'California',

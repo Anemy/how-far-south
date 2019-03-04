@@ -25,12 +25,13 @@
   "scripts": {
     "build-topojson": "node ./src/scripts/build-topojson && cp src/scripts/map-data.topo.json src/data/map-data.topo.json && cp src/scripts/map-data.topo.json public/map-data.topo.json",
     "start": "npm run build-topojson && react-scripts start",
-    "build": "react-scripts build",
+    "react-build": "react-scripts build",
+    "build": "npm run heroku-github-setup && npm run deploy",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run react-build",
     "deploy": "gh-pages -d build",
     "heroku-github-setup": "git init && git config --global user.email rhysh@live.com && git config --global user.name heroku_bot && git remote add origin git@github.com:Anemy/how-far-south.git",
-    "heroku": "npm run heroku-github-setup && npm run deploy"
+    "heroku": "npm run build"
   },
   "browserslist": [
     ">0.2%",

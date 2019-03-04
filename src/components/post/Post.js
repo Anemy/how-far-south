@@ -163,9 +163,9 @@ class Post extends Component {
                 <Link
                   className={`post-next post-next-and-prev nice-link`}
                   to={nextPost.url}
-                  data-title={`→ Next Post: ${nextPost.title}`}
+                  data-title={`Next Post: ${nextPost.title} →`}
                 >
-                  &rarr; Next Post: {nextPost.title}
+                  Next Post: {nextPost.title} &rarr;
                 </Link>
               )}
             </div>
