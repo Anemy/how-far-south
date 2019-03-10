@@ -190,7 +190,7 @@ const Daily = {
     '36 miles - Biked out of Sonoma, over some nice countryish feeling vineyards. donum. Sped through Napa - busy roads and cars and then took the Vallejo ferry to SF and SF ferry to Oakland. Now at Adam\'s parents house - Dave & Claudia. Awesome dinner and great chats with a view. Excited to spend a bit of time here.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 25 - San Francisco',
+      text: 'Day 25 - San Francisco, CA', // Feb 25
       stay: STAY_KINDS.FRIENDS_FAMILY,
       miles: 0,
       restDay: true
@@ -198,7 +198,7 @@ const Daily = {
     '0 miles - Rest day in SF.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 26 - San Francisco',
+      text: 'Day 26 - San Francisco, CA', // Feb 26
       stay: STAY_KINDS.FRIENDS_FAMILY,
       miles: 0,
       restDay: true
@@ -206,12 +206,90 @@ const Daily = {
     '0 miles - Rest day in SF.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 24 - San Francisco', // Feb 28
+      text: 'Day 27 - San Francisco, CA', // Feb 27
       stay: STAY_KINDS.FRIENDS_FAMILY,
       miles: 0,
       restDay: true
     },
-    '0 miles - Rest day in SF.'
+    '0 miles - Rest day in SF.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 28 - San Francisco, CA', // Feb 28
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 29 - San Francisco, CA', // March 1
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 30 - San Francisco, CA', // March 2
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 31 - San Francisco, CA', // March 3
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 32 - San Francisco, CA', // March 4
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in SF. Things that happened in SF: Dinner w/ Ze\'ev & Maddie. Dinner w/ Jacob & Holden. Dinner w/ Zach & Alex & his two minerva friends Tyler & Lucian. dinner w/ Becky?. Ate a big edible. Lunch w/ Ankit, Usmann, & Kedar. Worked on Wearwiki a bit with Ben and Jason. Poker at Evan\'s.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 33 - San Francisco, CA -> Santa Cruz, CA', // March 5
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 68,
+      restDay: true
+    },
+    '????? miles - Kind of uneventful biking, have driven a similair route. Some redwoods, and nice misty fog. Mud enxt to the lake was fun to bike through. Rained a bunch in the morning, took the subway to Millbrae to start the day. Nice dinner at Amy & David\'s w/ their dog Toby. First time having a big artichoke.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 34 - Santa Cruz, CA -> Monterey, CA', // March 6
+      stay: STAY_KINDS.LODGE,
+      miles: 50,
+      restDay: true
+    },
+    '????? miles - Rainy morning with winds from the South west. Biking past strawberry, artichoke, brusselsprout, & carrot fields on farm roads. Later really nice biking next to the water on a trail into Monterey. Bought a drone. Saw a nice rainbow. RV lodged in sand. The trail ended where Bike & Build hit the water - brought up some memories. Had a nice dinner by a guy from Lebanon. Stayed in a hotel when it was getting dark and rainy - the hostel was more expensive?!',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 35 - Monterey -> Esalon Retreat, Big Sur', // March 7
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 45,
+    },
+    '50 miles - Beautiful Big Sur. Large cliffs. Saw a bunch of people taking pics at some iconic bridge, in a way it felt like we earned the view. Met Oscar Lee who said come to his place for a steak dinner in LA. That evening Chris said to come to Esalon Retreat in the morning. Smoked a nice j and watched the sunset with a dinner of mac n cheese. Talked what makes waves occur & why they are perpendicular to the shore.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 36 - Rest day in Esalen Institute', // March 8
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in Esalen Institute/Retreat. Chris put us on the guest list. Morning met with a big rainbow, it was windy and some rain in the night. $25 - breakfast, lunch, & dinner. Hot springs on the Big Sur cliffs, clothing optional. NICE - although I feel like I have to be busy.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 36 - Esalon Retreat, Big Sur, CA -> San Simeon, CA', // March 8
+      stay: STAY_KINDS.LODGE,
+      miles: 49
+    },
+    '49 miles - Woke up at same camp site as last night - nice home. Last of Big Sur, huge scenic views with a nice big climb. We met other tourers! David was riding from Monterey to Ventura, Chen was driving and day tripping, and the others were doing most of California. Big rain in the afternoon, saw the storm roll in over the elephant seals. Stayed at days in because cold in haily rain lol.'
   ]
 };
 

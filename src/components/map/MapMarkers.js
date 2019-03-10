@@ -58,18 +58,23 @@ export default [
       countryCode: 'US'
     }
   },
-  {x: 91, y: 225, inprogress: true},
-  {x: 97, y: 230},
-  {x: 92, y: 236},
-  {x: 95, y: 247},
-  {x: 98, y: 253},
-  {x: 98, y: 262},
+  {x: 91, y: 225}, // Santa Cruz, CA
+  {x: 93, y: 228}, // Monterey, CA
+  {x: 90, y: 230}, // Monterey, CA
+  {x: 91, y: 236}, // Esalen Institute, Big Sur, CA
+  {x: 96, y: 247}, // San Simeon, CA
+  // {x: 98, y: 253},
+  {x: 98, y: 261, inprogress: true},
   {x: 110, y: 264},
   {x: 115, y: 269},
   {x: 122, y: 272},
   {x: 127, y: 277},
   {x: 128, y: 282},
-  {x: 128, y: 286},
+  {x: 128, y: 286, location: {
+    city: 'San Diego',
+    region: 'California',
+    countryCode: 'US'
+  }},
   {x: 128, y: 289},
   {x: 128, y: 297},
   {x: 132, y: 307},

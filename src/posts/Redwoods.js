@@ -8,7 +8,22 @@ export default {
   categories: [CATEGORIES.NORTH_AMERICA],
   previousPostUrl: 'Salem',
   content: [
-    'Hands frozen and covered in crab guts - we had to question the life decisions that led to this moment. It started with a morning break up with Salem, stomach queasy and heads throbbing, we ate a quick burrito at Tony’s Taco Shop and started pedalling for the coast. By the night we made it 10 miles from the coast and stealth camped for the first time, nervously whispering with the pitter patter of the rain. The next day was slated to be the start of a new storm; a 7 day rain deluge in theme with our trip.',
+    {
+      type: CONTENT_TYPES.TEXT,
+      inline: true,
+      text: 'Hands frozen and covered in crab guts - we had to question the life decisions that led to this moment. It started with a morning ',
+    },
+    {
+      type: CONTENT_TYPES.INTERNAL_LINK,
+      inline: true,
+      text: 'break-up with Salem',
+      url: '/Salem'
+    },
+    {
+      type: CONTENT_TYPES.TEXT,
+      inline: true,
+      text: ', stomach queasy and heads throbbing, we ate a quick burrito at Tony’s Taco Shop and started pedalling for the coast. By the night we made it 10 miles from the coast and stealth camped for the first time, nervously whispering with the pitter patter of the rain. The next day was slated to be the start of a new storm; a 7 day rain deluge in theme with our trip.',
+    },
     {
       type: CONTENT_TYPES.GRID,
       items: [{
@@ -83,7 +98,7 @@ export default {
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }]
     },
-    'The entire weekend ended up being an odd experience. We were woken at the break of dawn to be shuttled to the Port Orford to eviscerate a couple hundreds of crabs, breaking them in half and removing their lungs and guts to be sold at the Gorse Blossom festival. The Gorse festival is an absurd event celebrating an invasive plant that is essentially one giant thorn and whose oily spines led to the town burning down in the early 1900s. Our next task was to man a table at the festival advocating for recreational access to a river we had never seen. If Adam’s urban planning degree had taught him anything it is to sound convincing while knowing nothing about the policy he’s advocating for. With a “Brian for port commissioner” button pinned to his shirt and coffee in hand, Adam schmoozed the Bandonians.',
+    'The entire weekend ended up being an odd experience. We were woken at the break of dawn to be shuttled to Port Orford to eviscerate a couple hundreds of crabs, breaking them in half and removing their lungs and guts to be sold at the Gorse Blossom festival. The Gorse festival is an absurd event celebrating an invasive plant that is essentially one giant thorn and whose oily spines led to the town burning down in the early 1900s. Our next task was to man a table at the festival advocating for recreational access to a river we had never seen. If Adam’s urban planning degree had taught him anything it is to sound convincing while knowing nothing about the policy he’s advocating for. With a “Brian for port commissioner” button pinned to his shirt and coffee in hand, Adam schmoozed the Bandonians.',
     {
       type: CONTENT_TYPES.GRID,
       items: [{
