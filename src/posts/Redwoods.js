@@ -116,7 +116,7 @@ export default {
       }]
     }, // https://youtu.be/qfnhELRsnOs
 
-    'After surviving our weekend of servitude we continued our journey down the Oregon Coast and Adam got to meet the preeminent sage Sarge. Amazingly we heard about Sarge days earlier from Brian and Mike while eviscerating crabs. They told us about a character who only travels by bike and was awed that music was coming out of Mike’s phone. Sarge is one of those people that almost lives in a different universe that you wish you could be privy to. We met him in Gold Beach after he had biked three days to go to the bank which was closed for Presidents Day. He spent the winter sailing to Finland from Oregon and when stateside lives in treehouses in the redwoods. He preaches kindness and in the words of Adam, has that magic twinkle in his eye reserved for those who have truly learned how to live. Bike touring throws you into the world of nomads. We wander day by day, place by place.',
+    'After surviving our weekend of servitude we continued our journey down the Oregon Coast and Adam got to meet the preeminent sage Sarge. Amazingly we heard about Sarge days earlier from Brian and Mike while eviscerating crabs. They told us about a character who only travels by bike and was awed that music was coming out of Mike’s phone. Sarge is one of those people that almost lives in a different universe. We met him in Gold Beach after he had biked three days to go to the bank which was closed for Presidents Day. He spent the winter sailing to Finland from Oregon and when stateside lives in treehouses in the redwoods. He preaches kindness and in the words of Adam, has that magic twinkle in his eye reserved for those who have truly learned how to live. Bike touring gives you a glimpse into the world of nomads; we wander day by day, place by place.',
 
     // https://imgur.com/4J762CM
     // https://imgur.com/DW8y9y9
@@ -132,19 +132,13 @@ export default {
         alt: 'ssss',
         url: 'https://imgur.com/lvaVOZ6.jpg',
         thumbnailUrl: 'https://imgur.com/lvaVOZ6t.jpg',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'sffffffff',
         url: 'https://imgur.com/6RSIajK.jpg',
         thumbnailUrl: 'https://imgur.com/6RSIajKt.jpg',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
-      }, {
-        type: CONTENT_TYPES.IMAGE,
-        alt: 'sffffffff',
-        url: 'https://imgur.com/gK6ygTQ.jpg',
-        thumbnailUrl: 'https://imgur.com/gK6ygTQt.jpg',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }]
     },
     {
