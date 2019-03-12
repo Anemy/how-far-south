@@ -285,11 +285,25 @@ const Daily = {
     '0 miles - Rest day in Esalen Institute/Retreat. Chris put us on the guest list. Morning met with a big rainbow, it was windy and some rain in the night. $25 - breakfast, lunch, & dinner. Hot springs on the Big Sur cliffs, clothing optional. NICE - although I feel like I have to be busy.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 36 - Esalon Retreat, Big Sur, CA -> San Simeon, CA', // March 8
+      text: 'Day 36 - Esalon Retreat, Big Sur, CA -> San Simeon, CA', // March 9
       stay: STAY_KINDS.LODGE,
       miles: 49
     },
-    '49 miles - Woke up at same camp site as last night - nice home. Last of Big Sur, huge scenic views with a nice big climb. We met other tourers! David was riding from Monterey to Ventura, Chen was driving and day tripping, and the others were doing most of California. Big rain in the afternoon, saw the storm roll in over the elephant seals. Stayed at days in because cold in haily rain lol.'
+    '49 miles - Woke up at same camp site as last night - nice home. Last of Big Sur, huge scenic views with a nice big climb. We met other tourers! David was riding from Monterey to Ventura, Chen was driving and day tripping, and the others were doing most of California. Big rain in the afternoon, saw the storm roll in over the elephant seals. Stayed at days inn because cold in haily rain lol.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 37 - San Simeon, CA -> Pismo Beach, CA', // March 10
+      stay: STAY_KINDS.LEGAL_CAMPING,
+      miles: 53
+    },
+    '53 miles - ',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 36 - Pismo Beach, CA -> Goleta, CA', // March 11
+      stay: STAY_KINDS.WARM_SHOWERS,
+      miles: 88
+    },
+    '88 miles - '
   ]
 };
 
