@@ -66,9 +66,9 @@ export default [
   // {x: 98, y: 253},
   {x: 98, y: 261}, // Pismo Beach, CA
   {x: 110, y: 264}, // Goleta, CA
-  {x: 115, y: 269, inprogress: true},
-  {x: 122, y: 272},
-  {x: 127, y: 277},
+  {x: 115, y: 269}, // Sycamore Canyon Campground, CA (Near Oxnard)
+  {x: 122, y: 272}, // West Holywood, Los Angeles, CA
+  {x: 127, y: 277, inprogress: true},
   {x: 128, y: 282},
   {x: 128, y: 286, location: {
     city: 'San Diego',

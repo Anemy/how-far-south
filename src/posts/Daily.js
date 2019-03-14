@@ -299,11 +299,33 @@ const Daily = {
     '53 miles - ',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 36 - Pismo Beach, CA -> Goleta, CA', // March 11
+      text: 'Day 38 - Pismo Beach, CA -> Goleta, CA', // March 11
       stay: STAY_KINDS.WARM_SHOWERS,
       miles: 88
     },
-    '88 miles - '
+    '88 miles - ',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 39 - Goleta, CA -> Syracuse Canyon Campground, CA', // March 11
+      stay: STAY_KINDS.LEGAL_CAMPING,
+      miles: 66
+    },
+    '66 miles - ',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 40 - Syracuse Canyon Campground, CA -> West Holywood, LA, CA', // March 11
+      stay: STAY_KINDS.LEGAL_CAMPING,
+      miles: 44
+    },
+    '44 miles - Staying at Christine and Joe\'s',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 41 - West Holywood, LA, CA', // March 11
+      stay: STAY_KINDS.LEGAL_CAMPING,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Rest day in LA'
   ]
 };
 
