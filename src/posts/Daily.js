@@ -299,33 +299,62 @@ const Daily = {
     '53 miles - ',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 38 - Pismo Beach, CA -> Goleta, CA', // March 11
+      text: 'Day 38 - Pismo Beach, CA -> Goleta, CA', // March 12
       stay: STAY_KINDS.WARM_SHOWERS,
       miles: 88
     },
     '88 miles - ',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 39 - Goleta, CA -> Syracuse Canyon Campground, CA', // March 11
+      text: 'Day 39 - Goleta, CA -> Syracuse Canyon Campground, CA', // March 13
       stay: STAY_KINDS.LEGAL_CAMPING,
       miles: 66
     },
     '66 miles - ',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 40 - Syracuse Canyon Campground, CA -> West Holywood, LA, CA', // March 11
-      stay: STAY_KINDS.LEGAL_CAMPING,
+      text: 'Day 40 - Syracuse Canyon Campground, CA -> West Hollywood, LA, CA', // March 14
+      stay: STAY_KINDS.FRIENDS_FAMILY,
       miles: 44
     },
     '44 miles - Staying at Christine and Joe\'s',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 41 - West Holywood, LA, CA', // March 11
-      stay: STAY_KINDS.LEGAL_CAMPING,
+      text: 'Day 41 - West Holywood, LA, CA', // March 15
+      stay: STAY_KINDS.FRIENDS_FAMILY,
       miles: 0,
       restDay: true
     },
-    '0 miles - Rest day in LA'
+    '0 miles - Rest day in LA',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 42 - West Hollywood, LA, CA -> Crystal Cove Campground, CA', // March 16
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 59
+    },
+    '0 miles - Slept on the beach when the sun set.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 43 - Crystal Cove Campground, CA -> Deer Park Monestary, CA', // March 16
+      stay: STAY_KINDS.STEALTH_CAMPING,
+      miles: 70
+    },
+    '70 miles - Rest day in LA',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 43 - Deer Park Monestary, CA -> San Diego, CA', // March 16
+      stay: STAY_KINDS.LEGAL_CAMPING,
+      miles: 32
+    },
+    '32 miles - I was feeling sick af - dehydration and I think the monk food was too wholesome for me. Stayed at Nick & Carl\'s',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 43 - San Diego, CA -> Tecate', // March 16
+      stay: STAY_KINDS.LODGE,
+      miles: 58
+    },
+    '58 miles - Big climb into Mountainy rocky deserty shrubby hills. 400 Pesos for a night. GREAT TACOS WOOO WE IN MEXICO'
+    
   ]
 };
 

@@ -68,19 +68,19 @@ export default [
   {x: 110, y: 264}, // Goleta, CA
   {x: 115, y: 269}, // Sycamore Canyon Campground, CA (Near Oxnard)
   {x: 122, y: 272}, // West Holywood, Los Angeles, CA
-  {x: 127, y: 277, inprogress: true},
-  {x: 128, y: 282},
-  {x: 128, y: 286, location: {
-    city: 'San Diego',
-    region: 'California',
-    countryCode: 'US'
+  {x: 127, y: 277}, // Crystal Cove, CA
+  {x: 128, y: 282}, // Deer Park Monestary, Escondido, CA
+  {x: 126, y: 286}, // San Diego, CA
+  {x: 131, y: 290, location: {
+    city: 'Tecate',
+    region: 'Baja California',
+    countryCode: 'MX'
   }},
-  {x: 128, y: 289},
-  {x: 128, y: 297},
-  {x: 132, y: 307},
-  {x: 132, y: 314},
-  {x: 132, y: 321},
-  {x: 134, y: 324},
+  {x: 134, y: 297, inprogress: true},
+  {x: 136, y: 307},
+  {x: 137, y: 314},
+  {x: 136, y: 321},
+  {x: 136, y: 324},
   {x: 137, y: 327},
   {x: 137, y: 333},
   {x: 142, y: 338},
