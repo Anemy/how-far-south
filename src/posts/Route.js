@@ -121,9 +121,9 @@ Argentina
 Probably wont hit it but avoid Mendoza (Ruta 40)
 
 Miles (Approx.):
-1400 - West Coast USA -> Seattle to San Diego
-1600 - Baja Divide, Mexico - 3000
-1400 - Guadalara Mexico -> Lago Atitlan - 4400
+1700 - West Coast USA -> Seattle to San Diego
+1000 - Baja California, Mexico - 2700 -> Tecate to La Paz
+1700 - Mazatlan Mexico -> Lago Atitlan - 4400
 800 - Lago Atitlan -> Nicaragua - 5200
 900 - Nicaragua -> Panama City - 6100
 900 - Medellín -> Quito - 7000

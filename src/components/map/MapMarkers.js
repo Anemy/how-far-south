@@ -63,10 +63,9 @@ export default [
   {x: 90, y: 230}, // Monterey, CA
   {x: 91, y: 236}, // Esalen Institute, Big Sur, CA
   {x: 96, y: 247}, // San Simeon, CA
-  // {x: 98, y: 253},
   {x: 98, y: 261}, // Pismo Beach, CA
   {x: 110, y: 264}, // Goleta, CA
-  {x: 115, y: 269}, // Sycamore Canyon Campground, CA (Near Oxnard)
+  {x: 117, y: 268}, // Sycamore Canyon Campground, CA (Near Oxnard)
   {x: 122, y: 272}, // West Holywood, Los Angeles, CA
   {x: 127, y: 277}, // Crystal Cove, CA
   {x: 128, y: 282}, // Deer Park Monestary, Escondido, CA
@@ -76,9 +75,9 @@ export default [
     region: 'Baja California',
     countryCode: 'MX'
   }},
-  {x: 134, y: 297, inprogress: true},
-  {x: 136, y: 307},
-  {x: 137, y: 314},
+  {x: 128, y: 297}, // Ensenada, Baja, MX
+  {x: 133, y: 307},
+  {x: 134, y: 314, inprogress: true},
   {x: 136, y: 321},
   {x: 136, y: 324},
   {x: 137, y: 327},

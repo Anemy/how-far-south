@@ -259,7 +259,7 @@ const Daily = {
       miles: 68,
       restDay: true
     },
-    '????? miles - Kind of uneventful biking, have driven a similair route. Some redwoods, and nice misty fog. Mud enxt to the lake was fun to bike through. Rained a bunch in the morning, took the subway to Millbrae to start the day. Nice dinner at Amy & David\'s w/ their dog Toby. First time having a big artichoke.',
+    '????? miles - Kind of uneventful biking, have driven a similair route. Some redwoods, and nice misty fog. Mud next to the lake was fun to bike through. Rained a bunch in the morning, took the subway to Millbrae to start the day. Nice dinner at Amy & David\'s w/ their dog Toby. First time having a big artichoke.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 34 - Santa Cruz, CA -> Monterey, CA', // March 6
@@ -335,31 +335,48 @@ const Daily = {
     '0 miles - Slept on the beach when the sun set.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 43 - Crystal Cove Campground, CA -> Deer Park Monestary, CA', // March 16
+      text: 'Day 43 - Crystal Cove Campground, CA -> Deer Park Monestary, CA', // March 17
       stay: STAY_KINDS.STEALTH_CAMPING,
       miles: 70
     },
     '70 miles - Rest day in LA',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 43 - Deer Park Monestary, CA -> San Diego, CA', // March 16
+      text: 'Day 43 - Deer Park Monestary, CA -> San Diego, CA', // March 18
       stay: STAY_KINDS.LEGAL_CAMPING,
       miles: 32
     },
     '32 miles - I was feeling sick af - dehydration and I think the monk food was too wholesome for me. Stayed at Nick & Carl\'s',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 43 - San Diego, CA -> Tecate', // March 16
+      text: 'Day 43 - San Diego, CA -> Tecate', // March 19
       stay: STAY_KINDS.LODGE,
       miles: 58
     },
-    '58 miles - Big climb into Mountainy rocky deserty shrubby hills. 400 Pesos for a night. GREAT TACOS WOOO WE IN MEXICO'
+    '58 miles - Out of San Diego, Adam got some bigger tires. San Diego seemed nice. Big climb into Mountainy rocky deserty shrubby hills. 400 Pesos for a night. GREAT TACOS WOOO WE IN MEXICO. Just went through a turnstile to get into Mexico. About $20 for the room for the night.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 43 - Tecate, Baja, Mexico', // March 20
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Stayed with mum at Rancho la Puerta for the evening! Thanks Herve?(sp) Got Mexican Visa. Beers in the town square/park while we had beers and listened to mariachi band.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 43 - Tecate, Baja, Mexico -> Ensenada, Baja, Mexico', // March 21
+      stay: STAY_KINDS.FRIENDS_FAMILY,
+      miles: 70,
+      restDay: true
+    },
+    '70 miles - Rocky green hills and occasional mountains rule the landscape. Ensalo biked with us a bit in the morning and invited us to stay with him next time we\'re in Tecate. Had great big coconuts. Fantastic lunch tacos where someone named Thomas walke dup to us and invited us to stay at his place in Ensenada. He hosts a bunch of warm showers - our friends Tyler and Reese have stayed here before!!! Had a nice local beer (not Tecate) and some tacos at a restraunte on the water. Thomas and Carmen have a nice house with a big courtyard and a dog named JT.'
     
   ]
 };
 
 let totalMilesBiked = 0;
 let totalBikeDays = 0;
+let totalDays = 0;
 
 for (let i = 0; i < Daily.content.length; i++) {
   const item = Daily.content[i];
@@ -367,11 +384,16 @@ for (let i = 0; i < Daily.content.length; i++) {
   if (item.miles && item.miles > 0) {
     totalBikeDays++;
     totalMilesBiked += item.miles;
-  }
+
+    totalDays++;
+  } else if (item.restDay) {
+    totalDays++;
+  }  
 }
 
 console.log('Total miles biked:', totalMilesBiked);
 console.log('Total days biked (not including rest):', totalBikeDays);
+console.log('Total days on the road:', totalDays);
 console.log('Average miles biked/day:', (totalMilesBiked / totalBikeDays))
 
 /**
