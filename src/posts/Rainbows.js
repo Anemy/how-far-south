@@ -87,8 +87,32 @@ export default {
       }]
     },
 
-    'Big Sur was phenomenal, and it wasn’t just the clothing optional hot springs. The cliffs jut out of turquoise water as you ride feet from 1000 foot drops. The Big Sur ‘towns’ listed on Google Maps were no more than a lone store. Google Maps also hinted at hot springs along Highway 1 but there ended up being no access except through the reservation only Esalen Institute. Previously unknown to us, the Esalen institute is a world famous new-age retreat center that hosted Gorbachev and helped thaw the Cold War (apparently it wasn’t bikes on ferries). We spent some time at the entrance pondering mischievous ways to get into the hot springs when a battered pick up truck filled with plants pulled up. The driver, Chris, has a soft spot for travellers and invited us to visit the next day.',
-    
+    {
+      type: CONTENT_TYPES.TEXT,
+      inline: true,
+      text: 'Big Sur was phenomenal, and it wasn’t just the clothing optional hot springs. The cliffs jut out of turquoise water as you ride feet from 1000 foot drops. The Big Sur ‘towns’ listed on Google Maps were no more than a lone store. Google Maps also hinted at hot springs along Highway 1 but there ended up being no access except through the reservation only Esalen Institute. Previously unknown to us, the Esalen institute is a world famous new-age retreat center that hosted ',
+    },
+
+    {
+      type: CONTENT_TYPES.EXTERNAL_LINK,
+      text: 'Gorbachev and helped thaw the Cold War ',
+      url: 'https://www.atlasobscura.com/articles/how-a-famed-new-age-retreat-center-helped-end-the-cold-war',
+      inline: true,
+      target: '_blank'
+    },
+
+    {
+      type: CONTENT_TYPES.INTERNAL_LINK,
+      inline: true,
+      text: '(apparently it wasn’t bikes on ferries)',
+      url: '/North'
+    },
+    {
+      type: CONTENT_TYPES.TEXT,
+      inline: true,
+      text: '. We spent some time at the entrance pondering mischievous ways to get into the hot springs when a battered pick up truck filled with plants pulled up. The driver, Chris, has a soft spot for travellers and invited us to visit the next day.',
+    },
+
     {
       type: CONTENT_TYPES.IMAGE,
       alt: 'Big Sur camp',

@@ -160,7 +160,7 @@ class PostItem extends Component {
     } else if (item.type === CONTENT_TYPES.EXTERNAL_LINK) {
       return (
         <a
-          className="post-link nice-link"
+          className={`post-link nice-link ${item.inline ? 'post-inline' : ''}`}
           href={item.url}
           data-title={item.text}
           rel="noopener noreferrer"
