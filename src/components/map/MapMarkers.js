@@ -70,11 +70,16 @@ export default [
   {x: 127, y: 277}, // Crystal Cove, CA
   {x: 128, y: 282}, // Deer Park Monestary, Escondido, CA
   {x: 126, y: 286}, // San Diego, CA
-  {x: 131, y: 290, location: {
-    city: 'Tecate',
-    region: 'Baja California',
-    countryCode: 'MX'
-  }},
+  {
+    x: 131,
+    y: 290,
+    post: Posts.Rainbows.url,
+    location: {
+      city: 'Tecate',
+      region: 'Baja California',
+      countryCode: 'MX'
+    }
+  },
   {x: 128, y: 297}, // Ensenada, Baja, MX
   {x: 133, y: 307},
   {x: 134, y: 314, inprogress: true},

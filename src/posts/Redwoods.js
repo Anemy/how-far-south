@@ -7,6 +7,7 @@ export default {
   description: 'We biked past the road closed sign',
   categories: [CATEGORIES.NORTH_AMERICA],
   previousPostUrl: 'Salem',
+  nextPostUrl: 'Rainbows',
   content: [
     {
       type: CONTENT_TYPES.TEXT,
