@@ -217,7 +217,20 @@ export default {
       }*/]
     },
     
-    'Our final day in USA was uneventful and crossing the border into Tecate was too easy except for almost being trapped in limbo getting our bikes stuck in the USA -> Mexico turnstile. Crossing was so easy in fact that we didn’t get the stamp and visa we were supposed to get and had to return the next day to get it. We also had the wild surprise of Rhys’ mom also being in Tecate - we swear we did not plan this at all. We met up with her the next day at a spa called Rancho La Puerta and were graciously invited to stay the night by its owner. Our taco counter is already at 20 and fumbling spanish has become mildly less fumbling. Today we are starting down Baja towards Spring Break in Cabo (chistes).'  
+    'Our final day in USA was uneventful and crossing the border into Tecate was too easy except for almost being trapped in limbo getting our bikes stuck in the USA -> Mexico turnstile. Crossing was so easy in fact that we didn’t get the stamp and visa we were supposed to get and had to return the next day to get it. We also had the wild surprise of Rhys’ mom also being in Tecate - we swear we did not plan this at all. We met up with her the next day at a spa called Rancho La Puerta and were graciously invited to stay the night by its owner. Our taco counter is already at 20 and fumbling spanish has become mildly less fumbling. Today we are starting down Baja towards Spring Break in Cabo (chistes).',
+    'Thank you to the kind people who hosted and helped us on this leg of the trip:',
+    {
+      type: CONTENT_TYPES.LIST,
+      content: [
+        'Amy & David',
+        'Chris',
+        'Chase - and the puppy Andy',
+        'Jo, Christine, & Caroline',
+        'Deer Park Monastery',
+        'Nick',
+        'Hervé'
+      ]
+    }
   ]
 };
 
