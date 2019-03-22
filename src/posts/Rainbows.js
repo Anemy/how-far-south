@@ -224,6 +224,7 @@ export default {
       content: [
         'Amy & David',
         'Chris',
+        'Steve who sponsered us with goggles from spexusa.com',
         'Chase - and the puppy Andy',
         'Jo, Christine, & Caroline',
         'Deer Park Monastery',
