@@ -81,19 +81,16 @@ export default [
     }
   },
   {x: 128, y: 297}, // Ensenada, Baja, MX
-  {x: 133, y: 307},
-  {x: 134, y: 314, inprogress: true},
-  {x: 136, y: 321},
-  {x: 136, y: 324},
-  {x: 137, y: 327},
-  {x: 137, y: 333},
-  {x: 142, y: 338},
-  {x: 148, y: 347},
-  {x: 148, y: 353},
-  {x: 145, y: 357},
-  {x: 145, y: 363},
-  {x: 149, y: 365},
-  {x: 144, y: 371},
+  {x: 133, y: 307}, // Somewhere on the Baja divide near Santo Tomas?, Baja, MX
+  {x: 131, y: 314}, // Punta Colonet, Baja, MX
+  {x: 133, y: 321}, // Lazaro Cardainas / Baja Divide, Baja, MX
+  {x: 140, y: 322}, // Baja Divide East of Neuva Odisea, Baja, MX
+  {x: 142, y: 327}, // Baja Divide more East and South of Neuva Odisea, Baja, MX
+  {x: 145, y: 333}, // Cataviña, Baja, MX
+  {x: 148, y: 342}, // A bit after Punta Prieta, Baja, MX
+  {x: 145, y: 358}, // Guerrero Negro, Baja, MX
+  {x: 149, y: 365, inprogress: true},
+  {x: 147, y: 371},
   {x: 153, y: 373},
   {x: 155, y: 377},
   {x: 159, y: 383},
