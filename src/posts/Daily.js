@@ -432,8 +432,37 @@ const Daily = {
       stay: STAY_KINDS.LODGE,
       miles: 71
     },
-    '71 miles - In the morning we biked through more expansive seguaros. Straight road stretching on. Had lunch with a nice caravan of people from Santa Barbara on their way back up North. One of them is bike touring this summer. They bought us lunch xD. Tasty tacos in Geurrero Negro and we were able to stop at an atm to get some more Pesos for the rest of Baja.'
-    
+    '71 miles - In the morning we biked through more expansive seguaros. Straight road stretching on. Had lunch with a nice caravan of people from Santa Barbara on their way back up North. One of them is bike touring this summer. They bought us lunch xD. Tasty tacos in Geurrero Negro and we were able to stop at an atm to get some more Pesos for the rest of Baja.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 58 - Guerrero Negro', // March 30
+      stay: STAY_KINDS.LODGE,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Did laundry, Adam lost his wallet so we spent sometime looking for it and them working out logistics.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 58 - Guerrero Negro -> San Ignacio', // March 31
+      stay: STAY_KINDS.WARM_SHOWERS,
+      miles: 93
+    },
+    '93 miles - Long day - super flat road. I turned on the podcasts for this part. We met Josh & Jackie. Stayed in San Ignacio at the Cyclist camp. Had such tasty hot dogs & Tortas. The only other person staying at the place was a motorcyclist whose motorcycle broke. He reminded me of Joel.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 58 - San Ignacio -> 10 miles South of San Ignacio', // April 1
+      stay: STAY_KINDS.CAMPING,
+      miles: 10
+    },
+    '10 miles - Hung out in San Igle',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 58 - Guerrero Negro -> San Ignacio', // April 2
+      stay: STAY_KINDS.CAMPING,
+      miles: 10
+    },
+    '10 miles - Hung out in San Igle'
+    // To remeber: Jesus & Juan, Oso, Bruno, Radio tv, nice river, mountain canyon pass, 
   ]
 };
 

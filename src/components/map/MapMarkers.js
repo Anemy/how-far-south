@@ -89,14 +89,14 @@ export default [
   {x: 145, y: 333}, // Cataviña, Baja, MX
   {x: 148, y: 342}, // A bit after Punta Prieta, Baja, MX
   {x: 145, y: 358}, // Guerrero Negro, Baja, MX
-  {x: 149, y: 365, inprogress: true},
-  {x: 147, y: 371},
-  {x: 153, y: 373},
-  {x: 155, y: 377},
-  {x: 159, y: 383},
-  {x: 165, y: 392},
-  {x: 161, y: 399},
-  {x: 166, y: 405},
+  {x: 153, y: 371}, // San Iglesio, Baja, MX
+  {x: 152, y: 372}, // ~10 miles south of San Iglesio, Baja, MX
+  {x: 152, y: 377}, // Near a fishing town Los Castros in Baja, MX
+  {x: 155, y: 377}, // Baja Divide near the river on the ranch road to Mulegé, Baja, MX
+  {x: 159, y: 375}, // Baja Divide in the mountains on the ranch road to Mulegé, Baja, MX
+  {x: 165, y: 374}, // Mulegé, Baja, MX
+  {x: 166, y: 380, inprogress: true},
+  {x: 168, y: 395},
   {x: 166, y: 410},
   {x: 172, y: 417},
   {x: 175, y: 419},
