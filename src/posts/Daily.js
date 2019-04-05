@@ -92,7 +92,8 @@ const Daily = {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 11 - Newport, OR -> Waldport, OR',
       stay: STAY_KINDS.FRIENDS_FAMILY,
-      miles: 17
+      miles: 17,
+      notRealBikeDay: true
     },
     '17 miles - Worked on blogpost in coffee shop for the morning, rainy bike along 101. nice coastline. got gopro working. Stayed at Harper & Nick & Airee?\'s place.',
     {
@@ -344,7 +345,8 @@ const Daily = {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 45 - Deer Park Monestary, CA -> San Diego, CA', // March 17
       stay: STAY_KINDS.LEGAL_CAMPING,
-      miles: 32
+      miles: 32,
+      notRealBikeDay: true
     },
     '32 miles - I was feeling sick af - dehydration and I think the monk food was too wholesome for me. Stayed at Nick & Carl\'s',
     {
@@ -443,29 +445,47 @@ const Daily = {
     '0 miles - Did laundry, Adam lost his wallet so we spent sometime looking for it and them working out logistics.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 58 - Guerrero Negro -> San Ignacio', // March 31
+      text: 'Day 59 - Guerrero Negro -> San Ignacio', // March 31
       stay: STAY_KINDS.WARM_SHOWERS,
       miles: 93
     },
     '93 miles - Long day - super flat road. I turned on the podcasts for this part. We met Josh & Jackie. Stayed in San Ignacio at the Cyclist camp. Had such tasty hot dogs & Tortas. The only other person staying at the place was a motorcyclist whose motorcycle broke. He reminded me of Joel.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 58 - San Ignacio -> 10 miles South of San Ignacio', // April 1
+      text: 'Day 60 - San Ignacio -> 10 miles South of San Ignacio', // April 1
       stay: STAY_KINDS.CAMPING,
       miles: 10
     },
-    '10 miles - Hung out in San Igle',
+    '10 miles - Had breakfast at the Cassa de Cicletas. Road their tandem bycicle. Hung out in San Ignacio and read a book in the town center infrotn of a big church. Even nodded off for a bit. Met the other two cyclists with Josh & Jackie, Paul & Kayza. Had lunch with some random people who run a site called la bicikleta and do SEO as their main job. Another cyclist doing the divide, Alex, rolled up and also joined us. Camped South of the town in a gravel area.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 58 - Guerrero Negro -> San Ignacio', // April 2
+      text: 'Day 61 - 10 miles South of San Ignacio -> Near a fishing town Los Castros in Baja, MX', // April 2
       stay: STAY_KINDS.CAMPING,
-      miles: 10
+      miles: 50,
+      notRealBikeDay: true
     },
-    '10 miles - Hung out in San Igle'
+    '? miles - Misty morning. By whale watching towns, nice colored salt flats. Got first flat since usa. By fishing town. Biking on sand and dried beds. Ended up catching the crew again and we all camped on some sand kind of close to the beach.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 62 - Near a fishing town Los Castros in Baja, MX -> On Baja Divide near river on ranch road', // April 3
+      stay: STAY_KINDS.CAMPING,
+      miles: 50,
+      notRealBikeDay: true
+    },
+    '? miles - Hot day into the mountains, uphill, but mostly gradual. Many river crossings and fille dup water. Big nice dog named Oso and farmer showed us his goats. Later Adam\'s tired got a hole in the rim and we spent a while trying to boot it.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 63 - On Baja Divide near river on ranch road -> On Baja Divide in Mountains in Canyon', // April 4
+      stay: STAY_KINDS.CAMPING,
+      miles: 50,
+      notRealBikeDay: true
+    },
+    '? miles - Saw a nice chill rattlesnake in the morning. went By whale watching towns, nice colored salt flats. Got first flat since usa. By fishing town. Biking on sand and dried beds.'
     // To remeber: Jesus & Juan, Oso, Bruno, Radio tv, nice river, mountain canyon pass, 
   ]
 };
 
+let milesBikedOnBikeDays = 0; // Total without the half days ti get real average.
 let totalMilesBiked = 0;
 let totalBikeDays = 0;
 let totalDays = 0;
@@ -474,19 +494,21 @@ for (let i = 0; i < Daily.content.length; i++) {
   const item = Daily.content[i];
 
   if (item.miles && item.miles > 0) {
-    totalBikeDays++;
     totalMilesBiked += item.miles;
 
-    totalDays++;
-  } else if (item.restDay) {
-    totalDays++;
-  }  
+    if (item.notRealBikeDay) {
+      milesBikedOnBikeDays += item.miles;
+    } else {
+      totalBikeDays++;
+    }
+  }
+  totalDays++;
 }
 
 console.log('Total miles biked:', totalMilesBiked);
-console.log('Total days biked (not including rest):', totalBikeDays);
+console.log('Total days biked (not including rest & half days):', totalBikeDays);
 console.log('Total days on the road:', totalDays);
-console.log('Average miles biked/day:', (totalMilesBiked / totalBikeDays))
+console.log('Average miles biked/day:', (milesBikedOnBikeDays / totalBikeDays))
 
 /**
 
