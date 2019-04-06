@@ -6,6 +6,7 @@ export default {
   date: new Date(2019, 1 /* 0 is January. */, 25 /* 0 is the first of the month. */),
   description: 'We biked past the road closed sign',
   categories: [CATEGORIES.NORTH_AMERICA],
+  thumbnailUrl: 'https://imgur.com/cXRGtUhm.jpg',
   previousPostUrl: 'Salem',
   nextPostUrl: 'Rainbows',
   content: [
@@ -130,13 +131,13 @@ export default {
       type: CONTENT_TYPES.GRID,
       items: [{
         type: CONTENT_TYPES.IMAGE,
-        alt: 'ssss',
+        alt: 'Oregon coast',
         url: 'https://imgur.com/lvaVOZ6.jpg',
         thumbnailUrl: 'https://imgur.com/lvaVOZ6t.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
-        alt: 'sffffffff',
+        alt: 'Adam biking infront of the Oregon coast',
         url: 'https://imgur.com/6RSIajK.jpg',
         thumbnailUrl: 'https://imgur.com/6RSIajKt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
@@ -146,19 +147,19 @@ export default {
       type: CONTENT_TYPES.GRID,
       items: [{
         type: CONTENT_TYPES.IMAGE,
-        alt: 'ssss',
+        alt: 'Sunset on the Oregon coast',
         url: 'https://imgur.com/1zfZ0l0.jpg',
         thumbnailUrl: 'https://imgur.com/1zfZ0l0t.jpg',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
-        alt: 'sffffffff',
+        alt: 'A fishing boat off the coast',
         url: 'https://imgur.com/DW8y9y9.jpg',
         thumbnailUrl: 'https://imgur.com/DW8y9y9t.jpg',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
-        alt: 'sffffffff',
+        alt: 'Another nice shot of the coast',
         url: 'https://imgur.com/4J762CM.jpg',
         thumbnailUrl: 'https://imgur.com/4J762CMt.jpg',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
@@ -194,13 +195,13 @@ export default {
       type: CONTENT_TYPES.GRID,
       items: [{
         type: CONTENT_TYPES.IMAGE,
-        alt: 'Adam biking next to beach',
+        alt: 'Adam standing next to the road closed blocker',
         url: 'https://imgur.com/3N32Zir.jpg',
         thumbnailUrl: 'https://imgur.com/3N32Zirt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
-        alt: 'sffffffff',
+        alt: 'Redwoods',
         url: 'https://imgur.com/vrzG3Iq.jpg',
         thumbnailUrl: 'https://imgur.com/vrzG3Iqt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.

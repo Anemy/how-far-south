@@ -461,27 +461,31 @@ const Daily = {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 61 - 10 miles South of San Ignacio -> Near a fishing town Los Castros in Baja, MX', // April 2
       stay: STAY_KINDS.CAMPING,
-      miles: 50,
-      notRealBikeDay: true
+      miles: 50
     },
     '? miles - Misty morning. By whale watching towns, nice colored salt flats. Got first flat since usa. By fishing town. Biking on sand and dried beds. Ended up catching the crew again and we all camped on some sand kind of close to the beach.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 62 - Near a fishing town Los Castros in Baja, MX -> On Baja Divide near river on ranch road', // April 3
       stay: STAY_KINDS.CAMPING,
-      miles: 50,
-      notRealBikeDay: true
+      miles: 50
     },
     '? miles - Hot day into the mountains, uphill, but mostly gradual. Many river crossings and fille dup water. Big nice dog named Oso and farmer showed us his goats. Later Adam\'s tired got a hole in the rim and we spent a while trying to boot it.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 63 - On Baja Divide near river on ranch road -> On Baja Divide in Mountains in Canyon', // April 4
       stay: STAY_KINDS.CAMPING,
+      miles: 50
+    },
+    '? miles - Saw a nice chill rattlesnake in the morning. We saw a rancher last night and in the morning and he said the next ranch might have a spare tire. Jesus & Juan didn\'t but invited us in for coffee and then proceededd to radio all the other ranches in the area asking for a tire. We found one but it was 15 miles away. Our plan was split the gear and then I would bike ahead and check it out while Adam walked. If they didn\'t have a tire I\'d bike the remaining 60 ish miles over the next two days and bring back a tire from there while Adam kept walking. Luckily about 3 or 4 hours after we split there was a rancher Bruno taking cows into Mulegé and Adam was able to strap his bike onto the pickup and catch a ride. (The first car we\'d seen on that road). Over the next two days I biked through the beautiful river gorge up into the mountains and camped there for the night.', // Radio tv
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 62 - Near a fishing town Los Castros in Baja, MX -> On Baja Divide near river on ranch road', // April 3
+      stay: STAY_KINDS.LODGE,
       miles: 50,
       notRealBikeDay: true
     },
-    '? miles - Saw a nice chill rattlesnake in the morning. went By whale watching towns, nice colored salt flats. Got first flat since usa. By fishing town. Biking on sand and dried beds.'
-    // To remeber: Jesus & Juan, Oso, Bruno, Radio tv, nice river, mountain canyon pass, 
+    '? miles - Through the mountain pass to the other side. Bone rattling steep descents, some making me have to get off my bike and just walk down hah. I\'m suprised the pickup made it. In Mulegé, which is a quaint town on the Sea of Cortez with a good bit of tourist influence I met up with the other cyclists who were going to catch a boat to the next portion of the divide. The fish tacos here were on point and Adam and I each had a chalice of a margerita when we met up.',
   ]
 };
 

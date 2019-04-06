@@ -263,6 +263,12 @@ a {
   }
 }
 
+.nice-link-hovered {
+  &:after {
+    width: 100% !important;
+  }
+}
+
 .nice-link:after {
   content: attr(data-title);
   position: absolute;

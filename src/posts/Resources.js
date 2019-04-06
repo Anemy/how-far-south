@@ -85,7 +85,7 @@ export default {
         html: 'Pacific Coast (Maps): <a data-title="https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast" href="https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast/" rel="noopener noreferrer">https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/pacific-coast/</a>'
       }, {
         type: CONTENT_TYPES.HTML,
-        html: 'The Baja Divide is a route through Baja California, Mexico, which we are going to do bits and parts of. The site has lots of information you need for it: <a data-title="https://bajadivide.com/route-details/" href="https://bajadivide.com/route-details/" rel="noopener noreferrer">https://bajadivide.com/route-details/</a>'
+        html: 'The Baja Divide is a tough route through Baja California, Mexico, which we are going to do bits and parts of. The site has lots of information you need for it: <a data-title="https://bajadivide.com/route-details/" href="https://bajadivide.com/route-details/" rel="noopener noreferrer">https://bajadivide.com/route-details/</a>'
       }]
     }, {
       type: CONTENT_TYPES.HEADING,

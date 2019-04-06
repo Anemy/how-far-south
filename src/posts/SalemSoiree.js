@@ -6,6 +6,7 @@ export default {
   date: new Date(2019, 1 /* 0 is January. */, 11 /* 0 is the first of the month. */),
   description: 'Biking into a party in Salem, Oregon',
   categories: [CATEGORIES.NORTH_AMERICA],
+  thumbnailUrl: 'https://imgur.com/KRMoGrjm.jpg',
   previousPostUrl: 'North',
   nextPostUrl: 'Redwoods',
   content: [

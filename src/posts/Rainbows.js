@@ -6,6 +6,7 @@ export default {
   date: new Date(2019, 2 /* 0 is January. */, 19 /* 0 is the first of the month. */),
   description: 'Clothing optional',
   categories: [CATEGORIES.NORTH_AMERICA],
+  thumbnailUrl: 'https://imgur.com/l6l8eXfm.jpg',
   previousPostUrl: 'Redwoods',
   content: [
 
@@ -42,7 +43,7 @@ export default {
       type: CONTENT_TYPES.IMAGE,
       alt: 'Adam biking in misty trees',
       url: 'https://imgur.com/rCnKThC.jpg',
-      thumbnailUrl: 'https://imgur.com/rCnKThC.jpg',
+      thumbnailUrl: 'https://imgur.com/rCnKThCt.jpg',
     },
 
     {
@@ -51,7 +52,7 @@ export default {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Adam sitting in Big Sur',
         url: 'https://imgur.com/BAo9aBm.jpg',
-        thumbnailUrl: 'https://imgur.com/BAo9aBm.jpg',
+        thumbnailUrl: 'https://imgur.com/BAo9aBmt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
     },/*, {
         type: CONTENT_TYPES.IMAGE,
@@ -63,7 +64,7 @@ export default {
         type: CONTENT_TYPES.IMAGE,
         alt: 'LA River',
         url: 'https://imgur.com/yaqka8Z.jpg?2',
-        thumbnailUrl: 'https://imgur.com/yaqka8Z.jpg?2',
+        thumbnailUrl: 'https://imgur.com/yaqka8Zt.jpg?2',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }]
     },
@@ -117,7 +118,7 @@ export default {
       type: CONTENT_TYPES.IMAGE,
       alt: 'Big Sur camp',
       url: 'https://i.imgur.com/rW4HpqE.jpg',
-      thumbnailUrl: 'https://i.imgur.com/rW4HpqE.jpg',
+      thumbnailUrl: 'https://i.imgur.com/rW4HpqEt.jpg',
     },
     
     'We spent the night camping and in the morning speed packed our tent and beelined it to the hot springs for a morning soak. The springs are clothing optional which in reality means nakie only and, perched on the cliffs, have spectacular views of the waves crashing on Big Sur. We spent the day eating wonderful food, soaking, reading, and writing while other guests took classes on improv, the art of divination, loving-kindness meditation, and the like.',
@@ -126,7 +127,7 @@ export default {
       type: CONTENT_TYPES.IMAGE,
       alt: 'Esalen',
       url: 'https://imgur.com/l6l8eXf.jpg',
-      thumbnailUrl: 'https://imgur.com/l6l8eXf.jpg',
+      thumbnailUrl: 'https://imgur.com/l6l8eXft.jpg',
     },
     
     'The next day, skin supple and glowing, we rode the rest of Big Sur into the land of zebras, cows, and elephant seals (so big, smelly, and cute with their dangly snouts). One of the most telltale signs that we had entered SoCal is that everyone suddenly had 10 recommendations of surf spots in Mexico. It was all rolling green hills and prancing cows the rest of the way to LA. As we got closer we also started to see many charred remains of trees and swathes of houses under repair. Remnants of the brutal fires from the past year. Climate change is fun. Thank God for LA and its 500 sq miles of car centric bliss (we are not huge fans of LA). We did have wonderful hosts in LA - Rhys’ Mom’s friend’s Joe and Christine - but we weren’t sad to leave the city.',
@@ -137,19 +138,19 @@ export default {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Cows windows screensaver',
         url: 'https://imgur.com/jg7D1E5.jpg',
-        thumbnailUrl: 'https://imgur.com/jg7D1E5.jpg',
+        thumbnailUrl: 'https://imgur.com/jg7D1E5t.jpg',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Adam and Cows',
         url: 'https://imgur.com/iVh4jQc.jpg',
-        thumbnailUrl: 'https://imgur.com/iVh4jQc.jpg',
+        thumbnailUrl: 'https://imgur.com/iVh4jQct.jpg',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Elephant Seal',
         url: 'https://imgur.com/s9Md5dr.jpg?1',
-        thumbnailUrl: 'https://imgur.com/s9Md5dr.jpg?1',
+        thumbnailUrl: 'https://imgur.com/s9Md5drt.jpg?1',
         grid: 'col-sm-4', // This is out of 12 how much space it takes up.
       }]
     },
@@ -160,13 +161,13 @@ export default {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Oil Tanker',
         url: 'https://imgur.com/Ru2dClh.jpg',
-        thumbnailUrl: 'https://imgur.com/Ru2dClh.jpg',
+        thumbnailUrl: 'https://imgur.com/Ru2dClht.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Leaves Sun',
         url: 'https://imgur.com/C6GHDsX.jpg',
-        thumbnailUrl: 'https://imgur.com/C6GHDsX.jpg',
+        thumbnailUrl: 'https://imgur.com/C6GHDsXt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }]
     },
@@ -184,13 +185,13 @@ export default {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Sunset Bike',
         url: 'https://imgur.com/ZeVQdzr.jpg',
-        thumbnailUrl: 'https://imgur.com/ZeVQdzr.jpg',
+        thumbnailUrl: 'https://imgur.com/ZeVQdzrt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Beach camp',
         url: 'https://imgur.com/htg5EDw.jpg',
-        thumbnailUrl: 'https://imgur.com/htg5EDw.jpg',
+        thumbnailUrl: 'https://imgur.com/htg5EDwt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }]
     },
@@ -206,7 +207,7 @@ export default {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Rhys Border',
         url: 'https://i.imgur.com/bVQG1C8.jpg?3',
-        thumbnailUrl: 'https://i.imgur.com/bVQG1C8.jpg?3',
+        thumbnailUrl: 'https://i.imgur.com/bVQG1C8t.jpg?3',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }/*, {
         type: CONTENT_TYPES.IMAGE,
