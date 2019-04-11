@@ -413,7 +413,7 @@ const Daily = {
       stay: STAY_KINDS.LODGE,
       miles: 35
     },
-    '35 miles - Mountain biking on the divide. We pretty much ran out of water hah. The heat and dehydration makes me an angry person xD. The rocky hills were in color with flowers blooming all around with the rains from the past month. Yellows, reds, oranges, purples, & violets. Got into Saguaro country. Some firt bikers flew past us and chatted a bit. 2 more rattle snakes. Late in the day when we were almost out of water we came accross a cool stream with flowing water. I remember the feeling of sand in my tired feet in the cool water was straight orgasmic. Later we past a military checkpoint in the middle of nowhere, when asked what was in the bags of our bikes I said ropa y comida. We chatted and mentioned the rattlesnakes and they wondered if we killed them - I think it\'s expected. Camped with a nice fire under a big saguaro.',
+    '35 miles - Mountain biking on the divide. We pretty much ran out of water hah. The heat and dehydration makes me an angry person xD. The rocky hills were in color with flowers blooming all around with the rains from the past month. Yellows, reds, oranges, purples, & violets. Got into Saguaro country. Some firt bikers flew past us and chatted a bit. 2 more rattle snakes. Late in the day when we were almost out of water we came across a cool stream with flowing water. I remember the feeling of sand in my tired feet in the cool water was straight orgasmic. Later we past a military checkpoint in the middle of nowhere, when asked what was in the bags of our bikes I said ropa y comida. We chatted and mentioned the rattlesnakes and they wondered if we killed them - I think it\'s expected. Camped with a nice fire under a big saguaro.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 55 - Baja Divide East of Neuva Odisea -> Cataviña, Baja California', // March 27
@@ -488,7 +488,7 @@ const Daily = {
     '? miles - Through the mountain pass to the other side. Bone rattling steep descents, some making me have to get off my bike and just walk down hah. I\'m suprised the pickup made it. In Mulegé, which is a quaint town on the Sea of Cortez with a good bit of tourist influence I met up with the other cyclists who were going to catch a boat to the next portion of the divide. The fish tacos here were on point and Adam and I each had a chalice of a margerita when we met up.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 65 - Mulegé, Baja, MX -> Coast accross from the peninsula South of Mulegé, Baja, MX', // April 6
+      text: 'Day 65 - Mulegé, Baja, MX -> Coast across from the peninsula South of Mulegé, Baja, MX', // April 6
       stay: STAY_KINDS.CAMPING,
       miles: 10,
       notRealBikeDay: true
@@ -496,7 +496,7 @@ const Daily = {
     '? miles - Had fish tacos and Adam sowed his tire in the morning. Met a backpacker from Argentine, Facu. Biked along the coast out of Mulegé and camped on a secluded sandy beach surrounded by mangroves.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 66 - Coast accross from the peninsula South of Mulegé, Baja, MX -> Somewhere slightly off the divide near Comondú', // April 7
+      text: 'Day 66 - Coast across from the peninsula South of Mulegé, Baja, MX -> Somewhere slightly off the divide near Comondú', // April 7
       stay: STAY_KINDS.CAMPING,
       miles: 50
     },
@@ -517,7 +517,7 @@ const Daily = {
     '80 miles - Long straight, flatish road. Adam\'s other tire was about to burst so he caught a ride with two surfers, Virginia and Walt. He got a new tire in the next city and when I biked in we grabbed lunch - fish. Grabbed some oranges on the way out of town and kept on the long road.',
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 68 - About 40 miles out of La Paz -> About 20 miles south of Ciudad Constitution', // April 10
+      text: 'Day 68 - About 20 miles south of Ciudad Constitution -> About 40 miles out of La Paz', // April 10
       stay: STAY_KINDS.CAMPING,
       miles: 70
     },
