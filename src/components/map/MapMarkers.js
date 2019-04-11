@@ -95,11 +95,12 @@ export default [
   {x: 155, y: 377}, // Baja Divide near the river on the ranch road to Mulegé, Baja, MX
   {x: 159, y: 375}, // Baja Divide in the mountains on the ranch road to Mulegé, Baja, MX
   {x: 165, y: 374}, // Mulegé, Baja, MX
-  {x: 166, y: 380, inprogress: true},
-  {x: 168, y: 395},
-  {x: 166, y: 410},
-  {x: 172, y: 417},
-  {x: 175, y: 419},
+  {x: 166, y: 377}, // Coast across from the peninsula South of Mulegé, Baja, MX
+  {x: 164, y: 384}, // Somewhere slightly off the divide near Comondú
+  {x: 161, y: 381}, // Not a day - just backtrack point
+  {x: 161, y: 396}, // Francisco Villa/La Poza Grande
+  {x: 166, y: 408}, // About 20 miles south of Ciudad Constitution
+  {x: 174, y: 414}, // About 40 miles out of La Paz
   {
     x: 178,
     y: 412,
@@ -109,7 +110,7 @@ export default [
       countryCode: 'MX'
     }
   },
-  {x: 232, y: 454},
+  {x: 232, y: 454, inprogress: true},
   {x: 243, y: 462},
   {x: 243, y: 476},
   {x: 258, y: 476},

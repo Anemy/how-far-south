@@ -461,31 +461,74 @@ const Daily = {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 61 - 10 miles South of San Ignacio -> Near a fishing town Los Castros in Baja, MX', // April 2
       stay: STAY_KINDS.CAMPING,
-      miles: 50
+      miles: 60
     },
     '? miles - Misty morning. By whale watching towns, nice colored salt flats. Got first flat since usa. By fishing town. Biking on sand and dried beds. Ended up catching the crew again and we all camped on some sand kind of close to the beach.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 62 - Near a fishing town Los Castros in Baja, MX -> On Baja Divide near river on ranch road', // April 3
       stay: STAY_KINDS.CAMPING,
-      miles: 50
+      miles: 40
     },
     '? miles - Hot day into the mountains, uphill, but mostly gradual. Many river crossings and fille dup water. Big nice dog named Oso and farmer showed us his goats. Later Adam\'s tired got a hole in the rim and we spent a while trying to boot it.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 63 - On Baja Divide near river on ranch road -> On Baja Divide in Mountains in Canyon', // April 4
       stay: STAY_KINDS.CAMPING,
-      miles: 50
+      miles: 40
     },
     '? miles - Saw a nice chill rattlesnake in the morning. We saw a rancher last night and in the morning and he said the next ranch might have a spare tire. Jesus & Juan didn\'t but invited us in for coffee and then proceededd to radio all the other ranches in the area asking for a tire. We found one but it was 15 miles away. Our plan was split the gear and then I would bike ahead and check it out while Adam walked. If they didn\'t have a tire I\'d bike the remaining 60 ish miles over the next two days and bring back a tire from there while Adam kept walking. Luckily about 3 or 4 hours after we split there was a rancher Bruno taking cows into Mulegé and Adam was able to strap his bike onto the pickup and catch a ride. (The first car we\'d seen on that road). Over the next two days I biked through the beautiful river gorge up into the mountains and camped there for the night.', // Radio tv
     {
       type: CONTENT_TYPES.HEADING,
-      text: 'Day 62 - Near a fishing town Los Castros in Baja, MX -> On Baja Divide near river on ranch road', // April 3
+      text: 'Day 64 - On Baja Divide in Mountains in Canyon in Baja, MX -> Mulegé, Baja, MX', // April 5
       stay: STAY_KINDS.LODGE,
-      miles: 50,
+      miles: 20,
       notRealBikeDay: true
     },
     '? miles - Through the mountain pass to the other side. Bone rattling steep descents, some making me have to get off my bike and just walk down hah. I\'m suprised the pickup made it. In Mulegé, which is a quaint town on the Sea of Cortez with a good bit of tourist influence I met up with the other cyclists who were going to catch a boat to the next portion of the divide. The fish tacos here were on point and Adam and I each had a chalice of a margerita when we met up.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 65 - Mulegé, Baja, MX -> Coast accross from the peninsula South of Mulegé, Baja, MX', // April 6
+      stay: STAY_KINDS.CAMPING,
+      miles: 10,
+      notRealBikeDay: true
+    },
+    '? miles - Had fish tacos and Adam sowed his tire in the morning. Met a backpacker from Argentine, Facu. Biked along the coast out of Mulegé and camped on a secluded sandy beach surrounded by mangroves.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 66 - Coast accross from the peninsula South of Mulegé, Baja, MX -> Somewhere slightly off the divide near Comondú', // April 7
+      stay: STAY_KINDS.CAMPING,
+      miles: 50
+    },
+    '? miles - Tough hot day. Rough road when we left the divide and took a wrong turn into a ranch. Pushed up a steep couple switchbacks and were running out of food and water.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 66 - Somewhere slightly off the divide near Comondú -> Francisco Villa/La Poza Grande', // April 8
+      stay: STAY_KINDS.CAMPING,
+      miles: 50
+    },
+    '? miles - In the morning decided we might run out of water and perish if we kept going the way we went so we walked back down the tough switch backs and back onto the divide route. Followed it to an oasis close to the west coast. Adam\'s woven tired made it all the way here before it almost burst - he swapped it for the spare he picked up in Mulege. I drank a full water bottle when we saw the oasis and my stomach hurt. Found some nice waterfalls and spent the afternoon diving off them. Back onto pavement on a really flat road for the night.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 67 - Francisco Villa/La Poza Grande, Baja, MX -> About 20 miles south of Ciudad Constitution', // April 9
+      stay: STAY_KINDS.CAMPING,
+      miles: 80
+    },
+    '80 miles - Long straight, flatish road. Adam\'s other tire was about to burst so he caught a ride with two surfers, Virginia and Walt. He got a new tire in the next city and when I biked in we grabbed lunch - fish. Grabbed some oranges on the way out of town and kept on the long road.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 68 - About 40 miles out of La Paz -> About 20 miles south of Ciudad Constitution', // April 10
+      stay: STAY_KINDS.CAMPING,
+      miles: 70
+    },
+    '70 miles - ',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 69 - Francisco Villa/La Poza Grande, Baja, MX -> La Paz', // April 11
+      stay: STAY_KINDS.LODGE,
+      miles: 40
+    },
+    '40 miles - ',
   ]
 };
 
