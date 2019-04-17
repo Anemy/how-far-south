@@ -8,6 +8,7 @@ export default {
   categories: [CATEGORIES.NORTH_AMERICA],
   thumbnailUrl: 'https://imgur.com/l6l8eXfm.jpg',
   previousPostUrl: 'Redwoods',
+  nextPostUrl: 'baja',
   content: [
 
     

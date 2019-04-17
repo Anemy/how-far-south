@@ -2,7 +2,7 @@ import { CONTENT_TYPES, CATEGORIES } from './constants';
 
 export default {
   url: 'Redwoods',
-  title: 'Redwoods 101',
+  title: 'Redwoods',
   date: new Date(2019, 1 /* 0 is January. */, 25 /* 0 is the first of the month. */),
   description: 'We biked past the road closed sign',
   categories: [CATEGORIES.NORTH_AMERICA],

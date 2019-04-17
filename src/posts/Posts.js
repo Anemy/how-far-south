@@ -1,3 +1,4 @@
+import Baja from './Baja';
 import Beginnings from './Beginnings';
 import Daily from './Daily';
 import Gear from './Gear';
@@ -13,6 +14,7 @@ import Rainbows from './Rainbows';
 const posts = {
   // [Beginnings.url]: Beginnings,
   // [Gear.url]: Gear,
+  [Baja.url]: Baja,
   [Rainbows.url]: Rainbows,
   [Redwoods.url]: Redwoods,
   [SalemSoiree.url]: SalemSoiree,
@@ -25,4 +27,4 @@ posts.keys = Object.keys(posts);
 posts.mostRecent = Rainbows.url;
 
 export default posts;
-export { Beginnings, SalemSoiree, Resources, North, Redwoods, Rainbows, Gear, Route, Daily };
+export { Baja, Beginnings, SalemSoiree, Resources, North, Redwoods, Rainbows, Gear, Route, Daily };

@@ -70,6 +70,7 @@ export default {
   date: new Date(2019, 0 /* 0 is January. */, 18 /* 0 is the first of the month. */),
   description: 'Related blogs and information sources for bike touring.',
   categories: [CATEGORIES.NORTH_AMERICA],
+  thumbnailUrl: 'https://imgur.com/0nsunXhm.jpg',
   content: [
     'Here are some of the resources we used to get information for our bike trip, as well as some fun reads, and inspiration. This post is a sort of a pasted list.',
     {

@@ -104,19 +104,20 @@ export default [
   {
     x: 178,
     y: 412,
+    post: Posts.baja.url,
     location: {
       city: 'La Paz',
       region: 'Baja California Sur',
       countryCode: 'MX'
     }
   },
-  {x: 232, y: 454, inprogress: true},
-  {x: 243, y: 462},
-  {x: 243, y: 476},
-  {x: 258, y: 476},
-  {x: 267, y: 495},
-  {x: 288, y: 509},
-  {x: 306, y: 508},
+  {x: 227, y: 433}, // Mazatlán
+  {x: 243, y: 442, inprogress: true},
+  {x: 243, y: 456},
+  {x: 258, y: 459},
+  {x: 267, y: 465},
+  {x: 288, y: 489},
+  {x: 306, y: 498},
   {x: 311, y: 523},
   {x: 326, y: 527},
   {x: 340, y: 522},

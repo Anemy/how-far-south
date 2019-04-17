@@ -197,7 +197,7 @@ class PostItem extends Component {
       return (
         <div className={`post-image-container ${item.grid ? item.grid : ''}`}>
           <Img
-            className={`post-image`}
+            className={`post-image${item.margin ? ' post-image-margin' : ''}`}
             onClick={() => onImageClick(item.url)} 
             src={item.url}
             alt={item.alt}

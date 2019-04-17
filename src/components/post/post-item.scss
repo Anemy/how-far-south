@@ -29,12 +29,17 @@
 //   padding-left: 0px;
 // }
 
-.post-image-container:first-child {
-  margin-left: -6px !important;
-}
+// .post-image-container:first-child {
+//   margin-left: -6px !important;
+// }
 
-.post-image-container:last-child {
-  margin-right: -6px !important;
+// .post-image-container:last-child {
+//   margin-right: -6px !important;
+// }
+
+.post-image-margin {
+  margin-top: 16px;
+  margin-bottom: 14px;
 }
 
 // .post-image-container:not(:first-child):not(:last-child) {

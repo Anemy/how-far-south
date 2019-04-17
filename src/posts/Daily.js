@@ -461,23 +461,23 @@ const Daily = {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 61 - 10 miles South of San Ignacio -> Near a fishing town Los Castros in Baja, MX', // April 2
       stay: STAY_KINDS.CAMPING,
-      miles: 60
+      miles: 50
     },
-    '? miles - Misty morning. By whale watching towns, nice colored salt flats. Got first flat since usa. By fishing town. Biking on sand and dried beds. Ended up catching the crew again and we all camped on some sand kind of close to the beach.',
+    '50 miles - Misty morning. By whale watching towns, nice colored salt flats. Got first flat since usa. By fishing town. Biking on sand and dried beds. Ended up catching the crew again and we all camped on some sand kind of close to the beach.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 62 - Near a fishing town Los Castros in Baja, MX -> On Baja Divide near river on ranch road', // April 3
       stay: STAY_KINDS.CAMPING,
       miles: 40
     },
-    '? miles - Hot day into the mountains, uphill, but mostly gradual. Many river crossings and fille dup water. Big nice dog named Oso and farmer showed us his goats. Later Adam\'s tired got a hole in the rim and we spent a while trying to boot it.',
+    '40 miles - Hot day into the mountains, uphill, but mostly gradual. Many river crossings and fille dup water. Big nice dog named Oso and farmer showed us his goats. Later Adam\'s tired got a hole in the rim and we spent a while trying to boot it.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 63 - On Baja Divide near river on ranch road -> On Baja Divide in Mountains in Canyon', // April 4
       stay: STAY_KINDS.CAMPING,
-      miles: 40
+      miles: 35
     },
-    '? miles - Saw a nice chill rattlesnake in the morning. We saw a rancher last night and in the morning and he said the next ranch might have a spare tire. Jesus & Juan didn\'t but invited us in for coffee and then proceededd to radio all the other ranches in the area asking for a tire. We found one but it was 15 miles away. Our plan was split the gear and then I would bike ahead and check it out while Adam walked. If they didn\'t have a tire I\'d bike the remaining 60 ish miles over the next two days and bring back a tire from there while Adam kept walking. Luckily about 3 or 4 hours after we split there was a rancher Bruno taking cows into Mulegé and Adam was able to strap his bike onto the pickup and catch a ride. (The first car we\'d seen on that road). Over the next two days I biked through the beautiful river gorge up into the mountains and camped there for the night.', // Radio tv
+    '35 miles - Saw a nice chill rattlesnake in the morning. We saw a rancher last night and in the morning and he said the next ranch might have a spare tire. Jesus & Juan didn\'t but invited us in for coffee and then proceededd to radio all the other ranches in the area asking for a tire. We found one but it was 15 miles away. Our plan was split the gear and then I would bike ahead and check it out while Adam walked. If they didn\'t have a tire I\'d bike the remaining 60 ish miles over the next two days and bring back a tire from there while Adam kept walking. Luckily about 3 or 4 hours after we split there was a rancher Bruno taking cows into Mulegé and Adam was able to strap his bike onto the pickup and catch a ride. (The first car we\'d seen on that road). Over the next two days I biked through the beautiful river gorge up into the mountains and camped there for the night.', // Radio tv
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 64 - On Baja Divide in Mountains in Canyon in Baja, MX -> Mulegé, Baja, MX', // April 5
@@ -490,10 +490,10 @@ const Daily = {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 65 - Mulegé, Baja, MX -> Coast across from the peninsula South of Mulegé, Baja, MX', // April 6
       stay: STAY_KINDS.CAMPING,
-      miles: 10,
+      miles: 15,
       notRealBikeDay: true
     },
-    '? miles - Had fish tacos and Adam sowed his tire in the morning. Met a backpacker from Argentine, Facu. Biked along the coast out of Mulegé and camped on a secluded sandy beach surrounded by mangroves.',
+    '15 miles - Had fish tacos and Adam sowed his tire in the morning. Met a backpacker from Argentine, Facu. Biked along the coast out of Mulegé and camped on a secluded sandy beach surrounded by mangroves.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 66 - Coast across from the peninsula South of Mulegé, Baja, MX -> Somewhere slightly off the divide near Comondú', // April 7
@@ -521,14 +521,30 @@ const Daily = {
       stay: STAY_KINDS.CAMPING,
       miles: 70
     },
-    '70 miles - ',
+    '70 miles - Long straight roads. HOT. Wake up early and siesta long time. Little girl came into store where we were siestaing and tried to buy water from us thinking we ran the place hah. Taki Toss.',
     {
       type: CONTENT_TYPES.HEADING,
       text: 'Day 69 - Francisco Villa/La Poza Grande, Baja, MX -> La Paz', // April 11
       stay: STAY_KINDS.LODGE,
       miles: 40
     },
-    '40 miles - ',
+    '40 miles - Long straight roads. HOT. Wake up early and siesta long time. Nice mid breakfast at a home restraunt with a funny little dude. Met up with Alex. Had some nice beers. Staying in the one tall hotel with a nice pool we watched sunset at. Great tortas from stall.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 70 - Francisco Villa/La Poza Grande, Baja, MX -> La Paz', // April 12
+      stay: STAY_KINDS.LODGE,
+      miles: 0,
+      restDay: true
+    },
+    '0 miles - Nice ice cream. Swam with whale sharks. Hung out with Alex some more.',
+    {
+      type: CONTENT_TYPES.HEADING,
+      text: 'Day 71 - La Paz -> Ferry to Mazatlán', // April 13
+      stay: STAY_KINDS.LODGE,
+      miles: 10,
+      notRealBikeDay: true
+    },
+    '10 miles - Writing blog post.',
   ]
 };
 
@@ -540,16 +556,18 @@ let totalDays = 0;
 for (let i = 0; i < Daily.content.length; i++) {
   const item = Daily.content[i];
 
-  if (item.miles && item.miles > 0) {
-    totalMilesBiked += item.miles;
+  if (item.miles) {
+    if (item.miles > 0) {
+      totalMilesBiked += item.miles;
 
-    if (item.notRealBikeDay) {
-      milesBikedOnBikeDays += item.miles;
-    } else {
-      totalBikeDays++;
+      if (!item.notRealBikeDay) {
+        milesBikedOnBikeDays += item.miles;
+        totalBikeDays++;
+      }
     }
+
+    totalDays++;
   }
-  totalDays++;
 }
 
 console.log('Total miles biked:', totalMilesBiked);
