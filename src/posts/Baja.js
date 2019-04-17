@@ -20,7 +20,7 @@ export default {
   description: 'Running out of water into waterfalls',
   categories: [CATEGORIES.NORTH_AMERICA],
   previousPostUrl: 'Rainbows',
-  thumbnailUrl: 'https://imgur.com/0nsunXhm.jpg',
+  thumbnailUrl: 'https://imgur.com/0A5d4iam.jpg',
   content: [
     'Biking Baja has been our first big taste of wild adventure on the trip, making us feel alive in the proximity to the opposite. In school we learned of the four necessities for life; water, food, shelter, and not getting bit by rattlesnakes - and here we are wishing we paid attention. Spending so much time in a world parsed down to the necessities brings out the joy in a sip of water, the joy of stumbling on a palm tree oasis, the joy of being present with non-human life emanating from thorn laden desert.',
     // https://imgur.com/2yUMVb4
