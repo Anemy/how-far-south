@@ -112,11 +112,11 @@ export default [
     }
   },
   {x: 227, y: 433}, // Mazatlán
-  {x: 243, y: 442, inprogress: true},
-  {x: 243, y: 456},
-  {x: 258, y: 459},
-  {x: 267, y: 465},
-  {x: 288, y: 489},
+  {x: 241, y: 430}, // On the way to Durango
+  {x: 248, y: 429}, // Durango
+  {x: 258, y: 435}, // On the way to Zacates
+  {x: 267, y: 448}, // On the way to Zacates
+  {x: 288, y: 489, inprogress: true},  // Zacates
   {x: 306, y: 498},
   {x: 311, y: 523},
   {x: 326, y: 527},
