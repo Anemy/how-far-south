@@ -24,7 +24,7 @@ const posts = {
 };
 
 posts.keys = Object.keys(posts);
-posts.mostRecent = Rainbows.url;
+posts.mostRecent = Baja.url;
 
 export default posts;
 export { Baja, Beginnings, SalemSoiree, Resources, North, Redwoods, Rainbows, Gear, Route, Daily };
