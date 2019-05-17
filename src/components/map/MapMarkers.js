@@ -116,8 +116,11 @@ export default [
   {x: 248, y: 429}, // Durango
   {x: 258, y: 435}, // On the way to Zacates
   {x: 267, y: 448}, // On the way to Zacates
-  {x: 288, y: 489, inprogress: true},  // Zacates
-  {x: 306, y: 498},
+  {x: 264, y: 469},  // Zacates
+  {x: 280, y: 478},
+  {x: 300, y: 484},
+  {x: 298, y: 493, inprogress: true},
+  {x: 320, y: 513},
   {x: 311, y: 523},
   {x: 326, y: 527},
   {x: 340, y: 522},
