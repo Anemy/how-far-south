@@ -119,9 +119,9 @@ export default [
   {x: 264, y: 469},  // Zacates
   {x: 280, y: 478},
   {x: 300, y: 484},
-  {x: 298, y: 493, inprogress: true},
+  {x: 298, y: 493},
   {x: 320, y: 513},
-  {x: 311, y: 523},
+  {x: 311, y: 523, inprogress: true},
   {x: 326, y: 527},
   {x: 340, y: 522},
   {x: 356, y: 527},
