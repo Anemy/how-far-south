@@ -12,7 +12,7 @@ export default {
     {
       type: CONTENT_TYPES.TEXT,
       inline: true,
-      text: 'I think that I have spent the most condensed with Rhys than I have with practically anyone in the world in these last two and a half months. After a week of surfing, ',
+      text: 'I think that I have spent the most condensed time with Rhys than I have with practically anyone in the world in these last two and a half months. After a week of surfing, ',
     },
     {
       type: CONTENT_TYPES.INTERNAL_LINK,
@@ -111,7 +111,7 @@ export default {
 
     'I reached Durango and was greeted by my friend Adria who I had met in Mazatlan. She is the perfect tour guide, having worked in every building in the city and is even friends with the governor and mayor. I spent two nights in Durango before heading to my next host, a Mexican family of Jonathan and his Mother.',
 
-    'On the way to Zacatecas I saved a baby horse. It’s rear legs were trapped in barbed wire in a way that attempting to free itself only gauged it more. I tried first helping her calm down with food but she would only try to jump away in fear, entrapping herself further in the fence. Her mom was staring at me, nostrils flaring, as I got closer. Eventually I just had to go for it so I grabbed both her legs and pulled them up and back to get them unbarbed, almost getting them over before she kicked out of my hands which were now covered in blood. The mom had gotten inches from my face to protect her daughter. I grabbed them again and shoved them up through the fence as she kicked again and finally made it through. She hobbled to the rest of her string (horse family) who were waiting for her. I found myself wanting the horse to turn around a neigh at me like in the movies but instead I was graced with the beauty of watching the string of horses walking into the forest.',
+    'On the way to Zacatecas I saved a baby horse. It’s rear legs were trapped in barbed wire in a way that attempting to free itself only gouged it more. I tried first helping her calm down with food but she would only try to jump away in fear, entrapping herself further in the fence. Her mom was staring at me, nostrils flaring, as I got closer. Eventually I just had to go for it so I grabbed both her legs and pulled them up and back to get them unbarbed, almost getting them over before she kicked out of my hands which were now covered in blood. The mom had gotten inches from my face to protect her daughter. I grabbed them again and shoved them up through the fence as she kicked again and finally made it through. She hobbled to the rest of her string (horse family) who were waiting for her. I found myself wanting the horse to turn around and neigh at me like in the movies but instead I was graced with the beauty of watching the string of horses walking into the forest.',
 
     // https://i.imgur.com/dsolUBA.jpg
     // https://i.imgur.com/m04UOTQ.jpg
