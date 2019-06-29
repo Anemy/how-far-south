@@ -4,7 +4,7 @@ export default {
   url: 'mexico',
   title: 'Mountains and Mole in Mexico',
   date: new Date(2019, 5 /* 0 is January. */, 20 /* 0 is the first of the month. */),
-  description: 'Running out of water into waterfalls',
+  description: 'Mountains may explode',
   categories: [CATEGORIES.NORTH_AMERICA],
   previousPostUrl: 'baja',
   thumbnailUrl: 'https://imgur.com/aF3Okp8.jpg',
