@@ -62,8 +62,8 @@ export default {
       items: [{
         type: CONTENT_TYPES.IMAGE,
         alt: 'Tunnel illusion 1',
-        url: 'https://i.imgur.com/nRuvvyQ.jpg',
-        thumbnailUrl: 'https://i.imgur.com/nRuvvyQt.jpg',
+        url: 'https://i.imgur.com/GZsTQ7R.jpg',
+        thumbnailUrl: 'https://i.imgur.com/GZsTQ7Rt.jpg',
         grid: 'col-sm-6', // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
@@ -74,7 +74,7 @@ export default {
       }]
     },
 
-    // https://i.imgur.com/nRuvvyQ.jpg
+    // https://i.imgur.com/nRuvvyQ.jpg   https://i.imgur.com/GZsTQ7R.jpg
     // https://i.imgur.com/z2jaQtC.jpg
     //[_MG_5665.CR2] or this 1 with a rotation [_MG_5654.CR2]
 
@@ -146,7 +146,7 @@ export default {
     // [_MG_5755.CR2][_MG_5754.CR2]
     // [_MG_5759.CR2] [phone vid?] w
 
-    'Reaching Zacatecas I was immediately welcomed as son and brother into Jonathan’s home and treated to delicious food paired with smoothies from Jonathan’s mom’s cute garage restaurant. After meeting me and another couple doing Seattle to Patagonia Jonathan has actually decided to start his own bike tour to Argentina! After leaving Zacatecas I ended up meeting the inflatable lounger, Luis, on the road who invited me to stay with him in the next city, Aguas Calientes. The vulnerability of cycling alone has been met with such great hospitality in Mexico. In Morelia I was taken in by Renato, Gloria, and Shawn, Mexico City - Mike, and Alixco - Tere, all making me feel at home the moment I step into their house.',
+    'Reaching Zacatecas I was immediately welcomed as son and brother into Jonathan’s home and treated to delicious food paired with smoothies from Jonathan’s mom’s cute garage restaurant. After meeting me and another couple doing Seattle to Patagonia Jonathan has actually decided to start his own bike tour to Argentina! After leaving Zacatecas I ended up meeting the inflatable lounger, Luis, who invited me to stay with him in the next city, Aguas Calientes. The vulnerability of cycling alone has been met with such great hospitality in Mexico. In Morelia I was taken in by Renato, Gloria, and Shawn, Mexico City - Mike, and Alixco - Tere, all making me feel at home the moment I step into their house.',
 
     // https://i.imgur.com/2DxJhzi.jpg
     // [_MG_5768.CR2]
@@ -158,7 +158,9 @@ export default {
       // grid: 'col-sm-6', // This is out of 12 how much space it takes up.
     },
 
-    'The ride into Mexico City was an especially eventful day, biking through forest fires and the even wilder streets of CDMX (Cuidad Mexico). To get to the city I biked through a mountain pass and could make out clouds of white smoke billowing out of the forest up ahead. I thought it was just burning trash and I didn’t think I would head that direction anyways but an hour later I was face to face with a smoldering forest. I could hear people fighting the fire up the mountainside as rocks careened down to the road. I kept biking past and at the top of the pass I saw a massive group of about 50 cyclists who had also just reached the top. Being the one group of people that hold people like me in high esteem we took about 40 selfies and then they headed down as I went for a swim in a nearby river.',
+    'The ride into Mexico City was an especially eventful day, biking through forest fires and the even wilder streets of CDMX (Cuidad Mexico). To get to the city I biked through a mountain pass and could make out clouds of white smoke billowing out of the forest up ahead. I thought it was just burning trash and I didn’t think I would head that direction anyways but an hour later I was face to face with a smoldering forest. I could hear people fighting the fire up the mountainside as rocks careened down to the road.',
+    
+    'I kept biking past and at the top of the pass I saw a massive group of about 50 cyclists who had also just reached the top. Being the one group of people that hold people like me in high esteem we took about 40 selfies and then they headed down as I went for a swim in a nearby river.',
 
     // https://i.imgur.com/NlT6Gwk.jpg
     // https://i.imgur.com/hc0XHTf.jpg
