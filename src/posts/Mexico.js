@@ -29,7 +29,7 @@ export default {
 
     // [_MG_5599.CR2][_MG_5600.CR2]
 
-    'Leaving Mazatlan I biked solo towards Durango and into the Sierra Madre Occidental mountain range, my first REAL mountain range. And when I say mountain range I mean that, without hyperbole, I biked uphill for straight days. As In I did not go down. At all. For two days. I went from 0ft elevation to 9,500 over 90 miles.',
+    'Leaving Mazatlan I biked solo towards Durango and into the Sierra Madre Occidental mountain range, my first REAL mountain range. And when I say mountain range I mean I biked uphill for straight days. As In I did not go down. At all. For two days. I went from 0ft elevation to 9,500 over 90 miles.',
 
     // https://i.imgur.com/ijtTZfG.jpg
     // https://i.imgur.com/p9gINNf.jpg
@@ -51,7 +51,7 @@ export default {
       }]
     },
 
-    'Before I even started climbing however, I had a classic Adam moment: My tire sidewall tore hugely. A man tried to help me by booting (covering up hole so tube doesn’t peak out) my tire with a literal boot. A couple miles later my tube exploded. On a multi-modal adventure I walked the two miles back to the truck stop, rode of those nifty motorized bikes to a bike shop, then hitchhiked with a car back my bike. I get back and my new motorcycle friend Luis, who was watching my bike, was lounging on a full sized inflatable couch in front of the convenience store. Motorcycle travelling is definitely the glamping of two wheeled travel.',
+    'Before I even started climbing however, I had a classic Adam moment: My tire sidewall tore. A man tried to help me by booting (covering up hole so the tube doesn’t peak out) my tire with a literal boot. A couple miles later my tube exploded. On a multi-modal adventure I walked the two miles back to the truck stop, rode one of those nifty motorized bikes to a bike shop, then hitchhiked with a car back my bike. I get back and my new motorcycle friend Luis, who was watching my bike, was lounging on a full sized inflatable couch in front of the convenience store. Motorcycle travelling is definitely the glamping of two wheeled travel.',
 
     'Honestly, I’m still not sure what to make of the relationship between bikes and bikes. I mean we both have two wheels, helmets, and a hatred for cars, the only discernible difference being the badass leather jackets with skulls on them to our skin-tight spandex. A group of cyclists is also called a peloton instead of a biker gang which I guess is also uncool. There is no moral to the story, I just want to be included.',
 
