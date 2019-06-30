@@ -24,12 +24,32 @@ export default {
     {
       type: CONTENT_TYPES.TEXT,
       inline: true,
-      text: ' and margaritas in Mazatlan, it was time for Rhadam to once again be Rhys and Adam. So off we went on our separate journeys.',
+      text: ' and margaritas in Mazatlan, it was time for Rhadam to once again be Rhys and Adam. Off we went on our separate journeys.',
     },
 
-    // [_MG_5599.CR2][_MG_5600.CR2]
+    {
+      type: CONTENT_TYPES.GRID,
+      items: [{
+        type: CONTENT_TYPES.IMAGE,
+        alt: 'Rhys n welyn on the beach',
+        url: 'https://i.imgur.com/jby6QN4.jpg',
+        thumbnailUrl: 'https://i.imgur.com/jby6QN4t.jpg',
+        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+      }, {
+        type: CONTENT_TYPES.IMAGE,
+        alt: 'Rhys on a board',
+        url: 'https://i.imgur.com/dF3XUta.jpg',
+        thumbnailUrl: 'https://i.imgur.com/dF3XUtat.jpg',
+        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+      }]
+    },
 
-    'Leaving Mazatlan I biked solo towards Durango and into the Sierra Madre Occidental mountain range, my first REAL mountain range. And when I say mountain range I mean I biked uphill for straight days. As In I did not go down. At all. For two days. I went from 0ft elevation to 9,500 over 90 miles.',
+
+    // [_MG_5599.CR2][_MG_5600.CR2]
+    // https://i.imgur.com/jby6QN4.jpg
+    // https://i.imgur.com/dF3XUta.jpg
+
+    'Leaving Mazatlan I biked solo towards Durango and into the Sierra Madre Occidental mountain range, my first REAL mountain range. And when I say mountain range I mean I biked uphill for straight days. As In *I did not go down*. At all. For two days. I went from 0ft elevation to 9,500 over 90 miles.',
 
     // https://i.imgur.com/ijtTZfG.jpg
     // https://i.imgur.com/p9gINNf.jpg
@@ -51,7 +71,7 @@ export default {
       }]
     },
 
-    'Before I even started climbing however, I had a classic Adam moment: My tire sidewall tore. A man tried to help me by booting (covering up hole so the tube doesn’t peak out) my tire with a literal boot. A couple miles later my tube exploded. On a multi-modal adventure I walked the two miles back to the truck stop, rode one of those nifty motorized bikes to a bike shop, then hitchhiked with a car back my bike. I get back and my new motorcycle friend Luis, who was watching my bike, was lounging on a full sized inflatable couch in front of the convenience store. Motorcycle travelling is definitely the glamping of two wheeled travel.',
+    'Before I started climbing however, I had a classic Adam moment: My tire sidewall tore. A man tried to help me by booting (covering up hole so the tube doesn’t peak out) my tire with a literal boot. A couple miles later my tube exploded. On a multi-modal adventure I walked the two miles back to the truck stop, rode one of those nifty motorized bikes to a bike shop, then hitchhiked with a car back to my bike. I get back and my new motorcycle friend Luis, who was watching my bike, was lounging on a full sized inflatable couch in front of the convenience store. Motorcycle travelling is definitely the glamping of two wheeled travel.',
 
     'Honestly, I’m still not sure what to make of the relationship between bikes and bikes. I mean we both have two wheels, helmets, and a hatred for cars, the only discernible difference being the badass leather jackets with skulls on them to our skin-tight spandex. A group of cyclists is also called a peloton instead of a biker gang which I guess is also uncool. There is no moral to the story, I just want to be included.',
 
@@ -109,9 +129,9 @@ export default {
 
     //[_MG_5704.CR2][_MG_5723.CR2][_MG_5743.CR2]
 
-    'I reached Durango and was greeted by my friend Adria who I had met in Mazatlan. She is the perfect tour guide, having worked in every building in the city and is even friends with the governor and mayor. I spent two nights in Durango before heading to my next host, a Mexican family of Jonathan and his Mother.',
+    'I reached Durango and was greeted by my friend Adria who I had met in Mazatlan. She is the perfect tour guide, having worked in every building in the city and is even friends with the governor and mayor. I spent two nights in Durango before heading to Zacatecas.',
 
-    'On the way to Zacatecas I saved a baby horse. It’s rear legs were trapped in barbed wire in a way that attempting to free itself only gouged it more. I tried first helping her calm down with food but she would only try to jump away in fear, entrapping herself further in the fence. Her mom was staring at me, nostrils flaring, as I got closer. Eventually I just had to go for it so I grabbed both her legs and pulled them up and back to get them unbarbed, almost getting them over before she kicked out of my hands which were now covered in blood. The mom had gotten inches from my face to protect her daughter. I grabbed them again and shoved them up through the fence as she kicked again and finally made it through. She hobbled to the rest of her string (horse family) who were waiting for her. I found myself wanting the horse to turn around and neigh at me like in the movies but instead I was graced with the beauty of watching the string of horses walking into the forest.',
+    'On the way to Zacatecas I saved a baby horse. Its rear legs were trapped in barbed wire in a way that attempting to free itself only gouged it more. I tried first helping her calm down with food but she would only try to jump away in fear, entrapping herself further in the fence. Her mom was staring at me, nostrils flaring, as I got closer. Eventually I just had to go for it so I grabbed both her legs and pulled them up and back to get them unbarbed, almost getting them over before she kicked out of my hands which were now covered in blood. The mom had gotten inches from my face to protect her daughter. I grabbed them again and shoved them up through the fence as she kicked again and finally made it through. She hobbled to the rest of her string (horse family) who were waiting for her. I found myself wanting the horse to turn around and neigh at me like in the movies but instead I was graced with the beauty of watching the string of horses walking into the forest.',
 
     // https://i.imgur.com/dsolUBA.jpg
     // https://i.imgur.com/m04UOTQ.jpg
@@ -146,7 +166,9 @@ export default {
     // [_MG_5755.CR2][_MG_5754.CR2]
     // [_MG_5759.CR2] [phone vid?] w
 
-    'Reaching Zacatecas I was immediately welcomed as son and brother into Jonathan’s home and treated to delicious food paired with smoothies from Jonathan’s mom’s cute garage restaurant. After meeting me and another couple doing Seattle to Patagonia Jonathan has actually decided to start his own bike tour to Argentina! After leaving Zacatecas I ended up meeting the inflatable lounger, Luis, who invited me to stay with him in the next city, Aguas Calientes. The vulnerability of cycling alone has been met with such great hospitality in Mexico. In Morelia I was taken in by Renato, Gloria, and Shawn, Mexico City - Mike, and Alixco - Tere, all making me feel at home the moment I step into their house.',
+    'My next host was a Mexican family of Jonathan and his Mother. Reaching Zacatecas I was immediately welcomed as son and brother into Jonathan’s home and treated to delicious food paired with smoothies from Jonathan’s mom’s cute garage restaurant. After meeting me and another couple doing Seattle to Patagonia Jonathan has actually decided to start his own bike tour to Argentina!',
+    
+    'After leaving Zacatecas I ended up meeting the inflatable lounger, Luis, who invited me to stay with him in the next city, Aguas Calientes. The vulnerability of cycling alone has been met with such great hospitality in Mexico. In Morelia I was taken in by Renato, Gloria, and Shawn, Mexico City - Mike, and Alixco - Tere, all making me feel at home the moment I step into their house.',
 
     // https://i.imgur.com/2DxJhzi.jpg
     // [_MG_5768.CR2]
@@ -214,7 +236,11 @@ export default {
 
     'By the time I got to the city it was almost dark but I had made it, right? I plug my exact address and I have 25 miles left to bike…. What kind of monstrosity is this city. I was extremely lucky though and met the cyclists from the top at the edge of the city. They ended up caravaning with me all the way to Mike’s home with a van in front and back, blaring lights and horns on nighttime highways. I have no clue how I would have made it without them. My few CDMX days were wonderful, highlighted by late night stoned babbling with Mike and his friends.',
 
-    'My next destination was, similar to the prior, a fiery mountain ride. This time, however, it was a volcano. I spent two days heading towards the volcano Iztaccihuatl from CDMX. I was shaken awake on the second night with the most extraordinary alarm, the neighboring volcano erupting. I woke to a boom and watched a huge mass of smoke billow out of the top. After biking the last bit of volcano to 13,000 ft I hid my bike and bags in the tall grass. Equipped with spandex shorts a t-shirt and no shoes (I only have flip flops and bike shoes and I LOVE being barefoot) I started my trek up Iztaccihuatl. I saw a baby rattlesnake in the first mile which made me stop and consider whether this was a stupid idea but I decided maybe and kept on. The volcano was stunning in its grandeur. Cliffs scattered about haphazardly, a sign of the strength of this fiery giant. The crest of the volcano was obscured by a storm raging around the summit. I couldn’t go any higher than the refuge hut where I could hear the hail and rain battering the ground. I also tried to fly my drone but the elevation was so high that the controls simply did not work and I crashed it into a cliff. I am very embarrassed. Returning to the base I recovered all of my things and biked to yet another fiery destination, Atlixco and my host Tere.',
+    'My next destination was, similar to the prior, a fiery mountain ride. This time, however, it was a volcano. I spent two days heading towards the volcano Iztaccihuatl from CDMX. I was shaken awake on the second night with the most extraordinary alarm, the neighboring volcano erupting. I woke to a boom and watched a huge mass of smoke billow out of the top. After biking the last bit of volcano to 13,000 ft I hid my bike and bags in the tall grass.',
+    
+    'Equipped with spandex shorts a t-shirt and no shoes (I only have flip flops and bike shoes and I LOVE being barefoot) I started my trek up Iztaccihuatl. I saw a baby rattlesnake in the first mile which made me stop and consider whether this was a stupid idea but I decided maybe and kept on.',
+    
+    'The volcano was stunning in its grandeur. Cliffs scattered about haphazardly, a sign of the strength of this fiery giant. The crest of the volcano was obscured by a storm raging around the summit. I couldn’t go any higher than the refuge hut where I could hear the hail and rain battering the ground. I also tried to fly my drone but the elevation was so high that the controls simply did not work and I crashed it into a cliff. I am very embarrassed. Returning to the base I recovered all of my things and biked to yet another fiery destination, Atlixco and my host Tere.',
     //[volcano smoke vid][phone pic (idk if 1 or both)] camera was momentarily broken
 
     {
