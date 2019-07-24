@@ -9,6 +9,7 @@ import Resources from './Resources';
 import Route from './Route';
 import Redwoods from './Redwoods';
 import Rainbows from './Rainbows';
+import Videos from './Videos';
 
 // console.log('North', North);
 
@@ -22,6 +23,7 @@ const posts = {
   [SalemSoiree.url]: SalemSoiree,
   [North.url]: North,
   [Resources.url]: Resources,
+  [Videos.url]: Videos
   // [Daily.url]: Daily
 };
 
@@ -29,4 +31,4 @@ posts.keys = Object.keys(posts);
 posts.mostRecent = Mexico.url;
 
 export default posts;
-export { Mexico, Baja, Beginnings, SalemSoiree, Resources, North, Redwoods, Rainbows, Gear, Route, Daily };
+export { Mexico, Baja, Beginnings, SalemSoiree, Resources, North, Redwoods, Rainbows, Gear, Route, Daily, Videos };
