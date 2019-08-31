@@ -7,6 +7,7 @@ export default {
   description: 'Mountains may explode',
   categories: [CATEGORIES.NORTH_AMERICA],
   previousPostUrl: 'baja',
+  nextPostUrl: 'guatemala',
   thumbnailUrl: 'https://imgur.com/aF3Okp8.jpg',
   content: [
     {

@@ -146,7 +146,15 @@ export default [
   {x: 413, y: 568},
   {x: 428, y: 571},
   {x: 438, y: 573},
-  {x: 448, y: 585},
+  {
+    x: 448,
+    y: 585,
+    location: {
+      city: 'León',
+      countryCode: 'GT'
+    },
+    post: Posts.guatemala.url
+  },
   {x: 450, y: 590},
   // {x: 456, y: 590},
   {x: 461, y: 594, inprogress: true},

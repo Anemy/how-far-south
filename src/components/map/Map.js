@@ -58,8 +58,10 @@ import { kavrayskiy7Raw, getLocationString } from '../../constants';
 //   'US-OR': 'US-OR'
 // };
 
-const mapMarkerRightAlignYThreshold = 625;
+const mapMarkerRightAlignYThreshold = 555;
 const markerTextDistanceFromMarker = 80;
+const markerTextDistanceFromMarkerRightAlign = 70;
+
 
 // const maxMapWidth = 5000; 
 
@@ -201,14 +203,14 @@ class Map extends Component {
     journeyPosts.append('line')
       .attr('x1', point.x)
       .attr('y1', point.y)
-      .attr('x2', point.x + (point.leftAlign ? (markerTextDistanceFromMarker + .1) : (-markerTextDistanceFromMarker - .1)))
+      .attr('x2', point.x + (point.leftAlign ? (markerTextDistanceFromMarker + .1) : (-markerTextDistanceFromMarkerRightAlign - .1)))
       .attr('y2', point.y - 2.4)
       .attr('class', 'map-journey-marker-line');
 
     const locationString = getLocationString(point.location);
 
     markerTextLink.append('text')
-      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarkerRightAlign))
       .attr('y', point.y - 4)
       .text(Posts[point.post].title)
       .attr('text-anchor', point.leftAlign ? 'start' : 'end')
@@ -217,7 +219,7 @@ class Map extends Component {
       .classed('map-post-completed', !passedInProgress);
 
     markerTextLink.append('text')
-      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarkerRightAlign))
       .attr('y', point.y + 14)
       .text(locationString)
       .attr('text-anchor', point.leftAlign ? 'start' : 'end')
@@ -232,12 +234,12 @@ class Map extends Component {
     journeyPosts.append('line')
       .attr('x1', point.x)
       .attr('y1', point.y)
-      .attr('x2', point.x + (point.leftAlign ? markerTextDistanceFromMarker - 2 : -markerTextDistanceFromMarker + 2))
+      .attr('x2', point.x + (point.leftAlign ? markerTextDistanceFromMarker - 2 : -markerTextDistanceFromMarkerRightAlign + 2))
       .attr('y2', point.y)
       .attr('class', 'map-journey-marker-line');
 
     journeyPosts.append('text')
-      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarker))
+      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarkerRightAlign))
       .attr('y', point.y + 4)
       .text(locationString)
       .attr('text-anchor', point.leftAlign ? 'start' : 'end')
