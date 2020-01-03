@@ -165,10 +165,10 @@ export default [
   {
     x: 478,
     y: 628,
-    location: {
-      city: 'San Jose',
-      countryCode: 'CR'
-    }
+    // location: {
+    //   city: 'San Jose',
+    //   countryCode: 'CR'
+    // }
   },
   {x: 487, y: 633},
   {x: 499, y: 645},
@@ -181,15 +181,23 @@ export default [
   {x: 543, y: 630},
   {x: 584, y: 622},
   {x: 588, y: 630},
-  {x: 584, y: 640, inprogress: true},
+  {x: 584, y: 640},
   {x: 578, y: 651},
-  {x: 567, y: 659},
-  {x: 562, y: 666},
-  {x: 567, y: 668},
-  {x: 567, y: 680},
+  {x: 575, y: 659},
+  {x: 578, y: 666},
+  {
+    x: 579,
+    y: 668, 
+    location: {
+      city: 'Medellin',
+      countryCode: 'CO'
+    },
+    post: Posts.medellin.url
+  },
+  {x: 577, y: 680},
   {x: 579, y: 686},
   {x: 573, y: 700},
-  {x: 566, y: 712},
+  {x: 566, y: 712, inprogress: true},
   {x: 571, y: 718},
   {x: 565, y: 730},
   {x: 554, y: 731},

@@ -8,6 +8,7 @@ export default {
   description: 'Kicked the camera off a volcano',
   categories: [CATEGORIES.CENTRAL_AMERICA],
   previousPostUrl: 'mexico',
+  nextPostUrl: 'medellin',
   thumbnailUrl: 'https://i.imgur.com/9nFNPSW.jpg',
   content: [
     'Through the misfortune of having my camera accidentally kicked down a volcano and losing my phone this post will be rather sparse on pictures. You will have to read kind of like a book or something and just imagine all the pretty volcanoes. ',

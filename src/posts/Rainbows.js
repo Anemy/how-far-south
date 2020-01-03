@@ -22,19 +22,19 @@ export default {
         alt: 'Rhys infront of the rainbow',
         url: 'https://imgur.com/XD6BqA5.jpg',
         thumbnailUrl: 'https://imgur.com/XD6BqA5t.jpg',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-4' // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'USA',
         url: 'https://imgur.com/zGo6uwC.jpg',
         thumbnailUrl: 'https://imgur.com/zGo6uwC.jpg',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-4' // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Harmony village sign - more feet than feet',
         url: 'https://imgur.com/2MxWOij.jpg?1',
         thumbnailUrl: 'https://imgur.com/2MxWOij.jpg?1',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-4' // This is out of 12 how much space it takes up.
       }]
     },
     
@@ -54,19 +54,19 @@ export default {
         alt: 'Adam sitting in Big Sur',
         url: 'https://imgur.com/BAo9aBm.jpg',
         thumbnailUrl: 'https://imgur.com/BAo9aBmt.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
-    },/*, {
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
+      },/*, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Adam biking in misty trees',
         url: 'https://imgur.com/rCnKThC.jpg',
         thumbnailUrl: 'https://imgur.com/rCnKThC.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
-      }*/, {
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
+      }*/ {
         type: CONTENT_TYPES.IMAGE,
         alt: 'LA River',
         url: 'https://imgur.com/yaqka8Z.jpg?2',
         thumbnailUrl: 'https://imgur.com/yaqka8Zt.jpg?2',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }]
     },
     
@@ -79,13 +79,13 @@ export default {
         alt: 'Lizard with strawberries in background',
         url: 'https://imgur.com/QjjwPmz.jpg',
         thumbnailUrl: 'https://imgur.com/QjjwPmzt.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'RV from back with rainbow',
         url: 'https://imgur.com/4z6Lvr9.jpg',
         thumbnailUrl: 'https://imgur.com/4z6Lvr9t.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }]
     },
 
@@ -140,19 +140,19 @@ export default {
         alt: 'Cows windows screensaver',
         url: 'https://imgur.com/jg7D1E5.jpg',
         thumbnailUrl: 'https://imgur.com/jg7D1E5t.jpg',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-4' // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Adam and Cows',
         url: 'https://imgur.com/iVh4jQc.jpg',
         thumbnailUrl: 'https://imgur.com/iVh4jQct.jpg',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-4' // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Elephant Seal',
         url: 'https://imgur.com/s9Md5dr.jpg?1',
         thumbnailUrl: 'https://imgur.com/s9Md5drt.jpg?1',
-        grid: 'col-sm-4', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-4' // This is out of 12 how much space it takes up.
       }]
     },
 
@@ -163,13 +163,13 @@ export default {
         alt: 'Oil Tanker',
         url: 'https://imgur.com/Ru2dClh.jpg',
         thumbnailUrl: 'https://imgur.com/Ru2dClht.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Leaves Sun',
         url: 'https://imgur.com/C6GHDsX.jpg',
         thumbnailUrl: 'https://imgur.com/C6GHDsXt.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }]
     },
 
@@ -187,13 +187,13 @@ export default {
         alt: 'Sunset Bike',
         url: 'https://imgur.com/ZeVQdzr.jpg',
         thumbnailUrl: 'https://imgur.com/ZeVQdzrt.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Beach camp',
         url: 'https://imgur.com/htg5EDw.jpg',
         thumbnailUrl: 'https://imgur.com/htg5EDwt.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }]
     },
     
@@ -209,13 +209,13 @@ export default {
         alt: 'Rhys Border',
         url: 'https://i.imgur.com/bVQG1C8.jpg?3',
         thumbnailUrl: 'https://i.imgur.com/bVQG1C8t.jpg?3',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }/*, {
         type: CONTENT_TYPES.IMAGE,
         alt: 'Mama Taco',
         url: 'https://imgur.com/4Punk2T.jpg',
         thumbnailUrl: 'https://imgur.com/4Punk2T.jpg',
-        grid: 'col-sm-6', // This is out of 12 how much space it takes up.
+        grid: 'col-sm-6' // This is out of 12 how much space it takes up.
       }*/]
     },
     
