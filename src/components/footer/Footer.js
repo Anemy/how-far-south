@@ -31,7 +31,15 @@ class Footer extends Component {
           >
             Source Code
           </a>
-          
+          <a
+            href="https://www.youtube.com/channel/UCC4wmQt2q-W9NEnP9WnbsVw"
+            className="nice-link footer-link"
+            data-title="Videos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Videos
+          </a>          
         </div>
       </div>
     );
