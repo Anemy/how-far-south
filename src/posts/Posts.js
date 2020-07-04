@@ -3,14 +3,15 @@ import Beginnings from './Beginnings';
 import Daily from './Daily';
 import Gear from './Gear';
 import Guatemala from './Guatemala';
-import North from './North';
 import Medellin from './Medellin';
 import Mexico from './Mexico';
-import SalemSoiree from './SalemSoiree';
+import North from './North';
+import Redwoods from './Redwoods';
 import Resources from './Resources';
 import Route from './Route';
-import Redwoods from './Redwoods';
 import Rainbows from './Rainbows';
+import SalemSoiree from './SalemSoiree';
+import South from './South';
 import Videos from './Videos';
 
 // console.log('North', North);
@@ -18,6 +19,7 @@ import Videos from './Videos';
 const posts = {
   // [Beginnings.url]: Beginnings,
   // [Gear.url]: Gear,
+  [South.url]: South,
   [Medellin.url]: Medellin,
   [Guatemala.url]: Guatemala,
   [Mexico.url]: Mexico,
@@ -32,7 +34,7 @@ const posts = {
 };
 
 posts.keys = Object.keys(posts);
-posts.mostRecent = Medellin.url;
+posts.mostRecent = South.url;
 
 export default posts;
-export { Medellin, Guatemala, Mexico, Baja, Beginnings, SalemSoiree, Resources, North, Redwoods, Rainbows, Gear, Route, Daily, Videos };
+export { South, Medellin, Guatemala, Mexico, Baja, Beginnings, SalemSoiree, Resources, North, Redwoods, Rainbows, Gear, Route, Daily, Videos };

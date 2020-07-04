@@ -205,14 +205,28 @@ export default [
   {x: 562, y: 746},
   {x: 553, y: 758},
   {x: 545, y: 771},
-  {x: 556, y: 786},
-  {x: 550, y: 799, inprogress: true},
-  {x: 547, y: 814},
-  {x: 566, y: 815},
+  {x: 552, y: 786},
+  {
+    x: 549,
+    y: 799,
+    location: {
+      city: 'Cuenca',
+      countryCode: 'EC'
+    },
+    post: Posts.south.url
+  },
+  {
+    x: 549,
+    y: 799,
+    inprogress: true
+  },
+  {x: 546, y: 814},
+  {x: 546, y: 814},
+  {x: 565, y: 815},
   {x: 561, y: 870},
   {x: 578, y: 867},
   {x: 578, y: 913},
-  {x: 604, y: 971},
+  {x: 604, y: 971, toBeContinued: true},
   {x: 624, y: 971},
   {x: 624, y: 996},
   {x: 642, y: 996},

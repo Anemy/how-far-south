@@ -217,6 +217,7 @@ class PostItem extends Component {
           <iframe
             className={`post-image`}
             src={item.url}
+            title={`${item.description}`}
           />
           {item.description && (
             <div className="post-image-description">

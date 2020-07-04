@@ -50,11 +50,12 @@ class Header extends Component {
         {!showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-burger"></button>}
         {showMobileMenu && <button onClick={this.mobileMenuClicked} className="header-mobile-menu-close">X</button>}
         {showLogoTitle && (
-          <div
+          <Link
+            to="/"
             className="logo-link"
           >
             How <span>F<span className="character-rotate">a</span>r</span> South
-          </div>
+          </Link>
         )}
         <div className={`header-links ${showMobileMenu ? 'header-links-mobile-menu-open' : 'header-links-mobile-menu-closed'}`}>
           {/* {showMobileMenu && <div className="header-mobile-menu-title">Menu</div>} */}

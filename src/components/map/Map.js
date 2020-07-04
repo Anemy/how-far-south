@@ -248,6 +248,15 @@ class Map extends Component {
       .classed('map-post-completed', !passedInProgress);
   }
 
+  addToBeContinuedMarker = (markerIndex, point, journeyPosts) => {
+    journeyPosts.append('text')
+      .attr('x', point.x + (point.leftAlign ? markerTextDistanceFromMarker : -markerTextDistanceFromMarkerRightAlign) * .6)
+      .attr('y', point.y + 120)
+      .text('to be continued...')
+      .attr('text-anchor', point.leftAlign ? 'start' : 'end')
+      .attr('class', 'map-post-to-be-continued');
+  }
+
   addPostMarker = (markerIndex, passedInProgress, point, isPost, journeyBubbles) => {
     const innerCircle = journeyBubbles
       .append('circle')
@@ -331,6 +340,10 @@ class Map extends Component {
       };
       point.x *= pathScale;
       point.y *= pathScale;
+
+      if (point.toBeContinued) {
+        this.addToBeContinuedMarker(i, point, journeyPosts);
+      }
 
       if (point.location) {
         this.addPostMarker(i, passedInProgress, point, !!point.post, journeyBubbles);

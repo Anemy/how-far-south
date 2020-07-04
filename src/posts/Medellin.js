@@ -8,6 +8,7 @@ export default {
   description: '95 degree, 90% humidity, heat',
   categories: [CATEGORIES.CENTRAL_AMERICA],
   previousPostUrl: 'guatemala',
+  nextPostUrl: 'south',
   thumbnailUrl: 'https://i.imgur.com/n82jJ6o.jpg',
   content: [
     'There are moments when the world is a touch too big. The sun is too hot and the road too long and it just may be that everyone is out to get you. A head seems to be designed for headaches and legs just to be sore.',
